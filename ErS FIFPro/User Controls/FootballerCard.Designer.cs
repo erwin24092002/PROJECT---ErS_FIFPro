@@ -129,7 +129,7 @@
             // 
             this.ptbFlag.BackgroundImage = global::ErS_FIFPro.Flags.Argentina;
             this.ptbFlag.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ptbFlag.Location = new System.Drawing.Point(81, 253);
+            this.ptbFlag.Location = new System.Drawing.Point(84, 248);
             this.ptbFlag.Name = "ptbFlag";
             this.ptbFlag.Size = new System.Drawing.Size(76, 44);
             this.ptbFlag.TabIndex = 1;

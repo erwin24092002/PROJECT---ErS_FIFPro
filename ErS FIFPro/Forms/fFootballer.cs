@@ -58,8 +58,16 @@ namespace ErS_FIFPro.Forms
             flpFootballerCards.Controls.Clear();
             foreach (FootballerCard footballerCard in FootballerCardList)
             {
+                DataRow tmpFootballer = (DataRow)footballerCard.Tag;
+                if (!tmpFootballer["FB_NAME"].ToString().ToLower().Contains(txbSearch.Text.ToLower()))
+                    continue;
                 flpFootballerCards.Controls.Add(footballerCard);
             }
+        }
+
+        private void txbSearch_TextChanged(object sender, EventArgs e)
+        {
+            renderFootballerCardList(FootballerCardList);
         }
     }
 }
