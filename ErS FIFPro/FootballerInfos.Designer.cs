@@ -63,6 +63,16 @@ namespace ErS_FIFPro {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Lionel_Messi2 {
+            get {
+                object obj = ResourceManager.GetObject("Lionel_Messi2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Messi {
             get {
                 object obj = ResourceManager.GetObject("Messi", resourceCulture);

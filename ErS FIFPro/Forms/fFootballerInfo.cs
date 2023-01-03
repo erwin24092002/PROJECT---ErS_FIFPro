@@ -5,6 +5,8 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
+using System.Resources;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,6 +23,15 @@ namespace ErS_FIFPro.Forms
             this.Text = String.Empty;
             this.ControlBox = false;
             this.DoubleBuffered = true;
+
+            ResourceManager FootballerImageManager = new ResourceManager("ErS_FIFPro.FootballerInfos", Assembly.GetExecutingAssembly());
+            ptbFootballerInfo.BackgroundImage = (Image)FootballerImageManager.GetObject(string.Join("_", Footballer["FB_NAME"].ToString().Split(' ')) + "2");
+            lbFootballerName.Text = Footballer["FB_NAME"].ToString();
+            lbFootballerRole.Text = "Role: " + Footballer["FB_ROLE"].ToString();
+            lbFootballerIndex.Text = "Index: " + Footballer["FB_INDEX"].ToString();
+            string[] flags = { "Argentina", "France", "Brazil", "Qatar", "Japan", "South_Korea", "Germany", "Croatia" };
+            lbFootballerCountry.Text = "Country: " + flags[Int32.Parse(Footballer["FB_IDTEAM"].ToString()) - 1];
+            lbFootballerBirthday.Text = "Birthday: " + Footballer["FB_BIRTHDAY"].ToString();
         }
 
         private void btnExit_Click(object sender, EventArgs e)

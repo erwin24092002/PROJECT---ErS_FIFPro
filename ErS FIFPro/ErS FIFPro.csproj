@@ -875,5 +875,8 @@
   <ItemGroup>
     <None Include="Resources\Messi.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lionel Messi2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

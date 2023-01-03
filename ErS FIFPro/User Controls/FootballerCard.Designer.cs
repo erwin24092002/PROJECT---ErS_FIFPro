@@ -159,6 +159,7 @@
             this.Controls.Add(this.lbFootballerName);
             this.Controls.Add(this.ptbFlag);
             this.Controls.Add(this.ptbFootballer);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Margin = new System.Windows.Forms.Padding(60, 10, 0, 30);
             this.Name = "FootballerCard";
             this.Size = new System.Drawing.Size(240, 300);

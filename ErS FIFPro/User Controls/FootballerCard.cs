@@ -23,6 +23,7 @@ namespace ErS_FIFPro.User_Controls
 
             ResourceManager FootballerImageManager = new ResourceManager("ErS_FIFPro.Footballers", Assembly.GetExecutingAssembly());
             ptbFootballer.BackgroundImage = (Image)FootballerImageManager.GetObject(string.Join("_", Footballer["FB_NAME"].ToString().Split(' ')));
+            ptbFootballer.Click += FootballerCard_Click;
             lbFootballerName.Text = Footballer["FB_NAME"].ToString();
             lbRole.Text = Footballer["FB_ROLE"].ToString();
             lbIndex.Text = Footballer["FB_INDEX"].ToString();

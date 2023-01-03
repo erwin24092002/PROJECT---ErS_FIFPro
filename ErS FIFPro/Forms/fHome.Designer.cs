@@ -166,6 +166,7 @@
             // 
             // btnExit
             // 
+            this.btnExit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnExit.FlatAppearance.BorderSize = 0;
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExit.ForeColor = System.Drawing.Color.Gainsboro;
@@ -185,6 +186,7 @@
             // 
             // btnMinimize
             // 
+            this.btnMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMinimize.FlatAppearance.BorderSize = 0;
             this.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMinimize.ForeColor = System.Drawing.Color.Gainsboro;
@@ -203,6 +205,7 @@
             // 
             // btnLetter
             // 
+            this.btnLetter.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLetter.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnLetter.FlatAppearance.BorderSize = 0;
             this.btnLetter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -225,6 +228,7 @@
             // 
             // btnConfig
             // 
+            this.btnConfig.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnConfig.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnConfig.FlatAppearance.BorderSize = 0;
             this.btnConfig.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -247,6 +251,7 @@
             // 
             // btnCoaching
             // 
+            this.btnCoaching.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCoaching.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnCoaching.FlatAppearance.BorderSize = 0;
             this.btnCoaching.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -269,6 +274,7 @@
             // 
             // btnFootballer
             // 
+            this.btnFootballer.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnFootballer.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnFootballer.FlatAppearance.BorderSize = 0;
             this.btnFootballer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -291,6 +297,7 @@
             // 
             // btnTeam
             // 
+            this.btnTeam.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnTeam.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnTeam.FlatAppearance.BorderSize = 0;
             this.btnTeam.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -313,6 +320,7 @@
             // 
             // btnBetting
             // 
+            this.btnBetting.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBetting.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnBetting.FlatAppearance.BorderSize = 0;
             this.btnBetting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -335,6 +343,7 @@
             // 
             // btnResult
             // 
+            this.btnResult.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnResult.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnResult.FlatAppearance.BorderSize = 0;
             this.btnResult.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -357,6 +366,7 @@
             // 
             // btnMatch
             // 
+            this.btnMatch.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMatch.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnMatch.FlatAppearance.BorderSize = 0;
             this.btnMatch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -380,6 +390,7 @@
             // icptbHome
             // 
             this.icptbHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.icptbHome.Cursor = System.Windows.Forms.Cursors.Hand;
             this.icptbHome.ForeColor = System.Drawing.SystemColors.ControlText;
             this.icptbHome.IconChar = FontAwesome.Sharp.IconChar.None;
             this.icptbHome.IconColor = System.Drawing.SystemColors.ControlText;
