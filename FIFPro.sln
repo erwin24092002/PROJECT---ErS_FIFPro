@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32825.248
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ErS FIFPro", "ErS FIFPro\ErS FIFPro.csproj", "{B7DEB4DF-DAAA-4624-B0F4-26BA113803F9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B7DEB4DF-DAAA-4624-B0F4-26BA113803F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7DEB4DF-DAAA-4624-B0F4-26BA113803F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7DEB4DF-DAAA-4624-B0F4-26BA113803F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7DEB4DF-DAAA-4624-B0F4-26BA113803F9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F8C7987B-6568-4BD6-84F0-C8355364BE3C}
+	EndGlobalSection
+EndGlobal
