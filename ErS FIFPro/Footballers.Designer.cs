@@ -183,9 +183,9 @@ namespace ErS_FIFPro {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Andrej_Kramarić {
+        internal static System.Drawing.Bitmap Andrej_Kramaric {
             get {
-                object obj = ResourceManager.GetObject("Andrej_Kramarić", resourceCulture);
+                object obj = ResourceManager.GetObject("Andrej_Kramaric", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -333,9 +333,9 @@ namespace ErS_FIFPro {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Borna_Barišić {
+        internal static System.Drawing.Bitmap Borna_Barisic {
             get {
-                object obj = ResourceManager.GetObject("Borna_Barišić", resourceCulture);
+                object obj = ResourceManager.GetObject("Borna_Barisic", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -383,9 +383,9 @@ namespace ErS_FIFPro {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Bruno_Petković {
+        internal static System.Drawing.Bitmap Bruno_Petkovic {
             get {
-                object obj = ResourceManager.GetObject("Bruno_Petković", resourceCulture);
+                object obj = ResourceManager.GetObject("Bruno_Petkovic", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -523,6 +523,16 @@ namespace ErS_FIFPro {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Didier_Deschamps {
+            get {
+                object obj = ResourceManager.GetObject("Didier_Deschamps", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Domagoj_Vida {
             get {
                 object obj = ResourceManager.GetObject("Domagoj_Vida", resourceCulture);
@@ -533,9 +543,9 @@ namespace ErS_FIFPro {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Dominik_Livaković {
+        internal static System.Drawing.Bitmap Dominik_Livakovic {
             get {
-                object obj = ResourceManager.GetObject("Dominik_Livaković", resourceCulture);
+                object obj = ResourceManager.GetObject("Dominik_Livakovic", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -633,6 +643,16 @@ namespace ErS_FIFPro {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Felix_Sanchez {
+            get {
+                object obj = ResourceManager.GetObject("Felix_Sanchez", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Franco_Armani {
             get {
                 object obj = ResourceManager.GetObject("Franco_Armani", resourceCulture);
@@ -716,6 +736,26 @@ namespace ErS_FIFPro {
         internal static System.Drawing.Bitmap Guido_Rodríguez {
             get {
                 object obj = ResourceManager.GetObject("Guido_Rodríguez", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hajime_Moriyasu {
+            get {
+                object obj = ResourceManager.GetObject("Hajime_Moriyasu", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Hansi_Flick {
+            get {
+                object obj = ResourceManager.GetObject("Hansi_Flick", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -833,9 +873,9 @@ namespace ErS_FIFPro {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap İlkay_Gündoğan {
+        internal static System.Drawing.Bitmap Ilkay_Gundogan {
             get {
-                object obj = ResourceManager.GetObject("İlkay_Gündoğan", resourceCulture);
+                object obj = ResourceManager.GetObject("Ilkay_Gundogan", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -853,9 +893,9 @@ namespace ErS_FIFPro {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Ivan_Perišić {
+        internal static System.Drawing.Bitmap Ivan_Perisic {
             get {
-                object obj = ResourceManager.GetObject("Ivan_Perišić", resourceCulture);
+                object obj = ResourceManager.GetObject("Ivan_Perisic", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -863,9 +903,9 @@ namespace ErS_FIFPro {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Ivica_Ivušić {
+        internal static System.Drawing.Bitmap Ivica_Ivusic {
             get {
-                object obj = ResourceManager.GetObject("Ivica_Ivušić", resourceCulture);
+                object obj = ResourceManager.GetObject("Ivica_Ivusic", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -873,9 +913,9 @@ namespace ErS_FIFPro {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Ivo_Grbić {
+        internal static System.Drawing.Bitmap Ivo_Grbic {
             get {
-                object obj = ResourceManager.GetObject("Ivo_Grbić", resourceCulture);
+                object obj = ResourceManager.GetObject("Ivo_Grbic", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -953,9 +993,9 @@ namespace ErS_FIFPro {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Josip_Juranović {
+        internal static System.Drawing.Bitmap Josip_Juranovic {
             get {
-                object obj = ResourceManager.GetObject("Josip_Juranović", resourceCulture);
+                object obj = ResourceManager.GetObject("Josip_Juranovic", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -963,9 +1003,9 @@ namespace ErS_FIFPro {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Josip_Stanišić {
+        internal static System.Drawing.Bitmap Josip_Stanisic {
             get {
-                object obj = ResourceManager.GetObject("Josip_Stanišić", resourceCulture);
+                object obj = ResourceManager.GetObject("Josip_Stanisic", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1203,9 +1243,9 @@ namespace ErS_FIFPro {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Kristijan_Jakić {
+        internal static System.Drawing.Bitmap Kristijan_Jakic {
             get {
-                object obj = ResourceManager.GetObject("Kristijan_Jakić", resourceCulture);
+                object obj = ResourceManager.GetObject("Kristijan_Jakic", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1313,6 +1353,16 @@ namespace ErS_FIFPro {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Lionel_Scaloni {
+            get {
+                object obj = ResourceManager.GetObject("Lionel_Scaloni", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Lisandro_Martínez {
             get {
                 object obj = ResourceManager.GetObject("Lisandro_Martínez", resourceCulture);
@@ -1353,9 +1403,9 @@ namespace ErS_FIFPro {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Luka_Modrić__captain_ {
+        internal static System.Drawing.Bitmap Luka_Modric {
             get {
-                object obj = ResourceManager.GetObject("Luka_Modrić__captain_", resourceCulture);
+                object obj = ResourceManager.GetObject("Luka_Modric", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1363,9 +1413,9 @@ namespace ErS_FIFPro {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Luka_Sučić {
+        internal static System.Drawing.Bitmap Luka_Sucic {
             get {
-                object obj = ResourceManager.GetObject("Luka_Sučić", resourceCulture);
+                object obj = ResourceManager.GetObject("Luka_Sucic", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1403,9 +1453,9 @@ namespace ErS_FIFPro {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Marcelo_Brozović {
+        internal static System.Drawing.Bitmap Marcelo_Brozovic {
             get {
-                object obj = ResourceManager.GetObject("Marcelo_Brozović", resourceCulture);
+                object obj = ResourceManager.GetObject("Marcelo_Brozovic", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1443,9 +1493,9 @@ namespace ErS_FIFPro {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Mario_Pašalić {
+        internal static System.Drawing.Bitmap Mario_Pasalic {
             get {
-                object obj = ResourceManager.GetObject("Mario_Pašalić", resourceCulture);
+                object obj = ResourceManager.GetObject("Mario_Pasalic", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1473,9 +1523,9 @@ namespace ErS_FIFPro {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Martin_Erlić {
+        internal static System.Drawing.Bitmap Martin_Erlic {
             get {
-                object obj = ResourceManager.GetObject("Martin_Erlić", resourceCulture);
+                object obj = ResourceManager.GetObject("Martin_Erlic", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1483,9 +1533,9 @@ namespace ErS_FIFPro {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Mateo_Kovačić {
+        internal static System.Drawing.Bitmap Mateo_Kovacic {
             get {
-                object obj = ResourceManager.GetObject("Mateo_Kovačić", resourceCulture);
+                object obj = ResourceManager.GetObject("Mateo_Kovacic", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1543,9 +1593,9 @@ namespace ErS_FIFPro {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Mislav_Oršić {
+        internal static System.Drawing.Bitmap Mislav_Orsic {
             get {
-                object obj = ResourceManager.GetObject("Mislav_Oršić", resourceCulture);
+                object obj = ResourceManager.GetObject("Mislav_Orsic", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1683,9 +1733,9 @@ namespace ErS_FIFPro {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Nikola_Vlašić {
+        internal static System.Drawing.Bitmap Nikola_Vlasic {
             get {
-                object obj = ResourceManager.GetObject("Nikola_Vlašić", resourceCulture);
+                object obj = ResourceManager.GetObject("Nikola_Vlasic", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1726,6 +1776,16 @@ namespace ErS_FIFPro {
         internal static System.Drawing.Bitmap Papu_Gómez {
             get {
                 object obj = ResourceManager.GetObject("Papu_Gómez", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Paulo_Bento {
+            get {
+                object obj = ResourceManager.GetObject("Paulo_Bento", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1793,9 +1853,9 @@ namespace ErS_FIFPro {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Ritsu_Dōan {
+        internal static System.Drawing.Bitmap Ritsu_Doan {
             get {
-                object obj = ResourceManager.GetObject("Ritsu_Dōan", resourceCulture);
+                object obj = ResourceManager.GetObject("Ritsu_Doan", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1873,9 +1933,9 @@ namespace ErS_FIFPro {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Shūichi_Gonda {
+        internal static System.Drawing.Bitmap Shuichi_Gonda {
             get {
-                object obj = ResourceManager.GetObject("Shūichi_Gonda", resourceCulture);
+                object obj = ResourceManager.GetObject("Shuichi_Gonda", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2043,6 +2103,16 @@ namespace ErS_FIFPro {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Tite {
+            get {
+                object obj = ResourceManager.GetObject("Tite", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Vinícius_Júnior {
             get {
                 object obj = ResourceManager.GetObject("Vinícius_Júnior", resourceCulture);
@@ -2136,6 +2206,16 @@ namespace ErS_FIFPro {
         internal static System.Drawing.Bitmap Yuto_Nagatomo {
             get {
                 object obj = ResourceManager.GetObject("Yuto_Nagatomo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Zlatko_Dalic {
+            get {
+                object obj = ResourceManager.GetObject("Zlatko_Dalic", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

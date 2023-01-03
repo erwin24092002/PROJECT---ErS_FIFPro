@@ -53,11 +53,21 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Flags.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Flags.resx</DependentUpon>
+    </Compile>
     <Compile Include="fLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="fLogin.Designer.cs">
       <DependentUpon>fLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FootballerInfos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FootballerInfos.resx</DependentUpon>
     </Compile>
     <Compile Include="Footballers.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -87,6 +97,12 @@
     </Compile>
     <Compile Include="Forms\fFootballer.Designer.cs">
       <DependentUpon>fFootballer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\fFootballerInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\fFootballerInfo.Designer.cs">
+      <DependentUpon>fFootballerInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\fHome.cs">
       <SubType>Form</SubType>
@@ -121,8 +137,22 @@
     <Compile Include="MyColor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User Controls\FootballerCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\FootballerCard.Designer.cs">
+      <DependentUpon>FootballerCard.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Flags.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Flags.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="fLogin.resx">
       <DependentUpon>fLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FootballerInfos.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>FootballerInfos.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Footballers.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -130,6 +160,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\fFootballer.resx">
       <DependentUpon>fFootballer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\fFootballerInfo.resx">
+      <DependentUpon>fFootballerInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\fHome.resx">
       <DependentUpon>fHome.cs</DependentUpon>
@@ -147,6 +180,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="User Controls\FootballerCard.resx">
+      <DependentUpon>FootballerCard.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -787,6 +823,57 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Jo Hyeon-woo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Brazil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\France.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Argentina.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Croatia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Germany.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\South Korea.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Japan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Qatar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zlatko Dalic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Didier Deschamps.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Felix Sanchez.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hajime Moriyasu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hansi Flick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lionel Scaloni.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Paulo Bento.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Messi.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
