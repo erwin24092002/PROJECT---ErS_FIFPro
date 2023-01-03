@@ -128,6 +128,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Footballers.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\fFootballer.resx">
+      <DependentUpon>fFootballer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\fHome.resx">
       <DependentUpon>fHome.cs</DependentUpon>
     </EmbeddedResource>
@@ -160,6 +163,630 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\coin-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ángel Di María.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cristian Romero.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Emiliano Martínez.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enzo Fernández.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exequiel Palacios.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Franco Armani.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Germán Pezzella.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gerónimo Rulli.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gonzalo Montiel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Guido Rodríguez.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Juan Foyth.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Julián Álvarez.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lautaro Martínez.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Leandro Paredes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lionel Messi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lisandro Martínez.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Marcos Acuña.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nahuel Molina.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nicolás Otamendi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nicolás Tagliafico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Papu Gómez.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Paulo Dybala.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rodrigo De Paul.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thiago Almada.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alexis Mac Allister.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ángel Correa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Éder Militão.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ederson.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Éverton Ribeiro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fabinho.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fred.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gabriel Jesus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gabriel Martinelli.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lucas Paquetá.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Marquinhos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Neymar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pedro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Raphinha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Richarlison.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rodrygo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thiago Silva.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vinícius Júnior.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Weverton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alex Sandro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alex Telles.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alisson.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Antony.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bremer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bruno Guimarães.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Casemiro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dani Alves.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Danilo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ivica Ivušić.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ivo Grbić.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Josip Juranović.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Josip Stanišić.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Josip Šutalo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Joško Gvardiol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kristijan Jakić.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lovro Majer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Luka Modrić %28captain%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Luka Sučić.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Marcelo Brozović.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mario Pašalić.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Marko Livaja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Martin Erlić.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mateo Kovačić.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mislav Oršić.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nikola Vlašić.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Andrej Kramarić.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ante Budimir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Borna Barišić.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Borna Sosa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bruno Petković.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dejan Lovren.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Domagoj Vida.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dominik Livaković.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ivan Perišić.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ibrahima Konaté.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jordan Veretout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jules Koundé.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Karim Benzema.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kingsley Coman.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kylian Mbappé.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lucas Hernandez.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Marcus Thuram.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Matteo Guendouzi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Olivier Giroud.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ousmane Dembélé.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Randal Kolo Muani.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Raphaël Varane.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Steve Mandanda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Théo Hernandez.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\William Saliba.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Youssouf Fofana.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Adrien Rabiot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alphonse Areola.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Antoine Griezmann.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Aurélien Tchouaméni.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Axel Disasi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Benjamin Pavard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dayot Upamecano.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eduardo Camavinga.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hugo Lloris.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kai Havertz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Karim Adeyemi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kevin Trapp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Leon Goretzka.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Leroy Sané.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lukas Klostermann.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Manuel Neuer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Marc-André ter Stegen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mario Götze.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Matthias Ginter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Niclas Füllkrug.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nico Schlotterbeck.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Niklas Süle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Serge Gnabry.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thilo Kehrer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thomas Müller.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Youssoufa Moukoko.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Antonio Rüdiger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Armel Bella-Kotchap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Christian Günter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\David Raum.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\İlkay Gündoğan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jamal Musiala.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jonas Hofmann.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Joshua Kimmich.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Julian Brandt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hiroki Sakai.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Junya Ito.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kaoru Mitoma.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ko Itakura.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Maya Yoshida.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Miki Yamane.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ritsu Dōan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shogo Taniguchi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shūichi Gonda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shuto Machino.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Takefusa Kubo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Takehiro Tomiyasu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Takuma Asano.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Takumi Minamino.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wataru Endo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yuki Soma.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yuto Nagatomo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ao Tanaka.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ayase Ueda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Daichi Kamada.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Daizen Maeda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Daniel Schmidt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eiji Kawashima.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gaku Shibasaki.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hidemasa Morita.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hiroki Ito.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Boualem Khoukhi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hassan Al-Haydos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Homam Ahmed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ismaeel Mohammad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jassem Gaber.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Karim Boudiaf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Khalid Muneer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Meshaal Barsham.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mohammed Muntari.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mohammed Waad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mostafa Meshaal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Musab Kheder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Naif Al-Hadhrami.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ró-Ró.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Saad Al-Sheeb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Salem Al-Hajri.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tarek Salman.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yousef Hassan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Abdelkarim Hassan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Abdulaziz Hatem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ahmed Alaaeldin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Akram Afif.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ali Assadalla.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Almoez Ali.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Assim Madibo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bassam Al-Rawi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jung Woo-young.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kim Jin-su.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kim Min-jae.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kim Moon-hwan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kim Seung-gyu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kim Tae-hwan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kim Young-gwon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kwon Chang-hoon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kwon Kyung-won.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lee Jae-sung.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lee Kang-in.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Na Sang-ho.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Paik Seung-ho.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Son Heung-min.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Son Jun-ho.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Song Bum-keun.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Song Min-kyu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yoon Jong-gyu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cho Gue-sung.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cho Yu-min.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hong Chul.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hwang Hee-chan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hwang In-beom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hwang Ui-jo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jeong Woo-yeong.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jo Hyeon-woo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

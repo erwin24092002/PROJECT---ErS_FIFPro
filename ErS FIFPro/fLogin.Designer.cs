@@ -71,9 +71,9 @@
             this.txbConfPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.txbConfPassword.Font = new System.Drawing.Font("Century Schoolbook", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbConfPassword.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txbConfPassword.Location = new System.Drawing.Point(201, 328);
+            this.txbConfPassword.Location = new System.Drawing.Point(187, 328);
             this.txbConfPassword.Name = "txbConfPassword";
-            this.txbConfPassword.Size = new System.Drawing.Size(442, 28);
+            this.txbConfPassword.Size = new System.Drawing.Size(456, 28);
             this.txbConfPassword.TabIndex = 27;
             this.txbConfPassword.UseSystemPasswordChar = true;
             // 
@@ -93,9 +93,9 @@
             this.txbPassword2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.txbPassword2.Font = new System.Drawing.Font("Century Schoolbook", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbPassword2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txbPassword2.Location = new System.Drawing.Point(201, 291);
+            this.txbPassword2.Location = new System.Drawing.Point(187, 291);
             this.txbPassword2.Name = "txbPassword2";
-            this.txbPassword2.Size = new System.Drawing.Size(442, 28);
+            this.txbPassword2.Size = new System.Drawing.Size(456, 28);
             this.txbPassword2.TabIndex = 25;
             this.txbPassword2.UseSystemPasswordChar = true;
             // 
@@ -104,9 +104,9 @@
             this.txbUserName2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.txbUserName2.Font = new System.Drawing.Font("Century Schoolbook", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbUserName2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txbUserName2.Location = new System.Drawing.Point(201, 255);
+            this.txbUserName2.Location = new System.Drawing.Point(187, 255);
             this.txbUserName2.Name = "txbUserName2";
-            this.txbUserName2.Size = new System.Drawing.Size(442, 28);
+            this.txbUserName2.Size = new System.Drawing.Size(456, 28);
             this.txbUserName2.TabIndex = 24;
             // 
             // label1

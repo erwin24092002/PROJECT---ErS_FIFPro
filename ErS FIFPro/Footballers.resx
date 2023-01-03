@@ -1,101 +1,745 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-	<!-- 
-		Microsoft ResX Schema
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
 
-		Version 1.3
-
-		The primary goals of this format is to allow a simple XML format 
-		that is mostly human readable. The generation and parsing of the 
-		various data types are done through the TypeConverter classes 
-		associated with the data types.
-
-		Example:
-
-		... ado.net/XML headers & schema ...
-		<resheader name="resmimetype">text/microsoft-resx</resheader>
-		<resheader name="version">1.3</resheader>
-		<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
-		<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
-		<data name="Name1">this is my long string</data>
-		<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
-		<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
-			[base64 mime encoded serialized .NET Framework object]
-		</data>
-		<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-			[base64 mime encoded string representing a byte array form of the .NET Framework object]
-		</data>
-
-		There are any number of "resheader" rows that contain simple 
-		name/value pairs.
-
-		Each data row contains a name, and value. The row also contains a 
-		type or mimetype. Type corresponds to a .NET class that support 
-		text/value conversion through the TypeConverter architecture. 
-		Classes that don't support this are serialized and stored with the 
-		mimetype set.
-
-		The mimetype is used for serialized objects, and tells the 
-		ResXResourceReader how to depersist the object. This is currently not 
-		extensible. For a given mimetype the value must be set accordingly:
-
-		Note - application/x-microsoft.net.object.binary.base64 is the format 
-		that the ResXResourceWriter will generate, however the reader can 
-		read any of the formats listed below.
-
-		mimetype: application/x-microsoft.net.object.binary.base64
-		value   : The object must be serialized with 
-			: System.Serialization.Formatters.Binary.BinaryFormatter
-			: and then encoded with base64 encoding.
-
-		mimetype: application/x-microsoft.net.object.soap.base64
-		value   : The object must be serialized with 
-			: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
-			: and then encoded with base64 encoding.
-
-		mimetype: application/x-microsoft.net.object.bytearray.base64
-		value   : The object must be serialized into a byte array 
-			: using a System.ComponentModel.TypeConverter
-			: and then encoded with base64 encoding.
-	-->
-	
-	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-		<xsd:element name="root" msdata:IsDataSet="true">
-			<xsd:complexType>
-				<xsd:choice maxOccurs="unbounded">
-					<xsd:element name="data">
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
-							</xsd:sequence>
-							<xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
-							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-						</xsd:complexType>
-					</xsd:element>
-					<xsd:element name="resheader">
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-							</xsd:sequence>
-							<xsd:attribute name="name" type="xsd:string" use="required" />
-						</xsd:complexType>
-					</xsd:element>
-				</xsd:choice>
-			</xsd:complexType>
-		</xsd:element>
-	</xsd:schema>
-	<resheader name="resmimetype">
-		<value>text/microsoft-resx</value>
-	</resheader>
-	<resheader name="version">
-		<value>1.3</value>
-	</resheader>
-	<resheader name="reader">
-		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-	</resheader>
-	<resheader name="writer">
-		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-	</resheader>
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Abdelkarim_Hassan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Abdelkarim Hassan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Abdulaziz_Hatem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Abdulaziz Hatem.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Adrien_Rabiot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Adrien Rabiot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ahmed_Alaaeldin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Ahmed Alaaeldin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Akram_Afif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Akram Afif.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Alexis_Mac_Allister" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Alexis Mac Allister.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Alex_Sandro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Alex Sandro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Alex_Telles" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Alex Telles.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Alisson" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Alisson.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ali_Assadalla" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Ali Assadalla.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Almoez_Ali" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Almoez Ali.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Alphonse_Areola" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Alphonse Areola.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Andrej_Kramarić" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Andrej Kramarić.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ante_Budimir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Ante Budimir.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Antoine_Griezmann" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Antoine Griezmann.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Antonio_Rüdiger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Antonio Rüdiger.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Antony" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Antony.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ao_Tanaka" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Ao Tanaka.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Armel_Bella_Kotchap" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Armel Bella-Kotchap.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Assim_Madibo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Assim Madibo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Aurélien_Tchouaméni" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Aurélien Tchouaméni.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Axel_Disasi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Axel Disasi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ayase_Ueda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Ayase Ueda.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bassam_Al_Rawi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Bassam Al-Rawi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Benjamin_Pavard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Benjamin Pavard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Borna_Barišić" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Borna Barišić.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Borna_Sosa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Borna Sosa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Boualem_Khoukhi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Boualem Khoukhi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bremer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Bremer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bruno_Guimarães" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Bruno Guimarães.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bruno_Petković" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Bruno Petković.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Casemiro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Casemiro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cho_Gue_sung" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Cho Gue-sung.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cho_Yu_min" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Cho Yu-min.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Christian_Günter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Christian Günter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cristian_Romero" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Cristian Romero.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Daichi_Kamada" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Daichi Kamada.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Daizen_Maeda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Daizen Maeda.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Daniel_Schmidt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Daniel Schmidt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Danilo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Danilo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dani_Alves" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Dani Alves.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="David_Raum" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\David Raum.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dayot_Upamecano" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Dayot Upamecano.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dejan_Lovren" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Dejan Lovren.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Domagoj_Vida" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Domagoj Vida.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dominik_Livaković" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Dominik Livaković.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ederson" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Ederson.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Eduardo_Camavinga" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Eduardo Camavinga.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Eiji_Kawashima" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Eiji Kawashima.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Emiliano_Martínez" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Emiliano Martínez.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Enzo_Fernández" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Enzo Fernández.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Exequiel_Palacios" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Exequiel Palacios.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Fabinho" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Fabinho.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Franco_Armani" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Franco Armani.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Fred" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Fred.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Gabriel_Jesus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Gabriel Jesus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Gabriel_Martinelli" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Gabriel Martinelli.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Gaku_Shibasaki" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Gaku Shibasaki.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Germán_Pezzella" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Germán Pezzella.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Gerónimo_Rulli" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Gerónimo Rulli.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Gonzalo_Montiel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Gonzalo Montiel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Guido_Rodríguez" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Guido Rodríguez.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hassan_Al_Haydos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Hassan Al-Haydos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hidemasa_Morita" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Hidemasa Morita.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hiroki_Ito" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Hiroki Ito.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hiroki_Sakai" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Hiroki Sakai.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Homam_Ahmed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Homam Ahmed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hong_Chul" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Hong Chul.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hugo_Lloris" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Hugo Lloris.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hwang_Hee_chan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Hwang Hee-chan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hwang_In_beom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Hwang In-beom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hwang_Ui_jo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Hwang Ui-jo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ibrahima_Konaté" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Ibrahima Konaté.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ismaeel_Mohammad" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Ismaeel Mohammad.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ivan_Perišić" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Ivan Perišić.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ivica_Ivušić" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Ivica Ivušić.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ivo_Grbić" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Ivo Grbić.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Jamal_Musiala" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Jamal Musiala.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Jassem_Gaber" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Jassem Gaber.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Jeong_Woo_yeong" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Jeong Woo-yeong.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Jonas_Hofmann" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Jonas Hofmann.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Jordan_Veretout" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Jordan Veretout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Joshua_Kimmich" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Joshua Kimmich.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Josip_Juranović" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Josip Juranović.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Josip_Stanišić" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Josip Stanišić.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Josip_Šutalo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Josip Šutalo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Jo_Hyeon_woo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Jo Hyeon-woo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Joško_Gvardiol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Joško Gvardiol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Juan_Foyth" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Juan Foyth.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Jules_Koundé" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Jules Koundé.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Julian_Brandt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Julian Brandt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Julián_Álvarez" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Julián Álvarez.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Jung_Woo_young" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Jung Woo-young.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Junya_Ito" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Junya Ito.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Kai_Havertz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Kai Havertz.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Kaoru_Mitoma" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Kaoru Mitoma.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Karim_Adeyemi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Karim Adeyemi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Karim_Benzema" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Karim Benzema.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Karim_Boudiaf" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Karim Boudiaf.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Kevin_Trapp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Kevin Trapp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Khalid_Muneer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Khalid Muneer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Kim_Jin_su" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Kim Jin-su.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Kim_Min_jae" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Kim Min-jae.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Kim_Moon_hwan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Kim Moon-hwan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Kim_Seung_gyu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Kim Seung-gyu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Kim_Tae_hwan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Kim Tae-hwan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Kim_Young_gwon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Kim Young-gwon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Kingsley_Coman" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Kingsley Coman.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ko_Itakura" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Ko Itakura.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Kristijan_Jakić" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Kristijan Jakić.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Kwon_Chang_hoon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Kwon Chang-hoon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Kwon_Kyung_won" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Kwon Kyung-won.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Kylian_Mbappé" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Kylian Mbappé.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lautaro_Martínez" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Lautaro Martínez.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Leandro_Paredes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Leandro Paredes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lee_Jae_sung" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Lee Jae-sung.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lee_Kang_in" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Lee Kang-in.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Leon_Goretzka" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Leon Goretzka.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Leroy_Sané" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Leroy Sané.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lionel_Messi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Lionel Messi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lisandro_Martínez" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Lisandro Martínez.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lovro_Majer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Lovro Majer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lucas_Hernandez" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Lucas Hernandez.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lucas_Paquetá" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Lucas Paquetá.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lukas_Klostermann" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Lukas Klostermann.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Luka_Modrić__captain_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Luka Modrić (captain).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Luka_Sučić" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Luka Sučić.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Manuel_Neuer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Manuel Neuer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Marcelo_Brozović" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Marcelo Brozović.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Marcos_Acuña" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Marcos Acuña.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Marcus_Thuram" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Marcus Thuram.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Marc_André_ter_Stegen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Marc-André ter Stegen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mario_Götze" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Mario Götze.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mario_Pašalić" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Mario Pašalić.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Marko_Livaja" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Marko Livaja.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Marquinhos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Marquinhos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Martin_Erlić" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Martin Erlić.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mateo_Kovačić" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Mateo Kovačić.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Matteo_Guendouzi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Matteo Guendouzi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Matthias_Ginter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Matthias Ginter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Maya_Yoshida" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Maya Yoshida.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Meshaal_Barsham" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Meshaal Barsham.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Miki_Yamane" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Miki Yamane.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mislav_Oršić" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Mislav Oršić.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mohammed_Muntari" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Mohammed Muntari.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mohammed_Waad" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Mohammed Waad.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mostafa_Meshaal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Mostafa Meshaal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Musab_Kheder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Musab Kheder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Nahuel_Molina" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Nahuel Molina.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Naif_Al_Hadhrami" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Naif Al-Hadhrami.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Na_Sang_ho" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Na Sang-ho.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Neymar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Neymar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Niclas_Füllkrug" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Niclas Füllkrug.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Nicolás_Otamendi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Nicolás Otamendi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Nicolás_Tagliafico" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Nicolás Tagliafico.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Nico_Schlotterbeck" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Nico Schlotterbeck.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Niklas_Süle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Niklas Süle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Nikola_Vlašić" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Nikola Vlašić.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Olivier_Giroud" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Olivier Giroud.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ousmane_Dembélé" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Ousmane Dembélé.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Paik_Seung_ho" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Paik Seung-ho.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Papu_Gómez" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Papu Gómez.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Paulo_Dybala" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Paulo Dybala.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pedro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pedro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Randal_Kolo_Muani" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Randal Kolo Muani.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Raphaël_Varane" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Raphaël Varane.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Raphinha" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Raphinha.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Richarlison" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Richarlison.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ritsu_Dōan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Ritsu Dōan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Rodrigo_De_Paul" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Rodrigo De Paul.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Rodrygo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Rodrygo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ró_Ró" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Ró-Ró.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Saad_Al_Sheeb" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Saad Al-Sheeb.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Salem_Al_Hajri" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Salem Al-Hajri.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Serge_Gnabry" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Serge Gnabry.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Shogo_Taniguchi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Shogo Taniguchi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Shuto_Machino" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Shuto Machino.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Shūichi_Gonda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Shūichi Gonda.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Song_Bum_keun" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Song Bum-keun.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Song_Min_kyu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Song Min-kyu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Son_Heung_min" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Son Heung-min.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Son_Jun_ho" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Son Jun-ho.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Steve_Mandanda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Steve Mandanda.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Takefusa_Kubo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Takefusa Kubo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Takehiro_Tomiyasu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Takehiro Tomiyasu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Takuma_Asano" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Takuma Asano.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Takumi_Minamino" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Takumi Minamino.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tarek_Salman" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Tarek Salman.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thiago_Almada" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Thiago Almada.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thiago_Silva" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Thiago Silva.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thilo_Kehrer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Thilo Kehrer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thomas_Müller" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Thomas Müller.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Théo_Hernandez" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Théo Hernandez.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Vinícius_Júnior" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Vinícius Júnior.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Wataru_Endo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Wataru Endo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Weverton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Weverton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="William_Saliba" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\William Saliba.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Yoon_Jong_gyu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Yoon Jong-gyu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Yousef_Hassan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Yousef Hassan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Youssoufa_Moukoko" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Youssoufa Moukoko.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Youssouf_Fofana" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Youssouf Fofana.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Yuki_Soma" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Yuki Soma.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Yuto_Nagatomo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Yuto Nagatomo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ángel_Correa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Ángel Correa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ángel_Di_María" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Ángel Di María.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Éder_Militão" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Éder Militão.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Éverton_Ribeiro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Éverton Ribeiro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="İlkay_Gündoğan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\İlkay Gündoğan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
