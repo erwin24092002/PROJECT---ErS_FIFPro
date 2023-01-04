@@ -55,7 +55,7 @@ namespace ErS_FIFPro.Forms
         {
             if (currentBtn != null)
             {
-                currentBtn.BackColor = Color.FromArgb(31, 30, 68);
+                currentBtn.BackColor = Color.FromArgb(26, 25, 62);
                 currentBtn.ForeColor = Color.Gainsboro;
             }
         }
