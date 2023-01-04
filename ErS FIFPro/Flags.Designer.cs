@@ -123,6 +123,16 @@ namespace ErS_FIFPro {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Not_Know {
+            get {
+                object obj = ResourceManager.GetObject("Not_Know", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Qatar {
             get {
                 object obj = ResourceManager.GetObject("Qatar", resourceCulture);
