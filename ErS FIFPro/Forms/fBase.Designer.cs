@@ -31,8 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fBase));
             this.pFootballer = new System.Windows.Forms.Panel();
             this.gbFootballers = new System.Windows.Forms.GroupBox();
-            this.pBase = new System.Windows.Forms.Panel();
             this.flpFootballers = new System.Windows.Forms.FlowLayoutPanel();
+            this.pBase = new System.Windows.Forms.Panel();
             this.pFootballer.SuspendLayout();
             this.gbFootballers.SuspendLayout();
             this.SuspendLayout();
@@ -43,7 +43,7 @@
             this.pFootballer.Dock = System.Windows.Forms.DockStyle.Top;
             this.pFootballer.Location = new System.Drawing.Point(0, 0);
             this.pFootballer.Name = "pFootballer";
-            this.pFootballer.Size = new System.Drawing.Size(975, 100);
+            this.pFootballer.Size = new System.Drawing.Size(1284, 100);
             this.pFootballer.TabIndex = 0;
             // 
             // gbFootballers
@@ -52,34 +52,34 @@
             this.gbFootballers.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbFootballers.Location = new System.Drawing.Point(12, 3);
             this.gbFootballers.Name = "gbFootballers";
-            this.gbFootballers.Size = new System.Drawing.Size(951, 94);
+            this.gbFootballers.Size = new System.Drawing.Size(1260, 94);
             this.gbFootballers.TabIndex = 0;
             this.gbFootballers.TabStop = false;
             this.gbFootballers.Text = "Footballers";
+            // 
+            // flpFootballers
+            // 
+            this.flpFootballers.AutoScroll = true;
+            this.flpFootballers.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.flpFootballers.Location = new System.Drawing.Point(5, 25);
+            this.flpFootballers.Name = "flpFootballers";
+            this.flpFootballers.Size = new System.Drawing.Size(1250, 66);
+            this.flpFootballers.TabIndex = 0;
             // 
             // pBase
             // 
             this.pBase.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pBase.Location = new System.Drawing.Point(0, 100);
             this.pBase.Name = "pBase";
-            this.pBase.Size = new System.Drawing.Size(975, 510);
+            this.pBase.Size = new System.Drawing.Size(1284, 561);
             this.pBase.TabIndex = 1;
-            // 
-            // flpFootballers
-            // 
-            this.flpFootballers.AutoScroll = true;
-            this.flpFootballers.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.flpFootballers.Location = new System.Drawing.Point(4, 25);
-            this.flpFootballers.Name = "flpFootballers";
-            this.flpFootballers.Size = new System.Drawing.Size(945, 66);
-            this.flpFootballers.TabIndex = 0;
             // 
             // fBase
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.YellowGreen;
-            this.ClientSize = new System.Drawing.Size(975, 610);
+            this.ClientSize = new System.Drawing.Size(1284, 661);
             this.Controls.Add(this.pBase);
             this.Controls.Add(this.pFootballer);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

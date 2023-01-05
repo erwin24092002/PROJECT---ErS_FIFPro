@@ -73,7 +73,7 @@ namespace ErS_FIFPro.Forms
             foreach (DataRow row in Footballers.Rows)
             {
                 IContainer container = new Container();
-                list.Add(new FootballerBase(container));
+                list.Add(new FootballerBase(container, row));
                 id++;
             }
             return list;
