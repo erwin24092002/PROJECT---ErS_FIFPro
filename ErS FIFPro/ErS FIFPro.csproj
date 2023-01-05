@@ -79,6 +79,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Footballers.resx</DependentUpon>
     </Compile>
+    <Compile Include="Forms\fBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\fBase.Designer.cs">
+      <DependentUpon>fBase.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\fBetting.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -148,6 +154,12 @@
     <Compile Include="User Controls\CoachingMatch.Designer.cs">
       <DependentUpon>CoachingMatch.cs</DependentUpon>
     </Compile>
+    <Compile Include="User Controls\FootballerBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\FootballerBase.Designer.cs">
+      <DependentUpon>FootballerBase.cs</DependentUpon>
+    </Compile>
     <Compile Include="User Controls\FootballerCard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -185,6 +197,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Footballers.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\fBase.resx">
+      <DependentUpon>fBase.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\fCoaching.resx">
       <DependentUpon>fCoaching.cs</DependentUpon>
     </EmbeddedResource>
@@ -212,6 +227,9 @@
     </Compile>
     <EmbeddedResource Include="User Controls\CoachingMatch.resx">
       <DependentUpon>CoachingMatch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\FootballerBase.resx">
+      <DependentUpon>FootballerBase.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User Controls\FootballerCard.resx">
       <DependentUpon>FootballerCard.cs</DependentUpon>

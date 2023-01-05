@@ -47,7 +47,7 @@ namespace ErS_FIFPro.Forms
             flpCoachingMatch.Controls.Clear();
             foreach (DataRow row in Coachings.Rows)
             {
-                CoachingMatch match = new CoachingMatch(row);
+                CoachingMatch match = new CoachingMatch(row, account);
                 flpCoachingMatch.Controls.Add(match);
             }
         }

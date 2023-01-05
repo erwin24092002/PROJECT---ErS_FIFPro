@@ -79,6 +79,7 @@
             this.btnLogin.TabIndex = 29;
             this.btnLogin.Text = "Base";
             this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // lbCountry1
             // 
