@@ -117,38 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="AccArgentina" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\AccArgentina.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="AccBrazil" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\AccBrazil.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="AccCroatia" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\AccCroatia.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="AccErwin" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\he.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="AccFrance" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\AccFrance.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="AccGermany" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\AccGermany.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="AccJapan" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\AccJapan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="AccQatar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\AccQatar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="AccSouth_Korea" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\AccSouth Korea.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="AccSuong" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Suong.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Viewer" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Viewer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
 </root>

@@ -142,6 +142,12 @@
     <Compile Include="MyColor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User Controls\CoachingMatch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\CoachingMatch.Designer.cs">
+      <DependentUpon>CoachingMatch.cs</DependentUpon>
+    </Compile>
     <Compile Include="User Controls\FootballerCard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -179,6 +185,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Footballers.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\fCoaching.resx">
+      <DependentUpon>fCoaching.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\fFootballer.resx">
       <DependentUpon>fFootballer.cs</DependentUpon>
     </EmbeddedResource>
@@ -201,6 +210,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="User Controls\CoachingMatch.resx">
+      <DependentUpon>CoachingMatch.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="User Controls\FootballerCard.resx">
       <DependentUpon>FootballerCard.cs</DependentUpon>
     </EmbeddedResource>
@@ -940,6 +952,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AccGermany.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Viewer.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

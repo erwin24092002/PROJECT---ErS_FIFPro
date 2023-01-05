@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ErS_FIFPro.User_Controls;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,18 @@ namespace ErS_FIFPro.Forms
         public fCoaching()
         {
             InitializeComponent();
+            renderCoachingMatch();
+        }
+
+        private void renderCoachingMatch()
+        {
+            flpCoachingMatch.Controls.Clear();
+            for (int i =0; i<5; i++)
+            {
+                CoachingMatch tmpCoachingMatch = new CoachingMatch();
+                tmpCoachingMatch.BringToFront();
+                flpCoachingMatch.Controls.Add(tmpCoachingMatch);
+            }
         }
     }
 }

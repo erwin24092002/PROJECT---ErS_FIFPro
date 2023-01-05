@@ -69,7 +69,7 @@ namespace ErS_FIFPro
                 MessageBox.Show("Username already exists!");
             else
             {
-                createAccount(txbUserName2.Text, txbPassword.Text);
+                createAccount(txbUserName2.Text, txbPassword2.Text);
                 MessageBox.Show("Successful registration!");
                 txbUserName2.Text = "";
                 txbPassword2.Text = "";
