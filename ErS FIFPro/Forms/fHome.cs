@@ -163,7 +163,7 @@ namespace ErS_FIFPro.Forms
         private void btnCoaching_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, myColors.ActiveButtonColor);
-            OpenChildForm(new fCoaching());
+            OpenChildForm(new fCoaching(account));
         }
 
         private void btnConfig_Click(object sender, EventArgs e)
