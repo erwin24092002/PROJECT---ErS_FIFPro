@@ -19,8 +19,9 @@ namespace ErS_FIFPro.Forms
         private DataTable Matchs;
         private List<TeamMatch> TeamMatchList;
         private List<Match> MatchList;
+        private DataRow account;
 
-        public fMatch()
+        public fMatch(DataRow account)
         {
             InitializeComponent();
             Teams = getTeams();
@@ -29,6 +30,7 @@ namespace ErS_FIFPro.Forms
             Matchs = getMatchs();
             MatchList = genMatchList(Matchs);
             renderMatchList();
+            this.account = account;
         }
         private DataTable getMatchs()
         {
@@ -51,12 +53,12 @@ namespace ErS_FIFPro.Forms
         private List<Match> genMatchList(DataTable Matchs)
         {
             List<Match> MatchList = new List<Match>();
-            Match tmpCard = new Match(Matchs.Rows[0]);
+            Match tmpCard = new Match(Matchs.Rows[0], account);
             MatchList.Add(tmpCard);
 
             foreach (DataRow row in Matchs.Rows)
             {
-                Match tmpCard1 = new Match(row);
+                Match tmpCard1 = new Match(row, account);
                 MatchList.Add(tmpCard1);
             }
 
@@ -101,13 +103,13 @@ namespace ErS_FIFPro.Forms
         {
             List<TeamMatch> TeamMatchList = new List<TeamMatch>();
             IContainer container = new Container();
-            TeamMatch tmpCard = new TeamMatch(container, 0);
+            TeamMatch tmpCard = new TeamMatch(container, 0, account);
             TeamMatchList.Add(tmpCard);
 
             foreach (DataRow row in Teams.Rows)
             {
                 IContainer container1 = new Container();
-                TeamMatch tmpCard1 = new TeamMatch(container1, Int32.Parse(row["M_IDTEAM"].ToString()));
+                TeamMatch tmpCard1 = new TeamMatch(container1, Int32.Parse(row["M_IDTEAM"].ToString()), account);
                 TeamMatchList.Add(tmpCard1);
             }
 

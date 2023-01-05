@@ -61,6 +61,7 @@
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.Controls.Add(this.btnBase);
             this.Controls.Add(this.ptbTeam);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Name = "TeamMatch";
             this.Size = new System.Drawing.Size(110, 70);
             ((System.ComponentModel.ISupportInitialize)(this.ptbTeam)).EndInit();

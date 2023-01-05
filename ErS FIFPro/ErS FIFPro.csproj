@@ -53,6 +53,11 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Accounts.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Accounts.resx</DependentUpon>
+    </Compile>
     <Compile Include="Flags.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -155,6 +160,10 @@
     <Compile Include="User Controls\TeamMatch.Designer.cs">
       <DependentUpon>TeamMatch.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Accounts.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Accounts.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Flags.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Flags.Designer.cs</LastGenOutput>
@@ -901,6 +910,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Not Know.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\he.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Suong.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AccSouth Korea.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AccJapan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AccQatar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AccBrazil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AccFrance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AccArgentina.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AccCroatia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AccGermany.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

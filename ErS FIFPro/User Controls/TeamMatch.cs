@@ -14,7 +14,8 @@ namespace ErS_FIFPro.User_Controls
 {
     public partial class TeamMatch : UserControl
     {
-        public TeamMatch(IContainer container, int id)
+        private DataRow account;
+        public TeamMatch(IContainer container, int id, DataRow account)
         {
             InitializeComponent();
             container.Add(this);
@@ -22,6 +23,7 @@ namespace ErS_FIFPro.User_Controls
             string[] flags = { "Not_Know", "Argentina", "France", "Brazil", "Qatar", "Japan", "South_Korea", "Germany", "Croatia" };
             ResourceManager FlagImageManager = new ResourceManager("ErS_FIFPro.Flags", Assembly.GetExecutingAssembly());
             ptbTeam.BackgroundImage = (Image)FlagImageManager.GetObject(flags[id]);
+            this.account = account;
         }
 
         Point point;

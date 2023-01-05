@@ -353,20 +353,20 @@
             // 
             // lbAccountCoin
             // 
-            this.lbAccountCoin.Font = new System.Drawing.Font("Century Schoolbook", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAccountCoin.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbAccountCoin.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lbAccountCoin.Location = new System.Drawing.Point(39, 232);
+            this.lbAccountCoin.Location = new System.Drawing.Point(34, 232);
             this.lbAccountCoin.Name = "lbAccountCoin";
-            this.lbAccountCoin.Size = new System.Drawing.Size(158, 25);
+            this.lbAccountCoin.Size = new System.Drawing.Size(163, 25);
             this.lbAccountCoin.TabIndex = 8;
             this.lbAccountCoin.Text = "9999$";
             this.lbAccountCoin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lbAccountRole
             // 
-            this.lbAccountRole.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAccountRole.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbAccountRole.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lbAccountRole.Location = new System.Drawing.Point(3, 200);
+            this.lbAccountRole.Location = new System.Drawing.Point(3, 202);
             this.lbAccountRole.Name = "lbAccountRole";
             this.lbAccountRole.Size = new System.Drawing.Size(194, 21);
             this.lbAccountRole.TabIndex = 7;
@@ -375,7 +375,7 @@
             // 
             // lbAccountName
             // 
-            this.lbAccountName.Font = new System.Drawing.Font("Cooper Black", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAccountName.Font = new System.Drawing.Font("Cooper Black", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbAccountName.ForeColor = System.Drawing.Color.Gainsboro;
             this.lbAccountName.Location = new System.Drawing.Point(3, 168);
             this.lbAccountName.Name = "lbAccountName";

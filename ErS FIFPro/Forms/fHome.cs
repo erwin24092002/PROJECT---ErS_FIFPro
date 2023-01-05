@@ -5,7 +5,10 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
+using System.Resources;
 using System.Runtime.InteropServices;
+using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -18,10 +21,12 @@ namespace ErS_FIFPro.Forms
         private Panel leftBorderBtn;
         private MyColor myColors = new MyColor();
         private Form currentChildForm;
+        private DataRow account;
 
-        public fHome()
+        public fHome(DataRow acc)
         {
             InitializeComponent();
+            account = acc;
 
             leftBorderBtn = new Panel();
             leftBorderBtn.Size = new Size(7, 55);
@@ -30,6 +35,18 @@ namespace ErS_FIFPro.Forms
             this.Text = String.Empty;
             this.ControlBox = false;
             this.DoubleBuffered = true;
+
+            ResourceManager AccountImageManager = new ResourceManager("ErS_FIFPro.Accounts", Assembly.GetExecutingAssembly());
+            ptbAccount.BackgroundImage = (Image)AccountImageManager.GetObject("Acc" + string.Join("_", account["AC_NAME"].ToString().Split(' ')));
+            lbAccountName.Text = account["AC_NAME"].ToString();
+            lbAccountCoin.Text = account["AC_COIN"].ToString() + "$";
+            int role = Int32.Parse(account["AC_ROLE"].ToString());
+            if (role == 0)
+                lbAccountRole.Text = "Viewer";
+            else if (role == 1)
+                lbAccountRole.Text = "Team Manager";
+            else
+                lbAccountRole.Text = "Admin";
         }
         private void btnExit_Click(object sender, EventArgs e)
         {
@@ -116,7 +133,7 @@ namespace ErS_FIFPro.Forms
         private void btnMatch_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, myColors.ActiveButtonColor);
-            OpenChildForm(new fMatch());
+            OpenChildForm(new fMatch(account));
         }
 
         private void btnResult_Click(object sender, EventArgs e)

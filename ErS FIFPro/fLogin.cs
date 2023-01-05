@@ -26,7 +26,7 @@ namespace ErS_FIFPro
             DataTable accountList = getAccount(txbUserName.Text, txbPassword.Text);
             if (accountList.Rows.Count > 0)
             {
-                fHome f = new fHome();
+                fHome f = new fHome(accountList.Rows[0]);
                 this.Hide();
                 f.ShowDialog();
                 this.Show();
