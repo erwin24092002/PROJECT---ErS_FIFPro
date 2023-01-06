@@ -91,6 +91,7 @@
             this.lbWatch.TabIndex = 23;
             this.lbWatch.Text = "Watch";
             this.lbWatch.UseVisualStyleBackColor = false;
+            this.lbWatch.Click += new System.EventHandler(this.lbWatch_Click);
             // 
             // Match
             // 

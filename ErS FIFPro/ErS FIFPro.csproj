@@ -151,6 +151,12 @@
     <Compile Include="Forms\fTeam.Designer.cs">
       <DependentUpon>fTeam.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\fWatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\fWatch.Designer.cs">
+      <DependentUpon>fWatch.cs</DependentUpon>
+    </Compile>
     <Compile Include="MyColor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -159,6 +165,12 @@
     </Compile>
     <Compile Include="User Controls\CoachingMatch.Designer.cs">
       <DependentUpon>CoachingMatch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\Comment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\Comment.Designer.cs">
+      <DependentUpon>Comment.cs</DependentUpon>
     </Compile>
     <Compile Include="User Controls\FootballerBase.cs">
       <SubType>UserControl</SubType>
@@ -224,6 +236,9 @@
     <EmbeddedResource Include="Forms\fSubBase.resx">
       <DependentUpon>fSubBase.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\fWatch.resx">
+      <DependentUpon>fWatch.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -236,6 +251,9 @@
     </Compile>
     <EmbeddedResource Include="User Controls\CoachingMatch.resx">
       <DependentUpon>CoachingMatch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\Comment.resx">
+      <DependentUpon>Comment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User Controls\FootballerBase.resx">
       <DependentUpon>FootballerBase.cs</DependentUpon>

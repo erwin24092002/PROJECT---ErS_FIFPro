@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ErS_FIFPro.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -21,6 +22,12 @@ namespace ErS_FIFPro.User_Controls
             string[] strings = match["M_DATE"].ToString().Split(' ');
             lbDate.Text = strings[0] + "\n" + strings[1] + " " + strings[2];
             this.account = account;
+        }
+
+        private void lbWatch_Click(object sender, EventArgs e)
+        {
+            fWatch f = new fWatch();
+            f.ShowDialog();
         }
     }
 }
