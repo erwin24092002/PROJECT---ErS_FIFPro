@@ -103,14 +103,16 @@ namespace ErS_FIFPro.Forms
         {
             List<TeamMatch> TeamMatchList = new List<TeamMatch>();
             IContainer container = new Container();
-            TeamMatch tmpCard = new TeamMatch(container, 0, account);
+            TeamMatch tmpCard = new TeamMatch(container, 0, account, 0);
             TeamMatchList.Add(tmpCard);
 
+            int id = 1;
             foreach (DataRow row in Teams.Rows)
             {
                 IContainer container1 = new Container();
-                TeamMatch tmpCard1 = new TeamMatch(container1, Int32.Parse(row["M_IDTEAM"].ToString()), account);
+                TeamMatch tmpCard1 = new TeamMatch(container1, Int32.Parse(row["M_IDTEAM"].ToString()), account, id);
                 TeamMatchList.Add(tmpCard1);
+                id++;
             }
 
             return TeamMatchList;

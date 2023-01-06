@@ -43,6 +43,7 @@
             this.btnBase.TabIndex = 1;
             this.btnBase.Text = "Base";
             this.btnBase.UseVisualStyleBackColor = false;
+            this.btnBase.Click += new System.EventHandler(this.btnBase_Click);
             // 
             // ptbTeam
             // 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ErS_FIFPro.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,11 +16,15 @@ namespace ErS_FIFPro.User_Controls
     public partial class TeamMatch : UserControl
     {
         private DataRow account;
-        public TeamMatch(IContainer container, int id, DataRow account)
+        private int base_idx;
+        private int idteam;
+        public TeamMatch(IContainer container, int id, DataRow account, int idx)
         {
             InitializeComponent();
             container.Add(this);
 
+            base_idx = idx;
+            idteam = id;
             string[] flags = { "Not_Know", "Argentina", "France", "Brazil", "Qatar", "Japan", "South_Korea", "Germany", "Croatia" };
             ResourceManager FlagImageManager = new ResourceManager("ErS_FIFPro.Flags", Assembly.GetExecutingAssembly());
             ptbTeam.BackgroundImage = (Image)FlagImageManager.GetObject(flags[id]);
@@ -40,6 +45,12 @@ namespace ErS_FIFPro.User_Controls
                 this.Top += e.Y - point.Y;
             }
             base.OnMouseMove(e);
+        }
+
+        private void btnBase_Click(object sender, EventArgs e)
+        {
+            fSubBase f = new fSubBase(base_idx, idteam);
+            f.ShowDialog();
         }
     }
 }

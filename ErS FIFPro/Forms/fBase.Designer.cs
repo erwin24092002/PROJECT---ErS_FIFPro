@@ -33,8 +33,10 @@
             this.gbFootballers = new System.Windows.Forms.GroupBox();
             this.flpFootballers = new System.Windows.Forms.FlowLayoutPanel();
             this.pBase = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.pFootballer.SuspendLayout();
             this.gbFootballers.SuspendLayout();
+            this.pBase.SuspendLayout();
             this.SuspendLayout();
             // 
             // pFootballer
@@ -68,11 +70,23 @@
             // 
             // pBase
             // 
+            this.pBase.Controls.Add(this.button1);
             this.pBase.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pBase.Location = new System.Drawing.Point(0, 100);
             this.pBase.Name = "pBase";
             this.pBase.Size = new System.Drawing.Size(1284, 561);
             this.pBase.TabIndex = 1;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(1158, 515);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(109, 34);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Save";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // fBase
             // 
@@ -88,6 +102,7 @@
             this.Text = "Base";
             this.pFootballer.ResumeLayout(false);
             this.gbFootballers.ResumeLayout(false);
+            this.pBase.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -98,5 +113,6 @@
         private System.Windows.Forms.GroupBox gbFootballers;
         private System.Windows.Forms.Panel pBase;
         private System.Windows.Forms.FlowLayoutPanel flpFootballers;
+        private System.Windows.Forms.Button button1;
     }
 }
