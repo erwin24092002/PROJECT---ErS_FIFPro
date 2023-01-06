@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,9 +15,13 @@ namespace ErS_FIFPro.Forms
 {
     public partial class fWatch : Form
     {
-        public fWatch()
+        private DataRow match;
+        private DataRow account;
+        public fWatch(DataRow match, DataRow account)
         {
             InitializeComponent();
+            this.match = match;
+            this.account = account;
             playVideo();
             renderComment();
         }
@@ -27,23 +32,47 @@ namespace ErS_FIFPro.Forms
             html += "<meta content='IE=Edge' http-equiv='X-UA-Compatible'/>";
             html += "<iframe id='video' src= 'https://www.youtube.com/embed/{0}' width='1192' height='640' frameborder='0' allowfullscreen></iframe>";
             html += "</head></html>";
-            this.wbMatch.DocumentText = string.Format(html, "https://www.youtube.com/watch?v=TElOdnfP1SE".Split('=')[1]);
+            this.wbMatch.DocumentText = string.Format(html, match["M_LINK"].ToString().Split('=')[1]);
         }
 
         private void renderComment()
         {
-            Comment tmp = new Comment("Erwin", "2023-1-1 10:00:00", "Trận đấu này thật hay");
-            tmp.Margin = new Padding(5, 10, 0, 0);
-            flpComment.Controls.Add(tmp);
-
-            Comment tmp2 = new Comment("Erwin", "2023-1-1 10:00:00", "Trận đấu này thật hay");
-            tmp2.Margin = new Padding(35, 10, 0, 0);
-            flpComment.Controls.Add(tmp2);
+            string filePath = "Comments/" + match["M_ID"] + ".txt";
+            if (File.Exists(filePath))
+            {
+                List<string> lines = new List<string>();
+                lines = File.ReadAllLines(filePath).ToList();
+                foreach (string line in lines)
+                {
+                    string[] infos = line.Split(',');
+                    Comment tmp = new Comment(infos[0], infos[1], infos[2]);
+                    flpComment.Controls.Add(tmp);
+                    if (account["AC_NAME"].ToString() == infos[0])
+                        tmp.Margin = new Padding(35, 10, 0, 0);
+                    else
+                        tmp.Margin = new Padding(5, 10, 0, 0);
+                }
+            }
         }
 
         private void btnComment_Click(object sender, EventArgs e)
         {
-
+            if (rtbMessage.Text == "")
+                MessageBox.Show("Empty comments!");
+            else
+            {
+                string filePath = "Comments/" + match["M_ID"] + ".txt";
+                List<string> lines = new List<string>();
+                if (File.Exists(filePath))
+                {
+                    lines = File.ReadAllLines(filePath).ToList();
+                    Comment tmp = new Comment(account["AC_NAME"].ToString(), DateTime.Now.ToString(), rtbMessage.Text);
+                    flpComment.Controls.Add(tmp);
+                    tmp.Margin = new Padding(35, 10, 0, 0);
+                }
+                lines.Add(account["AC_NAME"].ToString() + "," + DateTime.Now.ToString() + "," + rtbMessage.Text);
+                File.WriteAllLines(filePath, lines);
+            }
         }
     }
 }

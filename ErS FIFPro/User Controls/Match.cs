@@ -14,6 +14,7 @@ namespace ErS_FIFPro.User_Controls
     public partial class Match : UserControl
     {
         private DataRow account;
+        private DataRow match;
         public Match(DataRow match, DataRow account)
         {
             InitializeComponent();
@@ -22,12 +23,18 @@ namespace ErS_FIFPro.User_Controls
             string[] strings = match["M_DATE"].ToString().Split(' ');
             lbDate.Text = strings[0] + "\n" + strings[1] + " " + strings[2];
             this.account = account;
+            this.match = match;
         }
 
         private void lbWatch_Click(object sender, EventArgs e)
         {
-            fWatch f = new fWatch();
-            f.ShowDialog();
+            if (match["M_LINK"].ToString() == "")
+                MessageBox.Show("The match has not yet started!");
+            else
+            {
+                fWatch f = new fWatch(match, account);
+                f.ShowDialog();
+            }
         }
     }
 }

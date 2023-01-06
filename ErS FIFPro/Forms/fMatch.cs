@@ -24,13 +24,14 @@ namespace ErS_FIFPro.Forms
         public fMatch(DataRow account)
         {
             InitializeComponent();
+            this.account = account;
+
             Teams = getTeams();
             TeamMatchList = genTeamMatchList(Teams);
             renderTeamMatchList();
             Matchs = getMatchs();
             MatchList = genMatchList(Matchs);
             renderMatchList();
-            this.account = account;
         }
         private DataTable getMatchs()
         {
