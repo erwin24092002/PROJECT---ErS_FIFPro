@@ -17,9 +17,11 @@ namespace ErS_FIFPro.Forms
     {
         private DataTable Matchs;
         private List<Result> MatchResultList;
-        public fResult()
+        private DataRow account;
+        public fResult(DataRow account)
         {
             InitializeComponent();
+            this.account = account;
             Matchs = getMatchs();
             MatchResultList = genResultList(Matchs);
             renderResultList();
@@ -46,7 +48,7 @@ namespace ErS_FIFPro.Forms
             List<Result> resultList = new List<Result>();
             foreach (DataRow row in Matchs.Rows)
             {
-                Result tmp = new Result(row);
+                Result tmp = new Result(row, account);
                 resultList.Add(tmp);
             }
             return resultList;

@@ -42,11 +42,20 @@ namespace ErS_FIFPro.Forms
             lbAccountCoin.Text = account["AC_COIN"].ToString() + "$";
             int role = Int32.Parse(account["AC_ROLE"].ToString());
             if (role == 0)
+            {
                 lbAccountRole.Text = "Viewer";
-            else if (role == 1)
+                this.btnConfig.Enabled = false;
+                this.btnCoaching.Enabled = false;
+            }
+            if (role == 1)
+            {
                 lbAccountRole.Text = "Team Manager";
-            else
+                this.btnConfig.Enabled = false;
+            }
+            if (role == 2)
+            {
                 lbAccountRole.Text = "Admin";
+            }
         }
         private void btnExit_Click(object sender, EventArgs e)
         {
@@ -139,7 +148,7 @@ namespace ErS_FIFPro.Forms
         private void btnResult_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, myColors.ActiveButtonColor);
-            OpenChildForm(new fResult());
+            OpenChildForm(new fResult(account));
         }
 
         private void btnBetting_Click(object sender, EventArgs e)

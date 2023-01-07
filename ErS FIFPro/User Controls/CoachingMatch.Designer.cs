@@ -28,33 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.ptbFlag1 = new System.Windows.Forms.PictureBox();
             this.lbDate = new System.Windows.Forms.Label();
-            this.btnLogin = new System.Windows.Forms.Button();
-            this.lbCountry1 = new System.Windows.Forms.Label();
-            this.lbCountry2 = new System.Windows.Forms.Label();
-            this.ptbFlag2 = new System.Windows.Forms.PictureBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.txbHDP1 = new System.Windows.Forms.TextBox();
-            this.txbGoal1 = new System.Windows.Forms.TextBox();
             this.txbGoal2 = new System.Windows.Forms.TextBox();
             this.txbHDP2 = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbFlag1)).BeginInit();
+            this.txbGoal1 = new System.Windows.Forms.TextBox();
+            this.txbHDP1 = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.lbCountry2 = new System.Windows.Forms.Label();
+            this.ptbFlag2 = new System.Windows.Forms.PictureBox();
+            this.lbCountry1 = new System.Windows.Forms.Label();
+            this.ptbFlag1 = new System.Windows.Forms.PictureBox();
+            this.btnBase = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.ptbFlag2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbFlag1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // ptbFlag1
-            // 
-            this.ptbFlag1.BackgroundImage = global::ErS_FIFPro.Flags.Argentina;
-            this.ptbFlag1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ptbFlag1.Location = new System.Drawing.Point(79, 66);
-            this.ptbFlag1.Name = "ptbFlag1";
-            this.ptbFlag1.Size = new System.Drawing.Size(76, 44);
-            this.ptbFlag1.TabIndex = 2;
-            this.ptbFlag1.TabStop = false;
             // 
             // lbDate
             // 
@@ -69,37 +59,111 @@
             this.lbDate.Text = "2023-1-11 22:00:00";
             this.lbDate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btnLogin
+            // txbGoal2
             // 
-            this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLogin.Font = new System.Drawing.Font("Century Schoolbook", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogin.Location = new System.Drawing.Point(976, 77);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(212, 33);
-            this.btnLogin.TabIndex = 29;
-            this.btnLogin.Text = "Base";
-            this.btnLogin.UseVisualStyleBackColor = true;
-            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            this.txbGoal2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.txbGoal2.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbGoal2.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txbGoal2.Location = new System.Drawing.Point(604, 84);
+            this.txbGoal2.Name = "txbGoal2";
+            this.txbGoal2.Size = new System.Drawing.Size(80, 27);
+            this.txbGoal2.TabIndex = 70;
+            this.txbGoal2.Text = "0";
+            this.txbGoal2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // lbCountry1
+            // txbHDP2
             // 
-            this.lbCountry1.Font = new System.Drawing.Font("Century Schoolbook", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCountry1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lbCountry1.Location = new System.Drawing.Point(29, 38);
-            this.lbCountry1.Name = "lbCountry1";
-            this.lbCountry1.Size = new System.Drawing.Size(179, 25);
-            this.lbCountry1.TabIndex = 30;
-            this.lbCountry1.Text = "Argentina";
-            this.lbCountry1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.txbHDP2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.txbHDP2.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbHDP2.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txbHDP2.Location = new System.Drawing.Point(604, 47);
+            this.txbHDP2.Name = "txbHDP2";
+            this.txbHDP2.Size = new System.Drawing.Size(80, 27);
+            this.txbHDP2.TabIndex = 69;
+            this.txbHDP2.Text = "0.0";
+            this.txbHDP2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txbGoal1
+            // 
+            this.txbGoal1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.txbGoal1.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbGoal1.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txbGoal1.Location = new System.Drawing.Point(518, 84);
+            this.txbGoal1.Name = "txbGoal1";
+            this.txbGoal1.Size = new System.Drawing.Size(80, 27);
+            this.txbGoal1.TabIndex = 68;
+            this.txbGoal1.Text = "1";
+            this.txbGoal1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txbHDP1
+            // 
+            this.txbHDP1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.txbHDP1.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbHDP1.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txbHDP1.Location = new System.Drawing.Point(518, 47);
+            this.txbHDP1.Name = "txbHDP1";
+            this.txbHDP1.Size = new System.Drawing.Size(80, 27);
+            this.txbHDP1.TabIndex = 67;
+            this.txbHDP1.Text = "0.5";
+            this.txbHDP1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label8
+            // 
+            this.label8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label8.Font = new System.Drawing.Font("Century Schoolbook", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label8.Location = new System.Drawing.Point(701, 79);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(80, 35);
+            this.label8.TabIndex = 66;
+            this.label8.Text = "Goal";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label9
+            // 
+            this.label9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label9.Font = new System.Drawing.Font("Century Schoolbook", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label9.Location = new System.Drawing.Point(701, 42);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(80, 35);
+            this.label9.TabIndex = 65;
+            this.label9.Text = "HDP";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label7
+            // 
+            this.label7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label7.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label7.Location = new System.Drawing.Point(421, 79);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(80, 35);
+            this.label7.TabIndex = 64;
+            this.label7.Text = "Goal";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label6
+            // 
+            this.label6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label6.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label6.Location = new System.Drawing.Point(421, 43);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(80, 35);
+            this.label6.TabIndex = 63;
+            this.label6.Text = "HDP";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lbCountry2
             // 
-            this.lbCountry2.Font = new System.Drawing.Font("Century Schoolbook", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCountry2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.lbCountry2.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbCountry2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lbCountry2.Location = new System.Drawing.Point(455, 38);
+            this.lbCountry2.Location = new System.Drawing.Point(911, 10);
             this.lbCountry2.Name = "lbCountry2";
             this.lbCountry2.Size = new System.Drawing.Size(179, 25);
-            this.lbCountry2.TabIndex = 32;
+            this.lbCountry2.TabIndex = 62;
             this.lbCountry2.Text = "Argentina";
             this.lbCountry2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -107,107 +171,45 @@
             // 
             this.ptbFlag2.BackgroundImage = global::ErS_FIFPro.Flags.Argentina;
             this.ptbFlag2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ptbFlag2.Location = new System.Drawing.Point(505, 66);
+            this.ptbFlag2.Location = new System.Drawing.Point(940, 42);
             this.ptbFlag2.Name = "ptbFlag2";
-            this.ptbFlag2.Size = new System.Drawing.Size(76, 44);
-            this.ptbFlag2.TabIndex = 31;
+            this.ptbFlag2.Size = new System.Drawing.Size(117, 72);
+            this.ptbFlag2.TabIndex = 61;
             this.ptbFlag2.TabStop = false;
             // 
-            // label6
+            // lbCountry1
             // 
-            this.label6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label6.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label6.Location = new System.Drawing.Point(193, 66);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(60, 20);
-            this.label6.TabIndex = 38;
-            this.label6.Text = "HDP";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbCountry1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.lbCountry1.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCountry1.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lbCountry1.Location = new System.Drawing.Point(112, 10);
+            this.lbCountry1.Name = "lbCountry1";
+            this.lbCountry1.Size = new System.Drawing.Size(179, 25);
+            this.lbCountry1.TabIndex = 60;
+            this.lbCountry1.Text = "Argentina";
+            this.lbCountry1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label7
+            // ptbFlag1
             // 
-            this.label7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label7.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label7.Location = new System.Drawing.Point(193, 90);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(60, 20);
-            this.label7.TabIndex = 39;
-            this.label7.Text = "Goal";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ptbFlag1.BackgroundImage = global::ErS_FIFPro.Flags.Argentina;
+            this.ptbFlag1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ptbFlag1.Location = new System.Drawing.Point(142, 42);
+            this.ptbFlag1.Name = "ptbFlag1";
+            this.ptbFlag1.Size = new System.Drawing.Size(108, 72);
+            this.ptbFlag1.TabIndex = 59;
+            this.ptbFlag1.TabStop = false;
             // 
-            // label8
+            // btnBase
             // 
-            this.label8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label8.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label8.Location = new System.Drawing.Point(389, 90);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(60, 20);
-            this.label8.TabIndex = 41;
-            this.label8.Text = "Goal";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label9
-            // 
-            this.label9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label9.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label9.Location = new System.Drawing.Point(389, 66);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(60, 20);
-            this.label9.TabIndex = 40;
-            this.label9.Text = "HDP";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txbHDP1
-            // 
-            this.txbHDP1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.txbHDP1.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbHDP1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txbHDP1.Location = new System.Drawing.Point(259, 65);
-            this.txbHDP1.Name = "txbHDP1";
-            this.txbHDP1.Size = new System.Drawing.Size(60, 22);
-            this.txbHDP1.TabIndex = 42;
-            this.txbHDP1.Text = "0.5";
-            this.txbHDP1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // txbGoal1
-            // 
-            this.txbGoal1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.txbGoal1.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbGoal1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txbGoal1.Location = new System.Drawing.Point(259, 90);
-            this.txbGoal1.Name = "txbGoal1";
-            this.txbGoal1.Size = new System.Drawing.Size(60, 22);
-            this.txbGoal1.TabIndex = 43;
-            this.txbGoal1.Text = "1";
-            this.txbGoal1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // txbGoal2
-            // 
-            this.txbGoal2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.txbGoal2.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbGoal2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txbGoal2.Location = new System.Drawing.Point(325, 90);
-            this.txbGoal2.Name = "txbGoal2";
-            this.txbGoal2.Size = new System.Drawing.Size(60, 22);
-            this.txbGoal2.TabIndex = 45;
-            this.txbGoal2.Text = "0";
-            this.txbGoal2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // txbHDP2
-            // 
-            this.txbHDP2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.txbHDP2.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbHDP2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txbHDP2.Location = new System.Drawing.Point(325, 65);
-            this.txbHDP2.Name = "txbHDP2";
-            this.txbHDP2.Size = new System.Drawing.Size(60, 22);
-            this.txbHDP2.TabIndex = 44;
-            this.txbHDP2.Text = "0.0";
-            this.txbHDP2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnBase.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBase.Font = new System.Drawing.Font("Century Schoolbook", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBase.Location = new System.Drawing.Point(494, 136);
+            this.btnBase.Name = "btnBase";
+            this.btnBase.Size = new System.Drawing.Size(212, 33);
+            this.btnBase.TabIndex = 71;
+            this.btnBase.Text = "Base";
+            this.btnBase.UseVisualStyleBackColor = true;
+            this.btnBase.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // CoachingMatch
             // 
@@ -215,6 +217,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Controls.Add(this.btnBase);
             this.Controls.Add(this.txbGoal2);
             this.Controls.Add(this.txbHDP2);
             this.Controls.Add(this.txbGoal1);
@@ -226,34 +229,32 @@
             this.Controls.Add(this.lbCountry2);
             this.Controls.Add(this.ptbFlag2);
             this.Controls.Add(this.lbCountry1);
-            this.Controls.Add(this.btnLogin);
-            this.Controls.Add(this.lbDate);
             this.Controls.Add(this.ptbFlag1);
+            this.Controls.Add(this.lbDate);
             this.Margin = new System.Windows.Forms.Padding(40, 20, 3, 30);
             this.Name = "CoachingMatch";
-            this.Size = new System.Drawing.Size(1200, 120);
-            ((System.ComponentModel.ISupportInitialize)(this.ptbFlag1)).EndInit();
+            this.Size = new System.Drawing.Size(1200, 180);
             ((System.ComponentModel.ISupportInitialize)(this.ptbFlag2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbFlag1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox ptbFlag1;
         private System.Windows.Forms.Label lbDate;
-        private System.Windows.Forms.Button btnLogin;
-        private System.Windows.Forms.Label lbCountry1;
-        private System.Windows.Forms.Label lbCountry2;
-        private System.Windows.Forms.PictureBox ptbFlag2;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox txbHDP1;
-        private System.Windows.Forms.TextBox txbGoal1;
         private System.Windows.Forms.TextBox txbGoal2;
         private System.Windows.Forms.TextBox txbHDP2;
+        private System.Windows.Forms.TextBox txbGoal1;
+        private System.Windows.Forms.TextBox txbHDP1;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lbCountry2;
+        private System.Windows.Forms.PictureBox ptbFlag2;
+        private System.Windows.Forms.Label lbCountry1;
+        private System.Windows.Forms.PictureBox ptbFlag1;
+        private System.Windows.Forms.Button btnBase;
     }
 }

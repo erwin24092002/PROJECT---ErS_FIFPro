@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ErS_FIFPro.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,10 +17,12 @@ namespace ErS_FIFPro.User_Controls
     public partial class Result : UserControl
     {
         private DataRow match;
-        public Result(DataRow match)
+        private DataRow account;
+        public Result(DataRow match, DataRow account)
         {
             InitializeComponent();
             this.match = match;
+            this.account = account;
 
             lbDate.Text = match["M_DATE"].ToString();
             string[] flags = { "Not Know", "Argentina", "France", "Brazil", "Qatar", "Japan", "South Korea", "Germany", "Croatia" };
@@ -33,6 +36,16 @@ namespace ErS_FIFPro.User_Controls
             lbCountry1.Text = flags[Int32.Parse(match["M_IDTEAM1"].ToString())];
             lbCountry2.Text = flags[Int32.Parse(match["M_IDTEAM2"].ToString())];
         }
-        
+
+        private void btnWatch_Click(object sender, EventArgs e)
+        {
+            if (match["M_LINK"].ToString() == "")
+                MessageBox.Show("The match has not yet started!");
+            else
+            {
+                fWatch f = new fWatch(match, account);
+                f.ShowDialog();
+            }
+        }
     }
 }

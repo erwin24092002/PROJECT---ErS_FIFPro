@@ -72,6 +72,7 @@ namespace ErS_FIFPro.Forms
                 }
                 lines.Add(account["AC_NAME"].ToString() + "," + DateTime.Now.ToString() + "," + rtbMessage.Text);
                 File.WriteAllLines(filePath, lines);
+                rtbMessage.Text = "";
             }
         }
     }

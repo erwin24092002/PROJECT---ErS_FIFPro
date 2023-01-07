@@ -41,6 +41,8 @@
             this.ptbFlag1 = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.btnWatch = new System.Windows.Forms.Button();
+            this.btnHighlight = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.ptbFlag2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbFlag1)).BeginInit();
             this.SuspendLayout();
@@ -50,7 +52,7 @@
             this.txbGoal2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.txbGoal2.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbGoal2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txbGoal2.Location = new System.Drawing.Point(606, 84);
+            this.txbGoal2.Location = new System.Drawing.Point(604, 84);
             this.txbGoal2.Name = "txbGoal2";
             this.txbGoal2.Size = new System.Drawing.Size(80, 27);
             this.txbGoal2.TabIndex = 58;
@@ -62,7 +64,7 @@
             this.txbHDP2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.txbHDP2.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbHDP2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txbHDP2.Location = new System.Drawing.Point(606, 47);
+            this.txbHDP2.Location = new System.Drawing.Point(604, 47);
             this.txbHDP2.Name = "txbHDP2";
             this.txbHDP2.Size = new System.Drawing.Size(80, 27);
             this.txbHDP2.TabIndex = 57;
@@ -74,7 +76,7 @@
             this.txbGoal1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.txbGoal1.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbGoal1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txbGoal1.Location = new System.Drawing.Point(520, 84);
+            this.txbGoal1.Location = new System.Drawing.Point(518, 84);
             this.txbGoal1.Name = "txbGoal1";
             this.txbGoal1.Size = new System.Drawing.Size(80, 27);
             this.txbGoal1.TabIndex = 56;
@@ -86,7 +88,7 @@
             this.txbHDP1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.txbHDP1.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbHDP1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txbHDP1.Location = new System.Drawing.Point(520, 47);
+            this.txbHDP1.Location = new System.Drawing.Point(518, 47);
             this.txbHDP1.Name = "txbHDP1";
             this.txbHDP1.Size = new System.Drawing.Size(80, 27);
             this.txbHDP1.TabIndex = 55;
@@ -98,7 +100,7 @@
             this.label7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label7.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label7.Location = new System.Drawing.Point(423, 79);
+            this.label7.Location = new System.Drawing.Point(421, 79);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(80, 35);
             this.label7.TabIndex = 52;
@@ -110,7 +112,7 @@
             this.label6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label6.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label6.Location = new System.Drawing.Point(423, 43);
+            this.label6.Location = new System.Drawing.Point(421, 43);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(80, 35);
             this.label6.TabIndex = 51;
@@ -179,7 +181,7 @@
             this.label9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label9.Font = new System.Drawing.Font("Century Schoolbook", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label9.Location = new System.Drawing.Point(703, 42);
+            this.label9.Location = new System.Drawing.Point(701, 42);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(80, 35);
             this.label9.TabIndex = 53;
@@ -191,18 +193,43 @@
             this.label8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label8.Font = new System.Drawing.Font("Century Schoolbook", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label8.Location = new System.Drawing.Point(703, 79);
+            this.label8.Location = new System.Drawing.Point(701, 79);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(80, 35);
             this.label8.TabIndex = 54;
             this.label8.Text = "Goal";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // btnWatch
+            // 
+            this.btnWatch.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnWatch.Font = new System.Drawing.Font("Century Schoolbook", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnWatch.Location = new System.Drawing.Point(386, 140);
+            this.btnWatch.Name = "btnWatch";
+            this.btnWatch.Size = new System.Drawing.Size(212, 33);
+            this.btnWatch.TabIndex = 73;
+            this.btnWatch.Text = "Watch";
+            this.btnWatch.UseVisualStyleBackColor = true;
+            this.btnWatch.Click += new System.EventHandler(this.btnWatch_Click);
+            // 
+            // btnHighlight
+            // 
+            this.btnHighlight.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnHighlight.Font = new System.Drawing.Font("Century Schoolbook", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHighlight.Location = new System.Drawing.Point(605, 140);
+            this.btnHighlight.Name = "btnHighlight";
+            this.btnHighlight.Size = new System.Drawing.Size(212, 33);
+            this.btnHighlight.TabIndex = 72;
+            this.btnHighlight.Text = "Highlight";
+            this.btnHighlight.UseVisualStyleBackColor = true;
+            // 
             // Result
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.Controls.Add(this.btnWatch);
+            this.Controls.Add(this.btnHighlight);
             this.Controls.Add(this.txbGoal2);
             this.Controls.Add(this.txbHDP2);
             this.Controls.Add(this.txbGoal1);
@@ -218,7 +245,7 @@
             this.Controls.Add(this.ptbFlag1);
             this.Margin = new System.Windows.Forms.Padding(40, 20, 3, 30);
             this.Name = "Result";
-            this.Size = new System.Drawing.Size(1200, 120);
+            this.Size = new System.Drawing.Size(1200, 180);
             ((System.ComponentModel.ISupportInitialize)(this.ptbFlag2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbFlag1)).EndInit();
             this.ResumeLayout(false);
@@ -241,5 +268,7 @@
         private System.Windows.Forms.PictureBox ptbFlag1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button btnWatch;
+        private System.Windows.Forms.Button btnHighlight;
     }
 }
