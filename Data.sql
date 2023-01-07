@@ -28,7 +28,6 @@ CREATE TABLE TEAM
 	T_WIN INT DEFAULT 0, 
 	T_LOSE INT DEFAULT 0, 
 	T_DRAW INT DEFAULT 0, 
-	T_SCORE INT DEFAULT 0, 
 )
 GO
 
@@ -106,15 +105,15 @@ INSERT INTO ACCOUNT (AC_NAME, AC_PASSWORD, AC_COIN, AC_ROLE, AC_IDTEAM) VALUES
 	('Suong', 'Suong', 1000, 2, 0)
 GO
 
-INSERT INTO TEAM (T_NAME) VALUES 
-	('Argentina'), 
-	('France'), 
-	('Brazil'), 
-	('Qatar'), 
-	('Japan'), 
-	('South Korea'), 
-	('Germany'), 
-	('Croatia')
+INSERT INTO TEAM (T_NAME, T_WIN, T_LOSE, T_DRAW) VALUES 
+	('Argentina', 1, 0, 0), 
+	('France', 0, 1, 0), 
+	('Brazil', 1, 0, 0), 
+	('Qatar', 0, 1, 0), 
+	('Japan', 0, 0, 0), 
+	('South Korea', 0, 0, 0), 
+	('Germany', 0, 0, 0), 
+	('Croatia', 0, 0, 0)
 GO
 
 INSERT INTO TMATCH (M_IDTEAM) VALUES 
@@ -127,7 +126,7 @@ INSERT INTO TMATCH (M_IDTEAM) VALUES
 	(7),
 	(8),
 	(1),
-	(0),
+	(3),
 	(0),
 	(0),
 	(0),
@@ -137,10 +136,10 @@ GO
 
 INSERT INTO FMATCH (M_IDTEAM1, M_IDTEAM2, M_SCORE1, M_SCORE2, M_DATE, M_LINK, M_STATUS) VALUES 
 	(1, 2, 2, 1, '2023-1-11 22:00:00', 'https://www.youtube.com/watch?v=TElOdnfP1SE', 1),
-	(3, 4, 0, 0, '2023-1-13 22:00:00', '', 0),
+	(3, 4, 3, 0, '2023-1-13 22:00:00', 'https://www.youtube.com/watch?v=TElOdnfP1SE', 1),
 	(5, 6, 0, 0, '2023-1-15 22:00:00', '', 0),
 	(7, 8, 0, 0, '2023-1-17 22:00:00', '', 0),
-	(1, 0, 0, 0, '2023-1-19 22:00:00', '', 0),
+	(1, 3, 0, 0, '2023-1-19 22:00:00', '', 0),
 	(0, 0, 0, 0, '2023-1-21 22:00:00', '', 0),
 	(0, 0, 0, 0, '2023-1-23 22:00:00', '', 0)
 GO

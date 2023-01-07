@@ -154,7 +154,7 @@
             this.txbPassword.Name = "txbPassword";
             this.txbPassword.Size = new System.Drawing.Size(522, 28);
             this.txbPassword.TabIndex = 20;
-            this.txbPassword.Text = "Argentina";
+            this.txbPassword.Text = "Erwin";
             this.txbPassword.UseSystemPasswordChar = true;
             // 
             // txbUserName
@@ -166,7 +166,7 @@
             this.txbUserName.Name = "txbUserName";
             this.txbUserName.Size = new System.Drawing.Size(522, 28);
             this.txbUserName.TabIndex = 19;
-            this.txbUserName.Text = "Argentina";
+            this.txbUserName.Text = "Erwin";
             // 
             // lbLogin
             // 

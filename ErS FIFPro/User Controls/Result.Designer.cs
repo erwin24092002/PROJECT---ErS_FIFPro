@@ -37,12 +37,12 @@
             this.lbCountry2 = new System.Windows.Forms.Label();
             this.lbCountry1 = new System.Windows.Forms.Label();
             this.lbDate = new System.Windows.Forms.Label();
-            this.ptbFlag2 = new System.Windows.Forms.PictureBox();
-            this.ptbFlag1 = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.btnWatch = new System.Windows.Forms.Button();
             this.btnHighlight = new System.Windows.Forms.Button();
+            this.ptbFlag2 = new System.Windows.Forms.PictureBox();
+            this.ptbFlag1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.ptbFlag2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbFlag1)).BeginInit();
             this.SuspendLayout();
@@ -156,26 +156,6 @@
             this.lbDate.Text = "2023-1-11 22:00:00";
             this.lbDate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // ptbFlag2
-            // 
-            this.ptbFlag2.BackgroundImage = global::ErS_FIFPro.Flags.Argentina;
-            this.ptbFlag2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ptbFlag2.Location = new System.Drawing.Point(939, 42);
-            this.ptbFlag2.Name = "ptbFlag2";
-            this.ptbFlag2.Size = new System.Drawing.Size(117, 72);
-            this.ptbFlag2.TabIndex = 49;
-            this.ptbFlag2.TabStop = false;
-            // 
-            // ptbFlag1
-            // 
-            this.ptbFlag1.BackgroundImage = global::ErS_FIFPro.Flags.Argentina;
-            this.ptbFlag1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ptbFlag1.Location = new System.Drawing.Point(149, 42);
-            this.ptbFlag1.Name = "ptbFlag1";
-            this.ptbFlag1.Size = new System.Drawing.Size(108, 72);
-            this.ptbFlag1.TabIndex = 46;
-            this.ptbFlag1.TabStop = false;
-            // 
             // label9
             // 
             this.label9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -222,6 +202,27 @@
             this.btnHighlight.TabIndex = 72;
             this.btnHighlight.Text = "Highlight";
             this.btnHighlight.UseVisualStyleBackColor = true;
+            this.btnHighlight.Click += new System.EventHandler(this.btnHighlight_Click);
+            // 
+            // ptbFlag2
+            // 
+            this.ptbFlag2.BackgroundImage = global::ErS_FIFPro.Flags.Argentina;
+            this.ptbFlag2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ptbFlag2.Location = new System.Drawing.Point(939, 42);
+            this.ptbFlag2.Name = "ptbFlag2";
+            this.ptbFlag2.Size = new System.Drawing.Size(117, 72);
+            this.ptbFlag2.TabIndex = 49;
+            this.ptbFlag2.TabStop = false;
+            // 
+            // ptbFlag1
+            // 
+            this.ptbFlag1.BackgroundImage = global::ErS_FIFPro.Flags.Argentina;
+            this.ptbFlag1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ptbFlag1.Location = new System.Drawing.Point(149, 42);
+            this.ptbFlag1.Name = "ptbFlag1";
+            this.ptbFlag1.Size = new System.Drawing.Size(108, 72);
+            this.ptbFlag1.TabIndex = 46;
+            this.ptbFlag1.TabStop = false;
             // 
             // Result
             // 
@@ -243,7 +244,7 @@
             this.Controls.Add(this.lbCountry1);
             this.Controls.Add(this.lbDate);
             this.Controls.Add(this.ptbFlag1);
-            this.Margin = new System.Windows.Forms.Padding(40, 20, 3, 30);
+            this.Margin = new System.Windows.Forms.Padding(40, 20, 3, 10);
             this.Name = "Result";
             this.Size = new System.Drawing.Size(1200, 180);
             ((System.ComponentModel.ISupportInitialize)(this.ptbFlag2)).EndInit();

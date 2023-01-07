@@ -55,6 +55,7 @@ namespace ErS_FIFPro.Forms
             if (role == 2)
             {
                 lbAccountRole.Text = "Admin";
+                this.btnCoaching.Enabled = false;
             }
         }
         private void btnExit_Click(object sender, EventArgs e)
@@ -178,7 +179,7 @@ namespace ErS_FIFPro.Forms
         private void btnConfig_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, myColors.ActiveButtonColor);
-            OpenChildForm(new fConfig());
+            OpenChildForm(new fConfig(account));
         }
 
         private void btnLetter_Click(object sender, EventArgs e)

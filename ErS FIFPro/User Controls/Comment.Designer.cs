@@ -58,7 +58,7 @@
             this.lbMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbMessage.Location = new System.Drawing.Point(7, 33);
             this.lbMessage.Name = "lbMessage";
-            this.lbMessage.Size = new System.Drawing.Size(320, 40);
+            this.lbMessage.Size = new System.Drawing.Size(320, 30);
             this.lbMessage.TabIndex = 2;
             this.lbMessage.Text = "Trận đấu này thật hay";
             // 
@@ -71,7 +71,7 @@
             this.Controls.Add(this.lbDate);
             this.Controls.Add(this.lbName);
             this.Name = "Comment";
-            this.Size = new System.Drawing.Size(330, 80);
+            this.Size = new System.Drawing.Size(330, 70);
             this.ResumeLayout(false);
 
         }

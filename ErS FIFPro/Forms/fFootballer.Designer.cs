@@ -159,8 +159,8 @@
             this.cbbOrder.FormattingEnabled = true;
             this.cbbOrder.Items.AddRange(new object[] {
             "A-Z",
-            "Z-A ",
-            "Goal Decrease ",
+            "Z-A",
+            "Goal Decrease",
             "Goal Increase"});
             this.cbbOrder.Location = new System.Drawing.Point(11, 27);
             this.cbbOrder.Name = "cbbOrder";

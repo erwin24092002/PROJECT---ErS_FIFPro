@@ -47,5 +47,16 @@ namespace ErS_FIFPro.User_Controls
                 f.ShowDialog();
             }
         }
+
+        private void btnHighlight_Click(object sender, EventArgs e)
+        {
+            if (match["M_LINK"].ToString() == "")
+                MessageBox.Show("The match has not yet started!");
+            else
+            {
+                fWatch f = new fWatch(match, account);
+                f.ShowDialog();
+            }
+        }
     }
 }

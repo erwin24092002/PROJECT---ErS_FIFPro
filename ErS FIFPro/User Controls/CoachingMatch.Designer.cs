@@ -38,10 +38,10 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.lbCountry2 = new System.Windows.Forms.Label();
-            this.ptbFlag2 = new System.Windows.Forms.PictureBox();
             this.lbCountry1 = new System.Windows.Forms.Label();
-            this.ptbFlag1 = new System.Windows.Forms.PictureBox();
             this.btnBase = new System.Windows.Forms.Button();
+            this.ptbFlag2 = new System.Windows.Forms.PictureBox();
+            this.ptbFlag1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.ptbFlag2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbFlag1)).BeginInit();
             this.SuspendLayout();
@@ -167,16 +167,6 @@
             this.lbCountry2.Text = "Argentina";
             this.lbCountry2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // ptbFlag2
-            // 
-            this.ptbFlag2.BackgroundImage = global::ErS_FIFPro.Flags.Argentina;
-            this.ptbFlag2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ptbFlag2.Location = new System.Drawing.Point(940, 42);
-            this.ptbFlag2.Name = "ptbFlag2";
-            this.ptbFlag2.Size = new System.Drawing.Size(117, 72);
-            this.ptbFlag2.TabIndex = 61;
-            this.ptbFlag2.TabStop = false;
-            // 
             // lbCountry1
             // 
             this.lbCountry1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
@@ -189,16 +179,6 @@
             this.lbCountry1.Text = "Argentina";
             this.lbCountry1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // ptbFlag1
-            // 
-            this.ptbFlag1.BackgroundImage = global::ErS_FIFPro.Flags.Argentina;
-            this.ptbFlag1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ptbFlag1.Location = new System.Drawing.Point(142, 42);
-            this.ptbFlag1.Name = "ptbFlag1";
-            this.ptbFlag1.Size = new System.Drawing.Size(108, 72);
-            this.ptbFlag1.TabIndex = 59;
-            this.ptbFlag1.TabStop = false;
-            // 
             // btnBase
             // 
             this.btnBase.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -210,6 +190,26 @@
             this.btnBase.Text = "Base";
             this.btnBase.UseVisualStyleBackColor = true;
             this.btnBase.Click += new System.EventHandler(this.btnLogin_Click);
+            // 
+            // ptbFlag2
+            // 
+            this.ptbFlag2.BackgroundImage = global::ErS_FIFPro.Flags.Argentina;
+            this.ptbFlag2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ptbFlag2.Location = new System.Drawing.Point(940, 42);
+            this.ptbFlag2.Name = "ptbFlag2";
+            this.ptbFlag2.Size = new System.Drawing.Size(117, 72);
+            this.ptbFlag2.TabIndex = 61;
+            this.ptbFlag2.TabStop = false;
+            // 
+            // ptbFlag1
+            // 
+            this.ptbFlag1.BackgroundImage = global::ErS_FIFPro.Flags.Argentina;
+            this.ptbFlag1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ptbFlag1.Location = new System.Drawing.Point(142, 42);
+            this.ptbFlag1.Name = "ptbFlag1";
+            this.ptbFlag1.Size = new System.Drawing.Size(108, 72);
+            this.ptbFlag1.TabIndex = 59;
+            this.ptbFlag1.TabStop = false;
             // 
             // CoachingMatch
             // 
@@ -231,7 +231,7 @@
             this.Controls.Add(this.lbCountry1);
             this.Controls.Add(this.ptbFlag1);
             this.Controls.Add(this.lbDate);
-            this.Margin = new System.Windows.Forms.Padding(40, 20, 3, 30);
+            this.Margin = new System.Windows.Forms.Padding(40, 20, 3, 10);
             this.Name = "CoachingMatch";
             this.Size = new System.Drawing.Size(1200, 180);
             ((System.ComponentModel.ISupportInitialize)(this.ptbFlag2)).EndInit();
