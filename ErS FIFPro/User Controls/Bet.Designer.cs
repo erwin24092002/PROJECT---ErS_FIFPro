@@ -32,7 +32,7 @@
             this.ptbAccountCoin = new System.Windows.Forms.PictureBox();
             this.cbbTeam = new System.Windows.Forms.ComboBox();
             this.txbCoin = new System.Windows.Forms.TextBox();
-            this.btnOK = new System.Windows.Forms.Button();
+            this.btnSaveChange = new System.Windows.Forms.Button();
             this.txbHDP2 = new System.Windows.Forms.TextBox();
             this.txbHDP1 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -42,6 +42,7 @@
             this.lbCountry1 = new System.Windows.Forms.Label();
             this.lbDate = new System.Windows.Forms.Label();
             this.ptbFlag1 = new System.Windows.Forms.PictureBox();
+            this.btnRemove = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbAccountCoin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbFlag2)).BeginInit();
@@ -52,7 +53,7 @@
             // 
             this.pictureBox1.BackgroundImage = global::ErS_FIFPro.Properties.Resources.flag;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(358, 126);
+            this.pictureBox1.Location = new System.Drawing.Point(362, 126);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(25, 25);
@@ -63,7 +64,7 @@
             // 
             this.ptbAccountCoin.BackgroundImage = global::ErS_FIFPro.Properties.Resources.coin_removebg_preview;
             this.ptbAccountCoin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ptbAccountCoin.Location = new System.Drawing.Point(358, 96);
+            this.ptbAccountCoin.Location = new System.Drawing.Point(362, 96);
             this.ptbAccountCoin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ptbAccountCoin.Name = "ptbAccountCoin";
             this.ptbAccountCoin.Size = new System.Drawing.Size(25, 25);
@@ -74,9 +75,9 @@
             // 
             this.cbbTeam.Font = new System.Drawing.Font("Century Schoolbook", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbbTeam.FormattingEnabled = true;
-            this.cbbTeam.Location = new System.Drawing.Point(386, 126);
+            this.cbbTeam.Location = new System.Drawing.Point(392, 126);
             this.cbbTeam.Name = "cbbTeam";
-            this.cbbTeam.Size = new System.Drawing.Size(460, 24);
+            this.cbbTeam.Size = new System.Drawing.Size(414, 24);
             this.cbbTeam.TabIndex = 119;
             // 
             // txbCoin
@@ -84,23 +85,24 @@
             this.txbCoin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.txbCoin.Font = new System.Drawing.Font("Century Schoolbook", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbCoin.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txbCoin.Location = new System.Drawing.Point(386, 98);
+            this.txbCoin.Location = new System.Drawing.Point(392, 98);
             this.txbCoin.Name = "txbCoin";
-            this.txbCoin.Size = new System.Drawing.Size(460, 23);
+            this.txbCoin.Size = new System.Drawing.Size(414, 23);
             this.txbCoin.TabIndex = 118;
             this.txbCoin.Text = "0";
             this.txbCoin.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // btnOK
+            // btnSaveChange
             // 
-            this.btnOK.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnOK.Font = new System.Drawing.Font("Century Schoolbook", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOK.Location = new System.Drawing.Point(498, 168);
-            this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(204, 33);
-            this.btnOK.TabIndex = 117;
-            this.btnOK.Text = "Save Changes";
-            this.btnOK.UseVisualStyleBackColor = true;
+            this.btnSaveChange.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSaveChange.Font = new System.Drawing.Font("Century Schoolbook", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSaveChange.Location = new System.Drawing.Point(392, 168);
+            this.btnSaveChange.Name = "btnSaveChange";
+            this.btnSaveChange.Size = new System.Drawing.Size(204, 33);
+            this.btnSaveChange.TabIndex = 117;
+            this.btnSaveChange.Text = "Save Changes";
+            this.btnSaveChange.UseVisualStyleBackColor = true;
+            this.btnSaveChange.Click += new System.EventHandler(this.btnSaveChanges_Click);
             // 
             // txbHDP2
             // 
@@ -207,15 +209,29 @@
             this.ptbFlag1.TabIndex = 108;
             this.ptbFlag1.TabStop = false;
             // 
+            // btnRemove
+            // 
+            this.btnRemove.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRemove.Font = new System.Drawing.Font("Century Schoolbook", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRemove.Location = new System.Drawing.Point(602, 168);
+            this.btnRemove.Name = "btnRemove";
+            this.btnRemove.Size = new System.Drawing.Size(204, 33);
+            this.btnRemove.TabIndex = 122;
+            this.btnRemove.Text = "Remove";
+            this.btnRemove.UseVisualStyleBackColor = true;
+            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
+            // 
             // Bet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.Controls.Add(this.btnRemove);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.ptbAccountCoin);
             this.Controls.Add(this.cbbTeam);
             this.Controls.Add(this.txbCoin);
-            this.Controls.Add(this.btnOK);
+            this.Controls.Add(this.btnSaveChange);
             this.Controls.Add(this.txbHDP2);
             this.Controls.Add(this.txbHDP1);
             this.Controls.Add(this.label9);
@@ -225,6 +241,7 @@
             this.Controls.Add(this.lbCountry1);
             this.Controls.Add(this.lbDate);
             this.Controls.Add(this.ptbFlag1);
+            this.Margin = new System.Windows.Forms.Padding(40, 20, 3, 10);
             this.Name = "Bet";
             this.Size = new System.Drawing.Size(1200, 210);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -242,7 +259,7 @@
         private System.Windows.Forms.PictureBox ptbAccountCoin;
         private System.Windows.Forms.ComboBox cbbTeam;
         private System.Windows.Forms.TextBox txbCoin;
-        private System.Windows.Forms.Button btnOK;
+        public System.Windows.Forms.Button btnSaveChange;
         private System.Windows.Forms.TextBox txbHDP2;
         private System.Windows.Forms.TextBox txbHDP1;
         private System.Windows.Forms.Label label9;
@@ -252,5 +269,6 @@
         private System.Windows.Forms.Label lbCountry1;
         private System.Windows.Forms.Label lbDate;
         private System.Windows.Forms.PictureBox ptbFlag1;
+        public System.Windows.Forms.Button btnRemove;
     }
 }

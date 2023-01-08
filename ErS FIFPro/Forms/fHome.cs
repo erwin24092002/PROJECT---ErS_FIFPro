@@ -155,7 +155,7 @@ namespace ErS_FIFPro.Forms
         private void btnBetting_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, myColors.ActiveButtonColor);
-            OpenChildForm(new fBetting());
+            OpenChildForm(new fBetting(account));
         }
 
         private void btnTeam_Click(object sender, EventArgs e)

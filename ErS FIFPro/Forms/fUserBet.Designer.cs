@@ -55,7 +55,7 @@
             this.txbCoin.ForeColor = System.Drawing.Color.Gainsboro;
             this.txbCoin.Location = new System.Drawing.Point(286, 87);
             this.txbCoin.Name = "txbCoin";
-            this.txbCoin.Size = new System.Drawing.Size(460, 23);
+            this.txbCoin.Size = new System.Drawing.Size(426, 23);
             this.txbCoin.TabIndex = 104;
             this.txbCoin.Text = "0";
             this.txbCoin.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -163,7 +163,7 @@
             this.cbbTeam.FormattingEnabled = true;
             this.cbbTeam.Location = new System.Drawing.Point(286, 115);
             this.cbbTeam.Name = "cbbTeam";
-            this.cbbTeam.Size = new System.Drawing.Size(460, 24);
+            this.cbbTeam.Size = new System.Drawing.Size(426, 24);
             this.cbbTeam.TabIndex = 105;
             // 
             // pictureBox1
@@ -212,6 +212,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.ClientSize = new System.Drawing.Size(1003, 191);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.ptbAccountCoin);

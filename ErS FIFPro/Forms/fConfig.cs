@@ -66,7 +66,19 @@ namespace ErS_FIFPro.Forms
 
         private void btnReset_Click(object sender, EventArgs e)
         {
+            string connectionSTR = @"Data Source=DESKTOP-8QQ3O75\ERWIN;Initial Catalog=FIFPro;Integrated Security=True";
+            
+            using (SqlConnection connection = new SqlConnection(connectionSTR))
+            {
+                connection.Open();
 
+                string query = "EXEC RESET_ALL";
+                SqlCommand command = new SqlCommand(query, connection);
+                command.ExecuteNonQuery();
+
+                connection.Close();
+            }
+            MessageBox.Show("Successful reset!");
         }
     }
 }

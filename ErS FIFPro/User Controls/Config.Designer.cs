@@ -41,7 +41,7 @@
             this.lbCountry1 = new System.Windows.Forms.Label();
             this.lbDate = new System.Windows.Forms.Label();
             this.ptbFlag1 = new System.Windows.Forms.PictureBox();
-            this.btnBase = new System.Windows.Forms.Button();
+            this.btnSaveChanges = new System.Windows.Forms.Button();
             this.txbLink = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ptbFlag2)).BeginInit();
@@ -201,16 +201,17 @@
             this.ptbFlag1.TabIndex = 74;
             this.ptbFlag1.TabStop = false;
             // 
-            // btnBase
+            // btnSaveChanges
             // 
-            this.btnBase.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBase.Font = new System.Drawing.Font("Century Schoolbook", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBase.Location = new System.Drawing.Point(500, 172);
-            this.btnBase.Name = "btnBase";
-            this.btnBase.Size = new System.Drawing.Size(204, 33);
-            this.btnBase.TabIndex = 87;
-            this.btnBase.Text = "Save Changes";
-            this.btnBase.UseVisualStyleBackColor = true;
+            this.btnSaveChanges.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSaveChanges.Font = new System.Drawing.Font("Century Schoolbook", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSaveChanges.Location = new System.Drawing.Point(500, 172);
+            this.btnSaveChanges.Name = "btnSaveChanges";
+            this.btnSaveChanges.Size = new System.Drawing.Size(204, 33);
+            this.btnSaveChanges.TabIndex = 87;
+            this.btnSaveChanges.Text = "Save Changes";
+            this.btnSaveChanges.UseVisualStyleBackColor = true;
+            this.btnSaveChanges.Click += new System.EventHandler(this.btnSaveChanges_Click);
             // 
             // txbLink
             // 
@@ -242,7 +243,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txbLink);
-            this.Controls.Add(this.btnBase);
+            this.Controls.Add(this.btnSaveChanges);
             this.Controls.Add(this.txbGoal2);
             this.Controls.Add(this.txbHDP2);
             this.Controls.Add(this.txbGoal1);
@@ -280,7 +281,7 @@
         private System.Windows.Forms.Label lbCountry1;
         private System.Windows.Forms.Label lbDate;
         private System.Windows.Forms.PictureBox ptbFlag1;
-        private System.Windows.Forms.Button btnBase;
+        private System.Windows.Forms.Button btnSaveChanges;
         private System.Windows.Forms.TextBox txbLink;
         private System.Windows.Forms.Label label1;
     }
