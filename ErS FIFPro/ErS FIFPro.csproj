@@ -151,6 +151,12 @@
     <Compile Include="Forms\fTeam.Designer.cs">
       <DependentUpon>fTeam.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\fUserBet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\fUserBet.Designer.cs">
+      <DependentUpon>fUserBet.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\fWatch.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -160,6 +166,12 @@
     <Compile Include="MyColor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User Controls\Bet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\Bet.Designer.cs">
+      <DependentUpon>Bet.cs</DependentUpon>
+    </Compile>
     <Compile Include="User Controls\CoachingMatch.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -230,6 +242,9 @@
     <EmbeddedResource Include="Forms\fBase.resx">
       <DependentUpon>fBase.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\fBetting.resx">
+      <DependentUpon>fBetting.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\fCoaching.resx">
       <DependentUpon>fCoaching.cs</DependentUpon>
     </EmbeddedResource>
@@ -257,6 +272,9 @@
     <EmbeddedResource Include="Forms\fTeam.resx">
       <DependentUpon>fTeam.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\fUserBet.resx">
+      <DependentUpon>fUserBet.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\fWatch.resx">
       <DependentUpon>fWatch.cs</DependentUpon>
     </EmbeddedResource>
@@ -270,6 +288,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="User Controls\Bet.resx">
+      <DependentUpon>Bet.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="User Controls\CoachingMatch.resx">
       <DependentUpon>CoachingMatch.cs</DependentUpon>
     </EmbeddedResource>
@@ -1357,6 +1378,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Yoon Jong gyu2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\base.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

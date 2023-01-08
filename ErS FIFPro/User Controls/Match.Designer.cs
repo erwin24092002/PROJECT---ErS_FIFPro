@@ -68,6 +68,7 @@
             this.lbBet.TabIndex = 24;
             this.lbBet.Text = "Bet";
             this.lbBet.UseVisualStyleBackColor = false;
+            this.lbBet.Click += new System.EventHandler(this.lbBet_Click);
             // 
             // lbWatch
             // 

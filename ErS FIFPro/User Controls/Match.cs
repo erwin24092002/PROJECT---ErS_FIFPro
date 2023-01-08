@@ -36,5 +36,10 @@ namespace ErS_FIFPro.User_Controls
                 f.ShowDialog();
             }
         }
+        private void lbBet_Click(object sender, EventArgs e)
+        {
+            fUserBet f = new fUserBet(match, account);
+            f.ShowDialog();
+        }
     }
 }
