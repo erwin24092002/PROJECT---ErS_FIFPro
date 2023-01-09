@@ -32,6 +32,9 @@ namespace ErS_FIFPro.Forms
             Matchs = getMatchs();
             MatchList = genMatchList(Matchs);
             renderMatchList();
+
+            if (account["AC_ID"].ToString() != "2")
+                btnSave.Visible = false;
         }
         private DataTable getMatchs()
         {
@@ -146,6 +149,12 @@ namespace ErS_FIFPro.Forms
         private void btnLetter_Click(object sender, EventArgs e)
         {
             MessageBox.Show(((Panel)sender).Location.ToString());
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+
+            MessageBox.Show("Save successfully!");
         }
     }
 }

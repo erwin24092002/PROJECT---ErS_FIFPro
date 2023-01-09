@@ -96,10 +96,10 @@ INSERT INTO ACCOUNT (AC_NAME, AC_PASSWORD, AC_COIN, AC_ROLE, AC_IDTEAM) VALUES
 GO
 
 INSERT INTO TEAM (T_NAME, T_WIN, T_LOSE, T_DRAW) VALUES 
-	('Argentina', 1, 0, 0), 
-	('France', 0, 1, 0), 
-	('Brazil', 1, 0, 0), 
-	('Qatar', 0, 1, 0), 
+	('Argentina', 0, 0, 0), 
+	('France', 0, 0, 0), 
+	('Brazil', 0, 0, 0), 
+	('Qatar', 0, 0, 0), 
 	('Japan', 0, 0, 0), 
 	('South Korea', 0, 0, 0), 
 	('Germany', 0, 0, 0), 
@@ -115,8 +115,8 @@ INSERT INTO TMATCH (M_IDTEAM) VALUES
 	(6),
 	(7),
 	(8),
-	(1),
-	(3),
+	(0),
+	(0),
 	(0),
 	(0),
 	(0),
@@ -125,19 +125,21 @@ INSERT INTO TMATCH (M_IDTEAM) VALUES
 GO
 
 INSERT INTO FMATCH (M_IDTEAM1, M_IDTEAM2, M_SCORE1, M_SCORE2, M_DATE, M_LINK, M_STATUS) VALUES 
-	(1, 2, 2, 1, '2023-1-11 22:00:00', 'https://www.youtube.com/watch?v=TElOdnfP1SE', 1),
-	(3, 4, 3, 0, '2023-1-13 22:00:00', 'https://www.youtube.com/watch?v=TElOdnfP1SE', 1),
+	(1, 2, 0, 0, '2023-1-11 22:00:00', '', 0),
+	(3, 4, 0, 0, '2023-1-13 22:00:00', '', 0),
 	(5, 6, 0, 0, '2023-1-15 22:00:00', '', 0),
 	(7, 8, 0, 0, '2023-1-17 22:00:00', '', 0),
-	(1, 3, 0, 0, '2023-1-19 22:00:00', '', 0),
+	(0, 0, 0, 0, '2023-1-19 22:00:00', '', 0),
 	(0, 0, 0, 0, '2023-1-21 22:00:00', '', 0),
 	(0, 0, 0, 0, '2023-1-23 22:00:00', '', 0)
 GO
 
+/*
 INSERT INTO BET (B_IDACCOUNT, B_IDMATCH, B_IDTEAM, B_COIN, B_DATE, B_STATUS) VALUES 
 	(9, 1, 1, 100, '2023-1-11 22:00:00', 1), 
 	(9, 2, 3, 200, '2023-1-11 22:00:00', 0)
 GO 
+*/
 
 INSERT INTO FOOTBALLER (FB_NAME, FB_BIRTHDAY, FB_INDEX, FB_ROLE, FB_SCORE, FB_IDTEAM) VALUES 
 	('Franco Armani', '1995-9-24', 1, 'Defender', 0, 1), 
@@ -375,6 +377,8 @@ SELECT * FROM ACCOUNT WHERE AC_NAME='Erwin' AND AC_PASSWORD='Erwin'
 SELECT * FROM FMATCH WHERE M_IDTEAM1=1 OR M_IDTEAM2=1
 SELECT * FROM ACCOUNT 
 GO
+
+UPDATE FMATCH SET M_HDP1=0.25 WHERE M_ID=1
 
 CREATE PROC RESET_ALL
 AS 

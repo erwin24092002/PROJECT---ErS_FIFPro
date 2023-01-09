@@ -70,10 +70,25 @@ namespace ErS_FIFPro.User_Controls
 
                     int id_match = Int32.Parse(match["M_ID"].ToString());
                     int id_teamwin = 0;
-                    if (Int32.Parse(txbGoal1.Text) - Int32.Parse(txbHDP1.Text) < Int32.Parse(txbGoal2.Text) - -Int32.Parse(txbHDP2.Text))
+                    int id_teamlose = 0;
+                    if (float.Parse(txbGoal1.Text) - float.Parse(txbHDP1.Text) < float.Parse(txbGoal2.Text) - float.Parse(txbHDP2.Text))
+                    {
                         id_teamwin = Int32.Parse(match["M_IDTEAM2"].ToString());
+                        id_teamlose = Int32.Parse(match["M_IDTEAM1"].ToString());
+                    }
                     else
+                    {
                         id_teamwin = Int32.Parse(match["M_IDTEAM1"].ToString());
+                        id_teamlose = Int32.Parse(match["M_IDTEAM2"].ToString());
+                    }
+
+                    query = "UPDATE TEAM SET T_WIN+=1 WHERE T_ID=" + id_teamwin.ToString();
+                    command = new SqlCommand(query, connection);
+                    command.ExecuteNonQuery();
+                    query = "UPDATE TEAM SET T_LOSE+=1 WHERE T_ID=" + id_teamlose.ToString();
+                    command = new SqlCommand(query, connection);
+                    command.ExecuteNonQuery();
+
                     switch (id_match)
                     {
                         case 1:

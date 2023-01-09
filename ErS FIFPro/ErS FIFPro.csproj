@@ -214,6 +214,12 @@
     <Compile Include="User Controls\Result.Designer.cs">
       <DependentUpon>Result.cs</DependentUpon>
     </Compile>
+    <Compile Include="User Controls\Team.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\Team.Designer.cs">
+      <DependentUpon>Team.cs</DependentUpon>
+    </Compile>
     <Compile Include="User Controls\TeamMatch.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -311,6 +317,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="User Controls\Result.resx">
       <DependentUpon>Result.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\Team.resx">
+      <DependentUpon>Team.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User Controls\TeamMatch.resx">
       <DependentUpon>TeamMatch.cs</DependentUpon>
