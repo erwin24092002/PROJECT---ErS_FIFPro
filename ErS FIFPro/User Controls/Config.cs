@@ -61,10 +61,90 @@ namespace ErS_FIFPro.User_Controls
                 if (Int32.Parse(txbGoal1.Text) != Int32.Parse(txbGoal2.Text))
                 {
                     query = "UPDATE FMATCH SET M_STATUS=1 WHERE M_ID=" + match["M_ID"].ToString();
-                }
-                SqlCommand command2 = new SqlCommand(query, connection);
-                command2.ExecuteNonQuery();
+                    SqlCommand command2 = new SqlCommand(query, connection);
+                    command2.ExecuteNonQuery();
 
+                    query = "UPDATE BET SET B_STATUS=1 WHERE B_IDMATCH=" + match["M_ID"].ToString();
+                    SqlCommand command3 = new SqlCommand(query, connection);
+                    command3.ExecuteNonQuery();
+
+                    int id_match = Int32.Parse(match["M_ID"].ToString());
+                    int id_teamwin = 0;
+                    if (Int32.Parse(txbGoal1.Text) - Int32.Parse(txbHDP1.Text) < Int32.Parse(txbGoal2.Text) - -Int32.Parse(txbHDP2.Text))
+                        id_teamwin = Int32.Parse(match["M_IDTEAM2"].ToString());
+                    else
+                        id_teamwin = Int32.Parse(match["M_IDTEAM1"].ToString());
+                    switch (id_match)
+                    {
+                        case 1:
+                            query = "UPDATE TMATCH SET M_IDTEAM=" + id_teamwin.ToString() + " WHERE M_ID=9";
+                            command = new SqlCommand(query, connection);
+                            command.ExecuteNonQuery();
+                            query = "UPDATE FMATCH SET M_IDTEAM1=" + id_teamwin.ToString() + " WHERE M_ID=5";
+                            command = new SqlCommand(query, connection);
+                            command.ExecuteNonQuery();
+                            break;
+                        case 2:
+                            query = "UPDATE TMATCH SET M_IDTEAM=" + id_teamwin.ToString() + " WHERE M_ID=10";
+                            command = new SqlCommand(query, connection);
+                            command.ExecuteNonQuery();
+                            query = "UPDATE FMATCH SET M_IDTEAM2=" + id_teamwin.ToString() + " WHERE M_ID=5";
+                            command = new SqlCommand(query, connection);
+                            command.ExecuteNonQuery();
+                            break;
+                        case 3:
+                            query = "UPDATE TMATCH SET M_IDTEAM=" + id_teamwin.ToString() + " WHERE M_ID=11";
+                            command = new SqlCommand(query, connection);
+                            command.ExecuteNonQuery();
+                            query = "UPDATE FMATCH SET M_IDTEAM1=" + id_teamwin.ToString() + " WHERE M_ID=6";
+                            command = new SqlCommand(query, connection);
+                            command.ExecuteNonQuery();
+                            break;
+                        case 4:
+                            query = "UPDATE TMATCH SET M_IDTEAM=" + id_teamwin.ToString() + " WHERE M_ID=12";
+                            command = new SqlCommand(query, connection);
+                            command.ExecuteNonQuery();
+                            query = "UPDATE FMATCH SET M_IDTEAM2=" + id_teamwin.ToString() + " WHERE M_ID=6";
+                            command = new SqlCommand(query, connection);
+                            command.ExecuteNonQuery();
+                            break;
+                        case 5:
+                            query = "UPDATE TMATCH SET M_IDTEAM=" + id_teamwin.ToString() + " WHERE M_ID=13";
+                            command = new SqlCommand(query, connection);
+                            command.ExecuteNonQuery();
+                            query = "UPDATE FMATCH SET M_IDTEAM1=" + id_teamwin.ToString() + " WHERE M_ID=7";
+                            command = new SqlCommand(query, connection);
+                            command.ExecuteNonQuery();
+                            break;
+                        case 6:
+                            query = "UPDATE TMATCH SET M_IDTEAM=" + id_teamwin.ToString() + " WHERE M_ID=14";
+                            command = new SqlCommand(query, connection);
+                            command.ExecuteNonQuery();
+                            query = "UPDATE FMATCH SET M_IDTEAM2=" + id_teamwin.ToString() + " WHERE M_ID=7";
+                            command = new SqlCommand(query, connection);
+                            command.ExecuteNonQuery();
+                            break;
+                        case 7:
+                            query = "UPDATE TMATCH SET M_IDTEAM=" + id_teamwin.ToString() + " WHERE M_ID=15";
+                            command = new SqlCommand(query, connection);
+                            command.ExecuteNonQuery();
+                            break;
+                    }
+
+                    DataTable bet = new DataTable();
+                    query = "SELECT * FROM BET WHERE B_STATUS!=0 AND B_IDMATCH=" + match["M_ID"].ToString() + " AND B_IDTEAM=" + id_teamwin.ToString();
+                    command = new SqlCommand(query, connection);
+                    SqlDataAdapter adapter = new SqlDataAdapter(command);
+                    adapter.Fill(bet);
+
+                    foreach (DataRow row in bet.Rows)
+                    {
+                        int add_coin = 2 * Int32.Parse(row["B_COIN"].ToString());
+                        query = "UPDATE ACCOUNT SET AC_COIN+=" + add_coin.ToString() + " WHERE AC_ID=" + row["B_IDACCOUNT"].ToString();
+                        command = new SqlCommand(query, connection);
+                        command.ExecuteNonQuery();
+                    }
+                }
                 connection.Close();
             }
             MessageBox.Show("Successful change!");

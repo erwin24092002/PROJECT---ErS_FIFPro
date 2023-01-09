@@ -24,6 +24,9 @@ namespace ErS_FIFPro.User_Controls
             lbDate.Text = strings[0] + "\n" + strings[1] + " " + strings[2];
             this.account = account;
             this.match = match;
+
+            if (match["M_STATUS"].ToString() == "1")
+                lbBet.Enabled = false;
         }
 
         private void lbWatch_Click(object sender, EventArgs e)
