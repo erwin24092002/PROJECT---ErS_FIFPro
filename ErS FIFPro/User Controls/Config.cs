@@ -5,6 +5,8 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Net.Mail;
+using System.Net;
 using System.Reflection;
 using System.Resources;
 using System.Security.Principal;
@@ -158,6 +160,30 @@ namespace ErS_FIFPro.User_Controls
                         query = "UPDATE ACCOUNT SET AC_COIN+=" + add_coin.ToString() + " WHERE AC_ID=" + row["B_IDACCOUNT"].ToString();
                         command = new SqlCommand(query, connection);
                         command.ExecuteNonQuery();
+
+                        string[] flags = { "Not Know", "Argentina", "France", "Brazil", "Qatar", "Japan", "South Korea", "Germany", "Croatia" };
+                        string message = "You just got " + add_coin.ToString() + " coins from the match between " + flags[Int32.Parse(match["M_IDTEAM1"].ToString())] + " and " + flags[Int32.Parse(match["M_IDTEAM2"].ToString())];
+                        query = "INSERT INTO LETTER (L_IDACCOUNT, L_DATE, L_MESSAGE) VALUES (" + row["B_IDACCOUNT"].ToString() + ", '" + DateTime.Now.ToString() + "', '" + message + "')";
+                        command = new SqlCommand(query, connection);
+                        command.ExecuteNonQuery();
+
+                        using (MailMessage mail = new MailMessage())
+                        {
+
+                            mail.From = new MailAddress("20521907@gm.uit.edu.vn");
+                            mail.To.Add("truongthang2409@gmail.com");
+                            mail.Subject = "ErS FIFPro Betting";
+                            string htmlString = $@"<html> <body> <p> {message} </p> </body> </html>";
+                            mail.Body = htmlString;
+                            mail.IsBodyHtml = true;
+
+                            using (SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587))
+                            {
+                                smtp.Credentials = new NetworkCredential("20521907@gm.uit.edu.vn", "TruongThang0979297634");
+                                smtp.EnableSsl = true;
+                                smtp.Send(mail);
+                            }
+                        }
                     }
                 }
                 connection.Close();

@@ -31,20 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fHome));
             this.pNav = new System.Windows.Forms.Panel();
-            this.pHome = new System.Windows.Forms.Panel();
-            this.pAccount = new System.Windows.Forms.Panel();
-            this.lbAccountCoin = new System.Windows.Forms.Label();
-            this.lbAccountRole = new System.Windows.Forms.Label();
-            this.lbAccountName = new System.Windows.Forms.Label();
-            this.pChildForm = new System.Windows.Forms.Panel();
-            this.tSlider = new System.Windows.Forms.Timer(this.components);
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.ptbSlider = new System.Windows.Forms.PictureBox();
-            this.ptbAccountCoin = new System.Windows.Forms.PictureBox();
-            this.ptbAccount = new System.Windows.Forms.PictureBox();
             this.btnExit = new FontAwesome.Sharp.IconButton();
             this.btnMinimize = new FontAwesome.Sharp.IconButton();
             this.btnLetter = new FontAwesome.Sharp.IconButton();
@@ -55,19 +41,35 @@
             this.btnBetting = new FontAwesome.Sharp.IconButton();
             this.btnResult = new FontAwesome.Sharp.IconButton();
             this.btnMatch = new FontAwesome.Sharp.IconButton();
+            this.pHome = new System.Windows.Forms.Panel();
             this.icptbHome = new FontAwesome.Sharp.IconPictureBox();
+            this.pAccount = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.ptbAccountCoin = new System.Windows.Forms.PictureBox();
+            this.lbAccountCoin = new System.Windows.Forms.Label();
+            this.lbAccountRole = new System.Windows.Forms.Label();
+            this.lbAccountName = new System.Windows.Forms.Label();
+            this.ptbAccount = new System.Windows.Forms.PictureBox();
+            this.pChildForm = new System.Windows.Forms.Panel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.ptbNew1 = new System.Windows.Forms.PictureBox();
+            this.ptbSlider = new System.Windows.Forms.PictureBox();
+            this.tSlider = new System.Windows.Forms.Timer(this.components);
             this.pNav.SuspendLayout();
             this.pHome.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.icptbHome)).BeginInit();
             this.pAccount.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbAccountCoin)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbAccount)).BeginInit();
             this.pChildForm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbNew1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbSlider)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbAccountCoin)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbAccount)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.icptbHome)).BeginInit();
             this.SuspendLayout();
             // 
             // pNav
@@ -90,161 +92,6 @@
             this.pNav.Size = new System.Drawing.Size(1484, 50);
             this.pNav.TabIndex = 1;
             this.pNav.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pNav_MouseDown);
-            // 
-            // pHome
-            // 
-            this.pHome.Controls.Add(this.icptbHome);
-            this.pHome.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pHome.Location = new System.Drawing.Point(0, 0);
-            this.pHome.Name = "pHome";
-            this.pHome.Size = new System.Drawing.Size(200, 50);
-            this.pHome.TabIndex = 0;
-            // 
-            // pAccount
-            // 
-            this.pAccount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.pAccount.Controls.Add(this.ptbAccountCoin);
-            this.pAccount.Controls.Add(this.lbAccountCoin);
-            this.pAccount.Controls.Add(this.lbAccountRole);
-            this.pAccount.Controls.Add(this.lbAccountName);
-            this.pAccount.Controls.Add(this.ptbAccount);
-            this.pAccount.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pAccount.Location = new System.Drawing.Point(0, 50);
-            this.pAccount.Name = "pAccount";
-            this.pAccount.Size = new System.Drawing.Size(200, 711);
-            this.pAccount.TabIndex = 2;
-            // 
-            // lbAccountCoin
-            // 
-            this.lbAccountCoin.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbAccountCoin.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lbAccountCoin.Location = new System.Drawing.Point(34, 232);
-            this.lbAccountCoin.Name = "lbAccountCoin";
-            this.lbAccountCoin.Size = new System.Drawing.Size(163, 25);
-            this.lbAccountCoin.TabIndex = 8;
-            this.lbAccountCoin.Text = "9999$";
-            this.lbAccountCoin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lbAccountRole
-            // 
-            this.lbAccountRole.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbAccountRole.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lbAccountRole.Location = new System.Drawing.Point(3, 202);
-            this.lbAccountRole.Name = "lbAccountRole";
-            this.lbAccountRole.Size = new System.Drawing.Size(194, 21);
-            this.lbAccountRole.TabIndex = 7;
-            this.lbAccountRole.Text = "Admin";
-            this.lbAccountRole.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbAccountName
-            // 
-            this.lbAccountName.Font = new System.Drawing.Font("Cooper Black", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbAccountName.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lbAccountName.Location = new System.Drawing.Point(3, 168);
-            this.lbAccountName.Name = "lbAccountName";
-            this.lbAccountName.Size = new System.Drawing.Size(194, 34);
-            this.lbAccountName.TabIndex = 6;
-            this.lbAccountName.Text = "Erwin";
-            this.lbAccountName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pChildForm
-            // 
-            this.pChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.pChildForm.Controls.Add(this.pictureBox4);
-            this.pChildForm.Controls.Add(this.pictureBox3);
-            this.pChildForm.Controls.Add(this.pictureBox2);
-            this.pChildForm.Controls.Add(this.pictureBox1);
-            this.pChildForm.Controls.Add(this.ptbSlider);
-            this.pChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pChildForm.Location = new System.Drawing.Point(200, 50);
-            this.pChildForm.Name = "pChildForm";
-            this.pChildForm.Size = new System.Drawing.Size(1284, 711);
-            this.pChildForm.TabIndex = 3;
-            // 
-            // tSlider
-            // 
-            this.tSlider.Enabled = true;
-            this.tSlider.Interval = 1200;
-            this.tSlider.Tick += new System.EventHandler(this.tSlider_Tick);
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.BackgroundImage")));
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox4.Location = new System.Drawing.Point(954, 527);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(302, 172);
-            this.pictureBox4.TabIndex = 4;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox3.Location = new System.Drawing.Point(646, 527);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(302, 172);
-            this.pictureBox3.TabIndex = 3;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox2.Location = new System.Drawing.Point(338, 527);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(302, 172);
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox1.Location = new System.Drawing.Point(23, 527);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(309, 172);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
-            // ptbSlider
-            // 
-            this.ptbSlider.BackgroundImage = global::ErS_FIFPro.Sliders._4;
-            this.ptbSlider.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ptbSlider.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.ptbSlider.InitialImage = global::ErS_FIFPro.Properties.Resources._1;
-            this.ptbSlider.Location = new System.Drawing.Point(23, 17);
-            this.ptbSlider.Name = "ptbSlider";
-            this.ptbSlider.Size = new System.Drawing.Size(1233, 504);
-            this.ptbSlider.TabIndex = 0;
-            this.ptbSlider.TabStop = false;
-            // 
-            // ptbAccountCoin
-            // 
-            this.ptbAccountCoin.BackgroundImage = global::ErS_FIFPro.Properties.Resources.coin_removebg_preview;
-            this.ptbAccountCoin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ptbAccountCoin.Location = new System.Drawing.Point(3, 232);
-            this.ptbAccountCoin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ptbAccountCoin.Name = "ptbAccountCoin";
-            this.ptbAccountCoin.Size = new System.Drawing.Size(25, 25);
-            this.ptbAccountCoin.TabIndex = 9;
-            this.ptbAccountCoin.TabStop = false;
-            // 
-            // ptbAccount
-            // 
-            this.ptbAccount.BackgroundImage = global::ErS_FIFPro.Accounts.Viewer;
-            this.ptbAccount.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ptbAccount.InitialImage = global::ErS_FIFPro.Accounts.Viewer;
-            this.ptbAccount.Location = new System.Drawing.Point(6, 20);
-            this.ptbAccount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ptbAccount.Name = "ptbAccount";
-            this.ptbAccount.Size = new System.Drawing.Size(187, 146);
-            this.ptbAccount.TabIndex = 5;
-            this.ptbAccount.TabStop = false;
             // 
             // btnExit
             // 
@@ -291,7 +138,7 @@
             this.btnLetter.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnLetter.FlatAppearance.BorderSize = 0;
             this.btnLetter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLetter.Font = new System.Drawing.Font("Century Schoolbook", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLetter.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLetter.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnLetter.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnLetter.IconColor = System.Drawing.Color.Gainsboro;
@@ -314,7 +161,7 @@
             this.btnConfig.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnConfig.FlatAppearance.BorderSize = 0;
             this.btnConfig.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnConfig.Font = new System.Drawing.Font("Century Schoolbook", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConfig.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConfig.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnConfig.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnConfig.IconColor = System.Drawing.Color.Gainsboro;
@@ -337,7 +184,7 @@
             this.btnCoaching.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnCoaching.FlatAppearance.BorderSize = 0;
             this.btnCoaching.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCoaching.Font = new System.Drawing.Font("Century Schoolbook", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCoaching.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCoaching.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnCoaching.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnCoaching.IconColor = System.Drawing.Color.Gainsboro;
@@ -360,7 +207,7 @@
             this.btnFootballer.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnFootballer.FlatAppearance.BorderSize = 0;
             this.btnFootballer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFootballer.Font = new System.Drawing.Font("Century Schoolbook", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFootballer.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFootballer.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnFootballer.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnFootballer.IconColor = System.Drawing.Color.Gainsboro;
@@ -383,7 +230,7 @@
             this.btnTeam.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnTeam.FlatAppearance.BorderSize = 0;
             this.btnTeam.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTeam.Font = new System.Drawing.Font("Century Schoolbook", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTeam.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTeam.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnTeam.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnTeam.IconColor = System.Drawing.Color.Gainsboro;
@@ -406,7 +253,7 @@
             this.btnBetting.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnBetting.FlatAppearance.BorderSize = 0;
             this.btnBetting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBetting.Font = new System.Drawing.Font("Century Schoolbook", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBetting.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBetting.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnBetting.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnBetting.IconColor = System.Drawing.Color.Gainsboro;
@@ -429,7 +276,7 @@
             this.btnResult.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnResult.FlatAppearance.BorderSize = 0;
             this.btnResult.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnResult.Font = new System.Drawing.Font("Century Schoolbook", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnResult.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnResult.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnResult.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnResult.IconColor = System.Drawing.Color.Gainsboro;
@@ -452,7 +299,7 @@
             this.btnMatch.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnMatch.FlatAppearance.BorderSize = 0;
             this.btnMatch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMatch.Font = new System.Drawing.Font("Century Schoolbook", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMatch.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMatch.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnMatch.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnMatch.IconColor = System.Drawing.Color.Gainsboro;
@@ -469,21 +316,201 @@
             this.btnMatch.UseVisualStyleBackColor = true;
             this.btnMatch.Click += new System.EventHandler(this.btnMatch_Click);
             // 
+            // pHome
+            // 
+            this.pHome.Controls.Add(this.icptbHome);
+            this.pHome.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pHome.Location = new System.Drawing.Point(0, 0);
+            this.pHome.Name = "pHome";
+            this.pHome.Size = new System.Drawing.Size(200, 50);
+            this.pHome.TabIndex = 0;
+            // 
             // icptbHome
             // 
             this.icptbHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.icptbHome.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("icptbHome.BackgroundImage")));
+            this.icptbHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.icptbHome.Cursor = System.Windows.Forms.Cursors.Hand;
             this.icptbHome.ForeColor = System.Drawing.SystemColors.ControlText;
             this.icptbHome.IconChar = FontAwesome.Sharp.IconChar.None;
             this.icptbHome.IconColor = System.Drawing.SystemColors.ControlText;
             this.icptbHome.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.icptbHome.IconSize = 44;
-            this.icptbHome.Location = new System.Drawing.Point(3, 3);
+            this.icptbHome.Location = new System.Drawing.Point(21, 3);
             this.icptbHome.Name = "icptbHome";
-            this.icptbHome.Size = new System.Drawing.Size(194, 44);
+            this.icptbHome.Size = new System.Drawing.Size(161, 44);
             this.icptbHome.TabIndex = 0;
             this.icptbHome.TabStop = false;
             this.icptbHome.Click += new System.EventHandler(this.btnHome_Click);
+            // 
+            // pAccount
+            // 
+            this.pAccount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.pAccount.Controls.Add(this.pictureBox1);
+            this.pAccount.Controls.Add(this.ptbAccountCoin);
+            this.pAccount.Controls.Add(this.lbAccountCoin);
+            this.pAccount.Controls.Add(this.lbAccountRole);
+            this.pAccount.Controls.Add(this.lbAccountName);
+            this.pAccount.Controls.Add(this.ptbAccount);
+            this.pAccount.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pAccount.Location = new System.Drawing.Point(0, 50);
+            this.pAccount.Name = "pAccount";
+            this.pAccount.Size = new System.Drawing.Size(200, 711);
+            this.pAccount.TabIndex = 2;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.InitialImage = global::ErS_FIFPro.Accounts.Viewer;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 417);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(200, 282);
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            // 
+            // ptbAccountCoin
+            // 
+            this.ptbAccountCoin.BackgroundImage = global::ErS_FIFPro.Properties.Resources.coin_removebg_preview;
+            this.ptbAccountCoin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ptbAccountCoin.Location = new System.Drawing.Point(168, 271);
+            this.ptbAccountCoin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ptbAccountCoin.Name = "ptbAccountCoin";
+            this.ptbAccountCoin.Size = new System.Drawing.Size(25, 25);
+            this.ptbAccountCoin.TabIndex = 9;
+            this.ptbAccountCoin.TabStop = false;
+            // 
+            // lbAccountCoin
+            // 
+            this.lbAccountCoin.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lbAccountCoin.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAccountCoin.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lbAccountCoin.Location = new System.Drawing.Point(34, 271);
+            this.lbAccountCoin.Name = "lbAccountCoin";
+            this.lbAccountCoin.Size = new System.Drawing.Size(128, 25);
+            this.lbAccountCoin.TabIndex = 8;
+            this.lbAccountCoin.Text = "9999";
+            this.lbAccountCoin.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lbAccountRole
+            // 
+            this.lbAccountRole.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAccountRole.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lbAccountRole.Location = new System.Drawing.Point(3, 241);
+            this.lbAccountRole.Name = "lbAccountRole";
+            this.lbAccountRole.Size = new System.Drawing.Size(194, 21);
+            this.lbAccountRole.TabIndex = 7;
+            this.lbAccountRole.Text = "Admin";
+            this.lbAccountRole.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbAccountName
+            // 
+            this.lbAccountName.Font = new System.Drawing.Font("Cooper Black", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAccountName.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lbAccountName.Location = new System.Drawing.Point(3, 207);
+            this.lbAccountName.Name = "lbAccountName";
+            this.lbAccountName.Size = new System.Drawing.Size(194, 34);
+            this.lbAccountName.TabIndex = 6;
+            this.lbAccountName.Text = "Erwin";
+            this.lbAccountName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // ptbAccount
+            // 
+            this.ptbAccount.BackgroundImage = global::ErS_FIFPro.Accounts.Viewer;
+            this.ptbAccount.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ptbAccount.InitialImage = global::ErS_FIFPro.Accounts.Viewer;
+            this.ptbAccount.Location = new System.Drawing.Point(6, 59);
+            this.ptbAccount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ptbAccount.Name = "ptbAccount";
+            this.ptbAccount.Size = new System.Drawing.Size(187, 146);
+            this.ptbAccount.TabIndex = 5;
+            this.ptbAccount.TabStop = false;
+            // 
+            // pChildForm
+            // 
+            this.pChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.pChildForm.Controls.Add(this.pictureBox4);
+            this.pChildForm.Controls.Add(this.pictureBox3);
+            this.pChildForm.Controls.Add(this.pictureBox2);
+            this.pChildForm.Controls.Add(this.ptbNew1);
+            this.pChildForm.Controls.Add(this.ptbSlider);
+            this.pChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pChildForm.Location = new System.Drawing.Point(200, 50);
+            this.pChildForm.Name = "pChildForm";
+            this.pChildForm.Size = new System.Drawing.Size(1284, 711);
+            this.pChildForm.TabIndex = 3;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.BackgroundImage")));
+            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox4.Location = new System.Drawing.Point(954, 527);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(302, 172);
+            this.pictureBox4.TabIndex = 4;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox3.Location = new System.Drawing.Point(646, 527);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(302, 172);
+            this.pictureBox3.TabIndex = 3;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox2.Location = new System.Drawing.Point(338, 527);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(302, 172);
+            this.pictureBox2.TabIndex = 2;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // ptbNew1
+            // 
+            this.ptbNew1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ptbNew1.BackgroundImage")));
+            this.ptbNew1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ptbNew1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.ptbNew1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ptbNew1.Location = new System.Drawing.Point(23, 527);
+            this.ptbNew1.Name = "ptbNew1";
+            this.ptbNew1.Size = new System.Drawing.Size(309, 172);
+            this.ptbNew1.TabIndex = 1;
+            this.ptbNew1.TabStop = false;
+            this.ptbNew1.Click += new System.EventHandler(this.ptbNew1_Click);
+            // 
+            // ptbSlider
+            // 
+            this.ptbSlider.BackgroundImage = global::ErS_FIFPro.Sliders._4;
+            this.ptbSlider.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ptbSlider.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.ptbSlider.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ptbSlider.InitialImage = global::ErS_FIFPro.Properties.Resources._1;
+            this.ptbSlider.Location = new System.Drawing.Point(23, 17);
+            this.ptbSlider.Name = "ptbSlider";
+            this.ptbSlider.Size = new System.Drawing.Size(1233, 504);
+            this.ptbSlider.TabIndex = 0;
+            this.ptbSlider.TabStop = false;
+            // 
+            // tSlider
+            // 
+            this.tSlider.Enabled = true;
+            this.tSlider.Interval = 1200;
+            this.tSlider.Tick += new System.EventHandler(this.tSlider_Tick);
             // 
             // fHome
             // 
@@ -499,16 +526,17 @@
             this.Text = "fHome";
             this.pNav.ResumeLayout(false);
             this.pHome.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.icptbHome)).EndInit();
             this.pAccount.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbAccountCoin)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbAccount)).EndInit();
             this.pChildForm.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbNew1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbSlider)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbAccountCoin)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbAccount)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.icptbHome)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -536,9 +564,10 @@
         private FontAwesome.Sharp.IconButton btnMinimize;
         private System.Windows.Forms.PictureBox ptbSlider;
         private System.Windows.Forms.Timer tSlider;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox ptbNew1;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

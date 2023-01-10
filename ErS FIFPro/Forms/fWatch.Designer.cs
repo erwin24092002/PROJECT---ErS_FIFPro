@@ -28,11 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fWatch));
             this.wbMatch = new System.Windows.Forms.WebBrowser();
             this.pTool = new System.Windows.Forms.Panel();
+            this.btnComment = new FontAwesome.Sharp.IconButton();
             this.rtbMessage = new System.Windows.Forms.RichTextBox();
             this.flpComment = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnComment = new FontAwesome.Sharp.IconButton();
             this.pTool.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,25 +56,6 @@
             this.pTool.Name = "pTool";
             this.pTool.Size = new System.Drawing.Size(384, 661);
             this.pTool.TabIndex = 1;
-            // 
-            // rtbMessage
-            // 
-            this.rtbMessage.Dock = System.Windows.Forms.DockStyle.Top;
-            this.rtbMessage.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rtbMessage.Location = new System.Drawing.Point(0, 480);
-            this.rtbMessage.Name = "rtbMessage";
-            this.rtbMessage.Size = new System.Drawing.Size(384, 137);
-            this.rtbMessage.TabIndex = 1;
-            this.rtbMessage.Text = "";
-            // 
-            // flpComment
-            // 
-            this.flpComment.AutoScroll = true;
-            this.flpComment.Dock = System.Windows.Forms.DockStyle.Top;
-            this.flpComment.Location = new System.Drawing.Point(0, 0);
-            this.flpComment.Name = "flpComment";
-            this.flpComment.Size = new System.Drawing.Size(384, 480);
-            this.flpComment.TabIndex = 0;
             // 
             // btnComment
             // 
@@ -98,6 +80,25 @@
             this.btnComment.UseVisualStyleBackColor = true;
             this.btnComment.Click += new System.EventHandler(this.btnComment_Click);
             // 
+            // rtbMessage
+            // 
+            this.rtbMessage.Dock = System.Windows.Forms.DockStyle.Top;
+            this.rtbMessage.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtbMessage.Location = new System.Drawing.Point(0, 480);
+            this.rtbMessage.Name = "rtbMessage";
+            this.rtbMessage.Size = new System.Drawing.Size(384, 137);
+            this.rtbMessage.TabIndex = 1;
+            this.rtbMessage.Text = "";
+            // 
+            // flpComment
+            // 
+            this.flpComment.AutoScroll = true;
+            this.flpComment.Dock = System.Windows.Forms.DockStyle.Top;
+            this.flpComment.Location = new System.Drawing.Point(0, 0);
+            this.flpComment.Name = "flpComment";
+            this.flpComment.Size = new System.Drawing.Size(384, 480);
+            this.flpComment.TabIndex = 0;
+            // 
             // fWatch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -105,6 +106,7 @@
             this.ClientSize = new System.Drawing.Size(1584, 661);
             this.Controls.Add(this.pTool);
             this.Controls.Add(this.wbMatch);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "fWatch";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Watch";

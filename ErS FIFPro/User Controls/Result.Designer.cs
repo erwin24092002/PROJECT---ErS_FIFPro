@@ -121,10 +121,10 @@
             // 
             // lbCountry2
             // 
-            this.lbCountry2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.lbCountry2.BackColor = System.Drawing.Color.Transparent;
             this.lbCountry2.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCountry2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lbCountry2.Location = new System.Drawing.Point(910, 10);
+            this.lbCountry2.ForeColor = System.Drawing.Color.White;
+            this.lbCountry2.Location = new System.Drawing.Point(910, 32);
             this.lbCountry2.Name = "lbCountry2";
             this.lbCountry2.Size = new System.Drawing.Size(179, 25);
             this.lbCountry2.TabIndex = 50;
@@ -133,10 +133,10 @@
             // 
             // lbCountry1
             // 
-            this.lbCountry1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.lbCountry1.BackColor = System.Drawing.Color.Transparent;
             this.lbCountry1.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCountry1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lbCountry1.Location = new System.Drawing.Point(119, 10);
+            this.lbCountry1.ForeColor = System.Drawing.Color.White;
+            this.lbCountry1.Location = new System.Drawing.Point(119, 32);
             this.lbCountry1.Name = "lbCountry1";
             this.lbCountry1.Size = new System.Drawing.Size(179, 25);
             this.lbCountry1.TabIndex = 48;
@@ -145,13 +145,13 @@
             // 
             // lbDate
             // 
-            this.lbDate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.lbDate.BackColor = System.Drawing.Color.Goldenrod;
             this.lbDate.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lbDate.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDate.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lbDate.Font = new System.Drawing.Font("Century Schoolbook", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDate.ForeColor = System.Drawing.Color.Black;
             this.lbDate.Location = new System.Drawing.Point(0, 0);
             this.lbDate.Name = "lbDate";
-            this.lbDate.Size = new System.Drawing.Size(1200, 35);
+            this.lbDate.Size = new System.Drawing.Size(1196, 30);
             this.lbDate.TabIndex = 47;
             this.lbDate.Text = "2023-1-11 22:00:00";
             this.lbDate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -184,7 +184,7 @@
             // 
             this.btnWatch.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnWatch.Font = new System.Drawing.Font("Century Schoolbook", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnWatch.Location = new System.Drawing.Point(386, 140);
+            this.btnWatch.Location = new System.Drawing.Point(386, 126);
             this.btnWatch.Name = "btnWatch";
             this.btnWatch.Size = new System.Drawing.Size(212, 33);
             this.btnWatch.TabIndex = 73;
@@ -196,7 +196,7 @@
             // 
             this.btnHighlight.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnHighlight.Font = new System.Drawing.Font("Century Schoolbook", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHighlight.Location = new System.Drawing.Point(605, 140);
+            this.btnHighlight.Location = new System.Drawing.Point(605, 126);
             this.btnHighlight.Name = "btnHighlight";
             this.btnHighlight.Size = new System.Drawing.Size(212, 33);
             this.btnHighlight.TabIndex = 72;
@@ -207,8 +207,9 @@
             // ptbFlag2
             // 
             this.ptbFlag2.BackgroundImage = global::ErS_FIFPro.Flags.Argentina;
-            this.ptbFlag2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ptbFlag2.Location = new System.Drawing.Point(939, 42);
+            this.ptbFlag2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ptbFlag2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.ptbFlag2.Location = new System.Drawing.Point(939, 59);
             this.ptbFlag2.Name = "ptbFlag2";
             this.ptbFlag2.Size = new System.Drawing.Size(117, 72);
             this.ptbFlag2.TabIndex = 49;
@@ -217,8 +218,9 @@
             // ptbFlag1
             // 
             this.ptbFlag1.BackgroundImage = global::ErS_FIFPro.Flags.Argentina;
-            this.ptbFlag1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ptbFlag1.Location = new System.Drawing.Point(149, 42);
+            this.ptbFlag1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ptbFlag1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.ptbFlag1.Location = new System.Drawing.Point(149, 59);
             this.ptbFlag1.Name = "ptbFlag1";
             this.ptbFlag1.Size = new System.Drawing.Size(108, 72);
             this.ptbFlag1.TabIndex = 46;
@@ -228,7 +230,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.BackColor = System.Drawing.Color.Gray;
+            this.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.Controls.Add(this.btnWatch);
             this.Controls.Add(this.btnHighlight);
             this.Controls.Add(this.txbGoal2);
@@ -246,7 +249,7 @@
             this.Controls.Add(this.ptbFlag1);
             this.Margin = new System.Windows.Forms.Padding(40, 20, 3, 10);
             this.Name = "Result";
-            this.Size = new System.Drawing.Size(1200, 180);
+            this.Size = new System.Drawing.Size(1196, 170);
             ((System.ComponentModel.ISupportInitialize)(this.ptbFlag2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbFlag1)).EndInit();
             this.ResumeLayout(false);

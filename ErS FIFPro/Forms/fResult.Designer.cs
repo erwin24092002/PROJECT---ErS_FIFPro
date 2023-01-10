@@ -35,6 +35,7 @@
             // flpResult
             // 
             this.flpResult.AutoScroll = true;
+            this.flpResult.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(80)))));
             this.flpResult.Dock = System.Windows.Forms.DockStyle.Top;
             this.flpResult.Location = new System.Drawing.Point(0, 0);
             this.flpResult.Name = "flpResult";

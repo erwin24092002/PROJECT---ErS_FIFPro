@@ -207,6 +207,12 @@
     <Compile Include="User Controls\FootballerCard.Designer.cs">
       <DependentUpon>FootballerCard.cs</DependentUpon>
     </Compile>
+    <Compile Include="User Controls\Letter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\Letter.Designer.cs">
+      <DependentUpon>Letter.cs</DependentUpon>
+    </Compile>
     <Compile Include="User Controls\Match.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -323,6 +329,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="User Controls\FootballerCard.resx">
       <DependentUpon>FootballerCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\Letter.resx">
+      <DependentUpon>Letter.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User Controls\Match.resx">
       <DependentUpon>Match.cs</DependentUpon>

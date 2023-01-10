@@ -32,7 +32,7 @@ namespace ErS_FIFPro.User_Controls
             lbWin.Text = win.ToString();
             lbLose.Text = lose.ToString();
             lbDraw.Text = draw.ToString();
-            lbScore.Text = draw.ToString();
+            lbScore.Text = score.ToString();
             lbTeam.Text = team["T_NAME"].ToString();
 
             this.Tag = team;

@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Reflection;
@@ -40,7 +41,7 @@ namespace ErS_FIFPro.Forms
             ResourceManager AccountImageManager = new ResourceManager("ErS_FIFPro.Accounts", Assembly.GetExecutingAssembly());
             ptbAccount.BackgroundImage = (Image)AccountImageManager.GetObject("Acc" + string.Join("_", account["AC_NAME"].ToString().Split(' ')));
             lbAccountName.Text = account["AC_NAME"].ToString();
-            lbAccountCoin.Text = account["AC_COIN"].ToString() + "$";
+            lbAccountCoin.Text = account["AC_COIN"].ToString();
             int role = Int32.Parse(account["AC_ROLE"].ToString());
             if (role == 0)
             {
@@ -201,7 +202,27 @@ namespace ErS_FIFPro.Forms
         private void btnLetter_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, myColors.ActiveButtonColor);
-            OpenChildForm(new fLetter());
+            OpenChildForm(new fLetter(account));
+        }
+
+        private void ptbNew1_Click(object sender, EventArgs e)
+        {
+            Process.Start(@"chrome.exe", "https://www.skysports.com/football/news/11095/12771144/world-cup-2022-review-lionel-messis-football-fairytale-ends-a-controversial-tournament-in-qatar");
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Process.Start(@"chrome.exe", "https://www.skysports.com/football/news/11095/12771383/kylian-mbappe-france-star-well-placed-to-become-the-best-player-on-the-planet-after-world-cup-final-heroics");
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Process.Start(@"chrome.exe", "https://www.skysports.com/football/story-telling/11095/12771464/world-cup-2022-in-pictures");
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            Process.Start(@"chrome.exe", "https://www.skysports.com/football/news/12027/12491277/pele-to-stay-in-hospital-for-exams-amid-treatment-on-colon-tumour");
         }
     }
 }

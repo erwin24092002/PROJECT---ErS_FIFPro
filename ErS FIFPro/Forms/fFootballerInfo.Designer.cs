@@ -30,17 +30,17 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fFootballerInfo));
             this.pNav = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.lbFootballerName = new System.Windows.Forms.Label();
-            this.lbFootballerBirthday = new System.Windows.Forms.Label();
-            this.ptbFootballerInfo = new System.Windows.Forms.PictureBox();
             this.btnExit = new FontAwesome.Sharp.IconButton();
             this.btnMinimize = new FontAwesome.Sharp.IconButton();
-            this.lbFootballerCountry = new System.Windows.Forms.Label();
-            this.lbFootballerRole = new System.Windows.Forms.Label();
-            this.lbFootballerIndex = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.lbFootballerDetail = new System.Windows.Forms.Label();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.lbFootballerIndex = new System.Windows.Forms.Label();
+            this.lbFootballerRole = new System.Windows.Forms.Label();
+            this.lbFootballerCountry = new System.Windows.Forms.Label();
+            this.lbFootballerBirthday = new System.Windows.Forms.Label();
+            this.lbFootballerName = new System.Windows.Forms.Label();
+            this.ptbFootballerInfo = new System.Windows.Forms.PictureBox();
             this.pNav.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbFootballerInfo)).BeginInit();
@@ -54,60 +54,9 @@
             this.pNav.Dock = System.Windows.Forms.DockStyle.Top;
             this.pNav.Location = new System.Drawing.Point(0, 0);
             this.pNav.Name = "pNav";
-            this.pNav.Size = new System.Drawing.Size(866, 36);
+            this.pNav.Size = new System.Drawing.Size(857, 36);
             this.pNav.TabIndex = 0;
             this.pNav.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pNav_MouseDown);
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.lbFootballerDetail);
-            this.panel1.Controls.Add(this.richTextBox1);
-            this.panel1.Controls.Add(this.lbFootballerIndex);
-            this.panel1.Controls.Add(this.lbFootballerRole);
-            this.panel1.Controls.Add(this.lbFootballerCountry);
-            this.panel1.Controls.Add(this.lbFootballerBirthday);
-            this.panel1.Controls.Add(this.lbFootballerName);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 36);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(396, 588);
-            this.panel1.TabIndex = 2;
-            // 
-            // lbFootballerName
-            // 
-            this.lbFootballerName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.lbFootballerName.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lbFootballerName.Font = new System.Drawing.Font("Century Schoolbook", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbFootballerName.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lbFootballerName.Location = new System.Drawing.Point(0, 0);
-            this.lbFootballerName.Name = "lbFootballerName";
-            this.lbFootballerName.Size = new System.Drawing.Size(396, 62);
-            this.lbFootballerName.TabIndex = 20;
-            this.lbFootballerName.Text = "Lionel Messi";
-            this.lbFootballerName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbFootballerBirthday
-            // 
-            this.lbFootballerBirthday.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lbFootballerBirthday.Font = new System.Drawing.Font("Century Schoolbook", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbFootballerBirthday.ForeColor = System.Drawing.Color.Black;
-            this.lbFootballerBirthday.Location = new System.Drawing.Point(0, 62);
-            this.lbFootballerBirthday.Name = "lbFootballerBirthday";
-            this.lbFootballerBirthday.Size = new System.Drawing.Size(396, 36);
-            this.lbFootballerBirthday.TabIndex = 21;
-            this.lbFootballerBirthday.Text = "Birthday:";
-            this.lbFootballerBirthday.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // ptbFootballerInfo
-            // 
-            this.ptbFootballerInfo.BackgroundImage = global::ErS_FIFPro.FootballerInfos.Lionel_Messi2;
-            this.ptbFootballerInfo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ptbFootballerInfo.Dock = System.Windows.Forms.DockStyle.Right;
-            this.ptbFootballerInfo.Location = new System.Drawing.Point(396, 36);
-            this.ptbFootballerInfo.Name = "ptbFootballerInfo";
-            this.ptbFootballerInfo.Size = new System.Drawing.Size(470, 588);
-            this.ptbFootballerInfo.TabIndex = 1;
-            this.ptbFootballerInfo.TabStop = false;
             // 
             // btnExit
             // 
@@ -119,7 +68,7 @@
             this.btnExit.IconColor = System.Drawing.Color.Gainsboro;
             this.btnExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnExit.IconSize = 40;
-            this.btnExit.Location = new System.Drawing.Point(826, 5);
+            this.btnExit.Location = new System.Drawing.Point(816, 5);
             this.btnExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(37, 29);
@@ -140,7 +89,7 @@
             this.btnMinimize.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnMinimize.IconSize = 30;
             this.btnMinimize.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnMinimize.Location = new System.Drawing.Point(786, 4);
+            this.btnMinimize.Location = new System.Drawing.Point(776, 4);
             this.btnMinimize.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnMinimize.Name = "btnMinimize";
             this.btnMinimize.Size = new System.Drawing.Size(37, 27);
@@ -148,41 +97,32 @@
             this.btnMinimize.UseVisualStyleBackColor = true;
             this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
             // 
-            // lbFootballerCountry
+            // panel1
             // 
-            this.lbFootballerCountry.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lbFootballerCountry.Font = new System.Drawing.Font("Century Schoolbook", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbFootballerCountry.ForeColor = System.Drawing.Color.Black;
-            this.lbFootballerCountry.Location = new System.Drawing.Point(0, 98);
-            this.lbFootballerCountry.Name = "lbFootballerCountry";
-            this.lbFootballerCountry.Size = new System.Drawing.Size(396, 36);
-            this.lbFootballerCountry.TabIndex = 22;
-            this.lbFootballerCountry.Text = "Country:";
-            this.lbFootballerCountry.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.panel1.Controls.Add(this.lbFootballerDetail);
+            this.panel1.Controls.Add(this.richTextBox1);
+            this.panel1.Controls.Add(this.lbFootballerIndex);
+            this.panel1.Controls.Add(this.lbFootballerRole);
+            this.panel1.Controls.Add(this.lbFootballerCountry);
+            this.panel1.Controls.Add(this.lbFootballerBirthday);
+            this.panel1.Controls.Add(this.lbFootballerName);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 36);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(393, 588);
+            this.panel1.TabIndex = 2;
             // 
-            // lbFootballerRole
+            // lbFootballerDetail
             // 
-            this.lbFootballerRole.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lbFootballerRole.Font = new System.Drawing.Font("Century Schoolbook", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbFootballerRole.ForeColor = System.Drawing.Color.Black;
-            this.lbFootballerRole.Location = new System.Drawing.Point(0, 134);
-            this.lbFootballerRole.Name = "lbFootballerRole";
-            this.lbFootballerRole.Size = new System.Drawing.Size(396, 36);
-            this.lbFootballerRole.TabIndex = 23;
-            this.lbFootballerRole.Text = "Role:";
-            this.lbFootballerRole.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lbFootballerIndex
-            // 
-            this.lbFootballerIndex.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lbFootballerIndex.Font = new System.Drawing.Font("Century Schoolbook", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbFootballerIndex.ForeColor = System.Drawing.Color.Black;
-            this.lbFootballerIndex.Location = new System.Drawing.Point(0, 170);
-            this.lbFootballerIndex.Name = "lbFootballerIndex";
-            this.lbFootballerIndex.Size = new System.Drawing.Size(396, 36);
-            this.lbFootballerIndex.TabIndex = 24;
-            this.lbFootballerIndex.Text = "Index:";
-            this.lbFootballerIndex.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbFootballerDetail.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lbFootballerDetail.Font = new System.Drawing.Font("Century Schoolbook", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbFootballerDetail.ForeColor = System.Drawing.Color.Black;
+            this.lbFootballerDetail.Location = new System.Drawing.Point(0, 206);
+            this.lbFootballerDetail.Name = "lbFootballerDetail";
+            this.lbFootballerDetail.Size = new System.Drawing.Size(393, 36);
+            this.lbFootballerDetail.TabIndex = 26;
+            this.lbFootballerDetail.Text = "Detail:";
+            this.lbFootballerDetail.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // richTextBox1
             // 
@@ -192,33 +132,94 @@
             this.richTextBox1.Location = new System.Drawing.Point(0, 247);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
-            this.richTextBox1.Size = new System.Drawing.Size(396, 341);
+            this.richTextBox1.Size = new System.Drawing.Size(393, 341);
             this.richTextBox1.TabIndex = 25;
             this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
             // 
-            // lbFootballerDetail
+            // lbFootballerIndex
             // 
-            this.lbFootballerDetail.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lbFootballerDetail.Font = new System.Drawing.Font("Century Schoolbook", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbFootballerDetail.ForeColor = System.Drawing.Color.Black;
-            this.lbFootballerDetail.Location = new System.Drawing.Point(0, 206);
-            this.lbFootballerDetail.Name = "lbFootballerDetail";
-            this.lbFootballerDetail.Size = new System.Drawing.Size(396, 36);
-            this.lbFootballerDetail.TabIndex = 26;
-            this.lbFootballerDetail.Text = "Detail:";
-            this.lbFootballerDetail.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbFootballerIndex.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lbFootballerIndex.Font = new System.Drawing.Font("Century Schoolbook", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbFootballerIndex.ForeColor = System.Drawing.Color.Black;
+            this.lbFootballerIndex.Location = new System.Drawing.Point(0, 170);
+            this.lbFootballerIndex.Name = "lbFootballerIndex";
+            this.lbFootballerIndex.Size = new System.Drawing.Size(393, 36);
+            this.lbFootballerIndex.TabIndex = 24;
+            this.lbFootballerIndex.Text = "Index:";
+            this.lbFootballerIndex.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbFootballerRole
+            // 
+            this.lbFootballerRole.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lbFootballerRole.Font = new System.Drawing.Font("Century Schoolbook", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbFootballerRole.ForeColor = System.Drawing.Color.Black;
+            this.lbFootballerRole.Location = new System.Drawing.Point(0, 134);
+            this.lbFootballerRole.Name = "lbFootballerRole";
+            this.lbFootballerRole.Size = new System.Drawing.Size(393, 36);
+            this.lbFootballerRole.TabIndex = 23;
+            this.lbFootballerRole.Text = "Role:";
+            this.lbFootballerRole.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbFootballerCountry
+            // 
+            this.lbFootballerCountry.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lbFootballerCountry.Font = new System.Drawing.Font("Century Schoolbook", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbFootballerCountry.ForeColor = System.Drawing.Color.Black;
+            this.lbFootballerCountry.Location = new System.Drawing.Point(0, 98);
+            this.lbFootballerCountry.Name = "lbFootballerCountry";
+            this.lbFootballerCountry.Size = new System.Drawing.Size(393, 36);
+            this.lbFootballerCountry.TabIndex = 22;
+            this.lbFootballerCountry.Text = "Country:";
+            this.lbFootballerCountry.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbFootballerBirthday
+            // 
+            this.lbFootballerBirthday.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lbFootballerBirthday.Font = new System.Drawing.Font("Century Schoolbook", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbFootballerBirthday.ForeColor = System.Drawing.Color.Black;
+            this.lbFootballerBirthday.Location = new System.Drawing.Point(0, 62);
+            this.lbFootballerBirthday.Name = "lbFootballerBirthday";
+            this.lbFootballerBirthday.Size = new System.Drawing.Size(393, 36);
+            this.lbFootballerBirthday.TabIndex = 21;
+            this.lbFootballerBirthday.Text = "Birthday:";
+            this.lbFootballerBirthday.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbFootballerName
+            // 
+            this.lbFootballerName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.lbFootballerName.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lbFootballerName.Font = new System.Drawing.Font("Century Schoolbook", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbFootballerName.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lbFootballerName.Location = new System.Drawing.Point(0, 0);
+            this.lbFootballerName.Name = "lbFootballerName";
+            this.lbFootballerName.Size = new System.Drawing.Size(393, 62);
+            this.lbFootballerName.TabIndex = 20;
+            this.lbFootballerName.Text = "Lionel Messi";
+            this.lbFootballerName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // ptbFootballerInfo
+            // 
+            this.ptbFootballerInfo.BackgroundImage = global::ErS_FIFPro.FootballerInfos.Lionel_Messi2;
+            this.ptbFootballerInfo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ptbFootballerInfo.Dock = System.Windows.Forms.DockStyle.Right;
+            this.ptbFootballerInfo.Location = new System.Drawing.Point(393, 36);
+            this.ptbFootballerInfo.Name = "ptbFootballerInfo";
+            this.ptbFootballerInfo.Size = new System.Drawing.Size(464, 588);
+            this.ptbFootballerInfo.TabIndex = 1;
+            this.ptbFootballerInfo.TabStop = false;
             // 
             // fFootballerInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(866, 624);
+            this.ClientSize = new System.Drawing.Size(857, 624);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.ptbFootballerInfo);
             this.Controls.Add(this.pNav);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "fFootballerInfo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "fFootballerInfo";
+            this.Text = "Footballer Detail";
             this.TopMost = true;
             this.pNav.ResumeLayout(false);
             this.panel1.ResumeLayout(false);

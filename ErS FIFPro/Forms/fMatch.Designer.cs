@@ -203,7 +203,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.DimGray;
+            this.panel1.BackColor = System.Drawing.Color.RosyBrown;
             this.panel1.Location = new System.Drawing.Point(128, 50);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(400, 5);
@@ -211,7 +211,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.DimGray;
+            this.panel2.BackColor = System.Drawing.Color.RosyBrown;
             this.panel2.Location = new System.Drawing.Point(779, 50);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(400, 5);
@@ -219,7 +219,7 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.DimGray;
+            this.panel3.BackColor = System.Drawing.Color.RosyBrown;
             this.panel3.Location = new System.Drawing.Point(128, 657);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(400, 5);
@@ -227,7 +227,7 @@
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.DimGray;
+            this.panel4.BackColor = System.Drawing.Color.RosyBrown;
             this.panel4.Location = new System.Drawing.Point(779, 657);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(400, 5);
@@ -235,7 +235,7 @@
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.DimGray;
+            this.panel5.BackColor = System.Drawing.Color.RosyBrown;
             this.panel5.Location = new System.Drawing.Point(313, 41);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(5, 630);
@@ -243,7 +243,7 @@
             // 
             // panel6
             // 
-            this.panel6.BackColor = System.Drawing.Color.DimGray;
+            this.panel6.BackColor = System.Drawing.Color.RosyBrown;
             this.panel6.Location = new System.Drawing.Point(966, 41);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(5, 630);
@@ -251,7 +251,7 @@
             // 
             // panel7
             // 
-            this.panel7.BackColor = System.Drawing.Color.DimGray;
+            this.panel7.BackColor = System.Drawing.Color.RosyBrown;
             this.panel7.Location = new System.Drawing.Point(349, 352);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(600, 5);
@@ -259,7 +259,7 @@
             // 
             // panel8
             // 
-            this.panel8.BackColor = System.Drawing.Color.DimGray;
+            this.panel8.BackColor = System.Drawing.Color.RosyBrown;
             this.panel8.Location = new System.Drawing.Point(641, 267);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(5, 100);
@@ -281,6 +281,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(80)))));
             this.ClientSize = new System.Drawing.Size(1284, 711);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.pictureBox1);

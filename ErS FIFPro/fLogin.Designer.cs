@@ -48,7 +48,7 @@
             // btnRegister
             // 
             this.btnRegister.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRegister.Font = new System.Drawing.Font("Century Schoolbook", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegister.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegister.Location = new System.Drawing.Point(272, 376);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(121, 33);
@@ -60,7 +60,7 @@
             // btnLogin
             // 
             this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLogin.Font = new System.Drawing.Font("Century Schoolbook", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.Location = new System.Drawing.Point(272, 141);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(121, 33);
@@ -72,17 +72,17 @@
             // txbConfPassword
             // 
             this.txbConfPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.txbConfPassword.Font = new System.Drawing.Font("Century Schoolbook", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbConfPassword.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbConfPassword.ForeColor = System.Drawing.Color.Gainsboro;
             this.txbConfPassword.Location = new System.Drawing.Point(187, 328);
             this.txbConfPassword.Name = "txbConfPassword";
-            this.txbConfPassword.Size = new System.Drawing.Size(456, 28);
+            this.txbConfPassword.Size = new System.Drawing.Size(456, 30);
             this.txbConfPassword.TabIndex = 27;
             this.txbConfPassword.UseSystemPasswordChar = true;
             // 
             // label4
             // 
-            this.label4.Font = new System.Drawing.Font("Century Schoolbook", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Gainsboro;
             this.label4.Location = new System.Drawing.Point(9, 322);
             this.label4.Name = "label4";
@@ -94,29 +94,29 @@
             // txbPassword2
             // 
             this.txbPassword2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.txbPassword2.Font = new System.Drawing.Font("Century Schoolbook", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbPassword2.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbPassword2.ForeColor = System.Drawing.Color.Gainsboro;
             this.txbPassword2.Location = new System.Drawing.Point(187, 291);
             this.txbPassword2.Name = "txbPassword2";
-            this.txbPassword2.Size = new System.Drawing.Size(456, 28);
+            this.txbPassword2.Size = new System.Drawing.Size(456, 30);
             this.txbPassword2.TabIndex = 25;
             this.txbPassword2.UseSystemPasswordChar = true;
             // 
             // txbUserName2
             // 
             this.txbUserName2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.txbUserName2.Font = new System.Drawing.Font("Century Schoolbook", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbUserName2.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbUserName2.ForeColor = System.Drawing.Color.Gainsboro;
             this.txbUserName2.Location = new System.Drawing.Point(187, 255);
             this.txbUserName2.Name = "txbUserName2";
-            this.txbUserName2.Size = new System.Drawing.Size(456, 28);
+            this.txbUserName2.Size = new System.Drawing.Size(456, 30);
             this.txbUserName2.TabIndex = 24;
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("Century Schoolbook", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label1.Location = new System.Drawing.Point(241, 206);
+            this.label1.Location = new System.Drawing.Point(241, 207);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(185, 36);
             this.label1.TabIndex = 23;
@@ -125,7 +125,7 @@
             // 
             // label2
             // 
-            this.label2.Font = new System.Drawing.Font("Century Schoolbook", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Gainsboro;
             this.label2.Location = new System.Drawing.Point(9, 285);
             this.label2.Name = "label2";
@@ -136,7 +136,7 @@
             // 
             // label3
             // 
-            this.label3.Font = new System.Drawing.Font("Century Schoolbook", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Gainsboro;
             this.label3.Location = new System.Drawing.Point(9, 249);
             this.label3.Name = "label3";
@@ -148,11 +148,11 @@
             // txbPassword
             // 
             this.txbPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.txbPassword.Font = new System.Drawing.Font("Century Schoolbook", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbPassword.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbPassword.ForeColor = System.Drawing.Color.Gainsboro;
             this.txbPassword.Location = new System.Drawing.Point(121, 98);
             this.txbPassword.Name = "txbPassword";
-            this.txbPassword.Size = new System.Drawing.Size(522, 28);
+            this.txbPassword.Size = new System.Drawing.Size(522, 30);
             this.txbPassword.TabIndex = 20;
             this.txbPassword.Text = "Erwin";
             this.txbPassword.UseSystemPasswordChar = true;
@@ -160,17 +160,17 @@
             // txbUserName
             // 
             this.txbUserName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.txbUserName.Font = new System.Drawing.Font("Century Schoolbook", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbUserName.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbUserName.ForeColor = System.Drawing.Color.Gainsboro;
             this.txbUserName.Location = new System.Drawing.Point(121, 56);
             this.txbUserName.Name = "txbUserName";
-            this.txbUserName.Size = new System.Drawing.Size(522, 28);
+            this.txbUserName.Size = new System.Drawing.Size(522, 30);
             this.txbUserName.TabIndex = 19;
             this.txbUserName.Text = "Erwin";
             // 
             // lbLogin
             // 
-            this.lbLogin.Font = new System.Drawing.Font("Century Schoolbook", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbLogin.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbLogin.ForeColor = System.Drawing.Color.Gainsboro;
             this.lbLogin.Location = new System.Drawing.Point(241, 9);
             this.lbLogin.Name = "lbLogin";
@@ -181,7 +181,7 @@
             // 
             // lbPassword
             // 
-            this.lbPassword.Font = new System.Drawing.Font("Century Schoolbook", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPassword.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbPassword.ForeColor = System.Drawing.Color.Gainsboro;
             this.lbPassword.Location = new System.Drawing.Point(9, 93);
             this.lbPassword.Name = "lbPassword";
@@ -192,7 +192,7 @@
             // 
             // lbUserName
             // 
-            this.lbUserName.Font = new System.Drawing.Font("Century Schoolbook", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbUserName.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbUserName.ForeColor = System.Drawing.Color.Gainsboro;
             this.lbUserName.Location = new System.Drawing.Point(9, 51);
             this.lbUserName.Name = "lbUserName";
@@ -206,7 +206,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.ClientSize = new System.Drawing.Size(655, 426);
+            this.ClientSize = new System.Drawing.Size(655, 420);
             this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txbConfPassword);
