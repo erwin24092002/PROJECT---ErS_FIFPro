@@ -38,8 +38,11 @@ namespace ErS_FIFPro.Forms
             this.ControlBox = false;
             this.DoubleBuffered = true;
 
-            ResourceManager AccountImageManager = new ResourceManager("ErS_FIFPro.Accounts", Assembly.GetExecutingAssembly());
-            ptbAccount.BackgroundImage = (Image)AccountImageManager.GetObject("Acc" + string.Join("_", account["AC_NAME"].ToString().Split(' ')));
+            if (account["AC_ROLE"].ToString() != "0")
+            {
+                ResourceManager AccountImageManager = new ResourceManager("ErS_FIFPro.Accounts", Assembly.GetExecutingAssembly());
+                ptbAccount.BackgroundImage = (Image)AccountImageManager.GetObject("Acc" + string.Join("_", account["AC_NAME"].ToString().Split(' ')));
+            }
             lbAccountName.Text = account["AC_NAME"].ToString();
             lbAccountCoin.Text = account["AC_COIN"].ToString();
             int role = Int32.Parse(account["AC_ROLE"].ToString());

@@ -36,7 +36,7 @@
             // lbName
             // 
             this.lbName.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbName.Location = new System.Drawing.Point(6, 3);
+            this.lbName.Location = new System.Drawing.Point(6, 2);
             this.lbName.Name = "lbName";
             this.lbName.Size = new System.Drawing.Size(118, 23);
             this.lbName.TabIndex = 0;
@@ -46,7 +46,7 @@
             // lbDate
             // 
             this.lbDate.Font = new System.Drawing.Font("Century Schoolbook", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDate.Location = new System.Drawing.Point(130, 3);
+            this.lbDate.Location = new System.Drawing.Point(130, 2);
             this.lbDate.Name = "lbDate";
             this.lbDate.Size = new System.Drawing.Size(197, 23);
             this.lbDate.TabIndex = 1;
@@ -56,9 +56,9 @@
             // lbMessage
             // 
             this.lbMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMessage.Location = new System.Drawing.Point(7, 33);
+            this.lbMessage.Location = new System.Drawing.Point(7, 30);
             this.lbMessage.Name = "lbMessage";
-            this.lbMessage.Size = new System.Drawing.Size(320, 30);
+            this.lbMessage.Size = new System.Drawing.Size(320, 22);
             this.lbMessage.TabIndex = 2;
             this.lbMessage.Text = "Trận đấu này thật hay";
             // 
@@ -67,11 +67,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
+            this.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.Controls.Add(this.lbMessage);
             this.Controls.Add(this.lbDate);
             this.Controls.Add(this.lbName);
             this.Name = "Comment";
-            this.Size = new System.Drawing.Size(330, 70);
+            this.Size = new System.Drawing.Size(326, 51);
             this.ResumeLayout(false);
 
         }

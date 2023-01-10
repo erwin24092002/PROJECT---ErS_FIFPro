@@ -87,7 +87,8 @@ namespace ErS_FIFPro.Forms
                     int X = Int32.Parse(infos[1]);
                     int Y = Int32.Parse(infos[2]);
                     FootballerBases[id - 1].Location = new Point(X, Y);
-                    FootballerBases[id - 1].Visible = true;
+                    FootballerBases[id - 1].Visible = true; 
+                    FootballerBases[id - 1].BringToFront();
                 }
             }
 

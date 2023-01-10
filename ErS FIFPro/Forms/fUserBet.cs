@@ -5,12 +5,15 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Net.Mail;
+using System.Net;
 using System.Reflection;
 using System.Resources;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
+using System.Collections;
 
 namespace ErS_FIFPro.Forms
 {
@@ -61,6 +64,7 @@ namespace ErS_FIFPro.Forms
 
                     connection.Close();
                 }
+                
                 using (SqlConnection connection = new SqlConnection(connectionSTR))
                 {
                     connection.Open();
@@ -69,6 +73,30 @@ namespace ErS_FIFPro.Forms
                     string query = "UPDATE ACCOUNT SET AC_COIN=" + new_coin.ToString() + " WHERE AC_ID=" + account["AC_ID"].ToString();
                     SqlCommand command = new SqlCommand(query, connection);
                     command.ExecuteNonQuery();
+
+                    string[] flags = { "Not Know", "Argentina", "France", "Brazil", "Qatar", "Japan", "South Korea", "Germany", "Croatia" };
+                    string message = $"You just placed {txbCoin.Text} coins bet {cbbTeam.Text} won {flags[Int32.Parse(match["M_IDTEAM1"].ToString())]} vs {flags[Int32.Parse(match["M_IDTEAM2"].ToString())]}";
+                    query = $"INSERT INTO LETTER (L_IDACCOUNT, L_DATE, L_MESSAGE) VALUES ({account["AC_ID"]}, '{DateTime.Now.ToString()}', '{message}')";
+                    command = new SqlCommand(query, connection);
+                    command.ExecuteNonQuery();
+
+                    using (MailMessage mail = new MailMessage())
+                    {
+                        mail.From = new MailAddress("20521907@gm.uit.edu.vn");
+                        mail.To.Add("truongthang2409@gmail.com");
+                        mail.Subject = "[Betting] ErS FIFPro";
+
+                        string htmlString = $"<html> <body> <p> {message} </p> </body> </html>";
+                        mail.Body = htmlString;
+                        mail.IsBodyHtml = true;
+
+                        using (SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587))
+                        {
+                            smtp.Credentials = new NetworkCredential("20521907@gm.uit.edu.vn", "TruongThang0979297634");
+                            smtp.EnableSsl = true;
+                            smtp.Send(mail);
+                        }
+                    }
 
                     connection.Close();
                 }

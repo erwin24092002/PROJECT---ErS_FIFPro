@@ -98,9 +98,10 @@
             // 
             // label8
             // 
+            this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label8.Font = new System.Drawing.Font("Century Schoolbook", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label8.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Black;
             this.label8.Location = new System.Drawing.Point(701, 79);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(80, 35);
@@ -110,9 +111,10 @@
             // 
             // label9
             // 
+            this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label9.Font = new System.Drawing.Font("Century Schoolbook", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label9.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Black;
             this.label9.Location = new System.Drawing.Point(701, 42);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(80, 35);
@@ -122,9 +124,10 @@
             // 
             // label7
             // 
+            this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label7.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label7.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Black;
             this.label7.Location = new System.Drawing.Point(421, 79);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(80, 35);
@@ -134,9 +137,10 @@
             // 
             // label6
             // 
+            this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label6.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label6.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(421, 43);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(80, 35);
@@ -146,9 +150,9 @@
             // 
             // lbCountry2
             // 
-            this.lbCountry2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.lbCountry2.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCountry2.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lbCountry2.BackColor = System.Drawing.Color.Transparent;
+            this.lbCountry2.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCountry2.ForeColor = System.Drawing.Color.Black;
             this.lbCountry2.Location = new System.Drawing.Point(910, 38);
             this.lbCountry2.Name = "lbCountry2";
             this.lbCountry2.Size = new System.Drawing.Size(179, 25);
@@ -159,7 +163,8 @@
             // ptbFlag2
             // 
             this.ptbFlag2.BackgroundImage = global::ErS_FIFPro.Flags.Argentina;
-            this.ptbFlag2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ptbFlag2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ptbFlag2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.ptbFlag2.Location = new System.Drawing.Point(939, 70);
             this.ptbFlag2.Name = "ptbFlag2";
             this.ptbFlag2.Size = new System.Drawing.Size(117, 72);
@@ -168,10 +173,10 @@
             // 
             // lbCountry1
             // 
-            this.lbCountry1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.lbCountry1.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCountry1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.lbCountry1.Location = new System.Drawing.Point(119, 38);
+            this.lbCountry1.BackColor = System.Drawing.Color.Transparent;
+            this.lbCountry1.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCountry1.ForeColor = System.Drawing.Color.Black;
+            this.lbCountry1.Location = new System.Drawing.Point(117, 38);
             this.lbCountry1.Name = "lbCountry1";
             this.lbCountry1.Size = new System.Drawing.Size(179, 25);
             this.lbCountry1.TabIndex = 76;
@@ -180,13 +185,13 @@
             // 
             // lbDate
             // 
-            this.lbDate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.lbDate.BackColor = System.Drawing.Color.CadetBlue;
             this.lbDate.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lbDate.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDate.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lbDate.Font = new System.Drawing.Font("Century Schoolbook", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDate.ForeColor = System.Drawing.Color.Black;
             this.lbDate.Location = new System.Drawing.Point(0, 0);
             this.lbDate.Name = "lbDate";
-            this.lbDate.Size = new System.Drawing.Size(1200, 35);
+            this.lbDate.Size = new System.Drawing.Size(1196, 30);
             this.lbDate.TabIndex = 75;
             this.lbDate.Text = "2023-1-11 22:00:00";
             this.lbDate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -194,7 +199,8 @@
             // ptbFlag1
             // 
             this.ptbFlag1.BackgroundImage = global::ErS_FIFPro.Flags.Argentina;
-            this.ptbFlag1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ptbFlag1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ptbFlag1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.ptbFlag1.Location = new System.Drawing.Point(149, 70);
             this.ptbFlag1.Name = "ptbFlag1";
             this.ptbFlag1.Size = new System.Drawing.Size(108, 72);
@@ -203,30 +209,32 @@
             // 
             // btnSaveChanges
             // 
+            this.btnSaveChanges.BackColor = System.Drawing.Color.DarkGoldenrod;
             this.btnSaveChanges.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSaveChanges.Font = new System.Drawing.Font("Century Schoolbook", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSaveChanges.Location = new System.Drawing.Point(500, 172);
+            this.btnSaveChanges.Location = new System.Drawing.Point(500, 168);
             this.btnSaveChanges.Name = "btnSaveChanges";
             this.btnSaveChanges.Size = new System.Drawing.Size(204, 33);
             this.btnSaveChanges.TabIndex = 87;
             this.btnSaveChanges.Text = "Save Changes";
-            this.btnSaveChanges.UseVisualStyleBackColor = true;
+            this.btnSaveChanges.UseVisualStyleBackColor = false;
             this.btnSaveChanges.Click += new System.EventHandler(this.btnSaveChanges_Click);
             // 
             // txbLink
             // 
-            this.txbLink.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.txbLink.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txbLink.Font = new System.Drawing.Font("Century Schoolbook", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbLink.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txbLink.ForeColor = System.Drawing.Color.Black;
             this.txbLink.Location = new System.Drawing.Point(356, 141);
             this.txbLink.Name = "txbLink";
             this.txbLink.Size = new System.Drawing.Size(491, 23);
             this.txbLink.TabIndex = 88;
             this.txbLink.Text = "1";
+            this.txbLink.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label1
             // 
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.label1.BackColor = System.Drawing.Color.Brown;
             this.label1.Font = new System.Drawing.Font("Century Schoolbook", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Gainsboro;
             this.label1.Location = new System.Drawing.Point(357, 119);
@@ -240,7 +248,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.BackColor = System.Drawing.Color.Gainsboro;
+            this.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txbLink);
             this.Controls.Add(this.btnSaveChanges);
@@ -259,7 +268,7 @@
             this.Controls.Add(this.ptbFlag1);
             this.Margin = new System.Windows.Forms.Padding(40, 20, 3, 10);
             this.Name = "Config";
-            this.Size = new System.Drawing.Size(1200, 210);
+            this.Size = new System.Drawing.Size(1196, 206);
             ((System.ComponentModel.ISupportInitialize)(this.ptbFlag2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbFlag1)).EndInit();
             this.ResumeLayout(false);

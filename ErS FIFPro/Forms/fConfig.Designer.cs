@@ -39,9 +39,9 @@
             this.pControl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.pControl.Controls.Add(this.btnReset);
             this.pControl.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pControl.Location = new System.Drawing.Point(0, 652);
+            this.pControl.Location = new System.Drawing.Point(0, 661);
             this.pControl.Name = "pControl";
-            this.pControl.Size = new System.Drawing.Size(1284, 59);
+            this.pControl.Size = new System.Drawing.Size(1284, 50);
             this.pControl.TabIndex = 0;
             // 
             // btnReset
@@ -50,13 +50,13 @@
             this.btnReset.FlatAppearance.BorderSize = 0;
             this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReset.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReset.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnReset.ForeColor = System.Drawing.Color.Firebrick;
             this.btnReset.IconChar = FontAwesome.Sharp.IconChar.WindowRestore;
-            this.btnReset.IconColor = System.Drawing.Color.Gainsboro;
+            this.btnReset.IconColor = System.Drawing.Color.Firebrick;
             this.btnReset.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnReset.IconSize = 32;
             this.btnReset.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReset.Location = new System.Drawing.Point(12, 14);
+            this.btnReset.Location = new System.Drawing.Point(10, 8);
             this.btnReset.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnReset.Name = "btnReset";
             this.btnReset.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
@@ -73,7 +73,7 @@
             this.flpConfig.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flpConfig.Location = new System.Drawing.Point(0, 0);
             this.flpConfig.Name = "flpConfig";
-            this.flpConfig.Size = new System.Drawing.Size(1284, 652);
+            this.flpConfig.Size = new System.Drawing.Size(1284, 661);
             this.flpConfig.TabIndex = 1;
             // 
             // fConfig

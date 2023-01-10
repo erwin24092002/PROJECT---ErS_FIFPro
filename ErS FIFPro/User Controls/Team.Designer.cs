@@ -45,7 +45,7 @@
             // 
             this.lbWin.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lbWin.Font = new System.Drawing.Font("Century Schoolbook", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbWin.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lbWin.ForeColor = System.Drawing.Color.Green;
             this.lbWin.Location = new System.Drawing.Point(392, 75);
             this.lbWin.Name = "lbWin";
             this.lbWin.Size = new System.Drawing.Size(140, 35);
@@ -57,7 +57,7 @@
             // 
             this.ptbFlag.BackgroundImage = global::ErS_FIFPro.Flags.Argentina;
             this.ptbFlag.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ptbFlag.Location = new System.Drawing.Point(27, 30);
+            this.ptbFlag.Location = new System.Drawing.Point(27, 32);
             this.ptbFlag.Name = "ptbFlag";
             this.ptbFlag.Size = new System.Drawing.Size(177, 100);
             this.ptbFlag.TabIndex = 84;
@@ -65,13 +65,13 @@
             // 
             // lbTeam
             // 
-            this.lbTeam.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.lbTeam.BackColor = System.Drawing.Color.DarkCyan;
             this.lbTeam.Dock = System.Windows.Forms.DockStyle.Top;
             this.lbTeam.Font = new System.Drawing.Font("Century Schoolbook", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTeam.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lbTeam.ForeColor = System.Drawing.Color.Black;
             this.lbTeam.Location = new System.Drawing.Point(0, 0);
             this.lbTeam.Name = "lbTeam";
-            this.lbTeam.Size = new System.Drawing.Size(1200, 27);
+            this.lbTeam.Size = new System.Drawing.Size(1196, 30);
             this.lbTeam.TabIndex = 110;
             this.lbTeam.Text = "Argentina";
             this.lbTeam.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -79,7 +79,7 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Century Schoolbook", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label1.ForeColor = System.Drawing.Color.Green;
             this.label1.Location = new System.Drawing.Point(392, 40);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(140, 35);
@@ -90,7 +90,7 @@
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Century Schoolbook", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label2.ForeColor = System.Drawing.Color.DarkRed;
             this.label2.Location = new System.Drawing.Point(577, 40);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(140, 35);
@@ -102,7 +102,7 @@
             // 
             this.lbLose.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lbLose.Font = new System.Drawing.Font("Century Schoolbook", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbLose.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lbLose.ForeColor = System.Drawing.Color.DarkRed;
             this.lbLose.Location = new System.Drawing.Point(577, 75);
             this.lbLose.Name = "lbLose";
             this.lbLose.Size = new System.Drawing.Size(140, 35);
@@ -113,7 +113,7 @@
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("Century Schoolbook", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(764, 40);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(140, 35);
@@ -125,7 +125,7 @@
             // 
             this.lbDraw.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lbDraw.Font = new System.Drawing.Font("Century Schoolbook", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDraw.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lbDraw.ForeColor = System.Drawing.Color.Black;
             this.lbDraw.Location = new System.Drawing.Point(764, 75);
             this.lbDraw.Name = "lbDraw";
             this.lbDraw.Size = new System.Drawing.Size(140, 35);
@@ -136,7 +136,7 @@
             // label7
             // 
             this.label7.Font = new System.Drawing.Font("Century Schoolbook", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label7.ForeColor = System.Drawing.Color.Goldenrod;
             this.label7.Location = new System.Drawing.Point(953, 40);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(140, 35);
@@ -148,7 +148,7 @@
             // 
             this.lbScore.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lbScore.Font = new System.Drawing.Font("Century Schoolbook", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbScore.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lbScore.ForeColor = System.Drawing.Color.Goldenrod;
             this.lbScore.Location = new System.Drawing.Point(953, 75);
             this.lbScore.Name = "lbScore";
             this.lbScore.Size = new System.Drawing.Size(140, 35);
@@ -160,7 +160,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.BackColor = System.Drawing.Color.Gainsboro;
+            this.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.Controls.Add(this.lbScore);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.lbDraw);
@@ -173,7 +174,7 @@
             this.Controls.Add(this.ptbFlag);
             this.Margin = new System.Windows.Forms.Padding(40, 20, 3, 10);
             this.Name = "Team";
-            this.Size = new System.Drawing.Size(1200, 139);
+            this.Size = new System.Drawing.Size(1196, 135);
             ((System.ComponentModel.ISupportInitialize)(this.ptbFlag)).EndInit();
             this.ResumeLayout(false);
 

@@ -35,26 +35,26 @@
             // 
             // lbMessage
             // 
-            this.lbMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMessage.Location = new System.Drawing.Point(7, 32);
+            this.lbMessage.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMessage.Location = new System.Drawing.Point(7, 34);
             this.lbMessage.Name = "lbMessage";
-            this.lbMessage.Size = new System.Drawing.Size(1186, 40);
+            this.lbMessage.Size = new System.Drawing.Size(1186, 30);
             this.lbMessage.TabIndex = 5;
             this.lbMessage.Text = "Trận đấu này thật hay";
             // 
             // lbDate
             // 
-            this.lbDate.Font = new System.Drawing.Font("Century Schoolbook", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDate.Location = new System.Drawing.Point(996, 6);
+            this.lbDate.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDate.Location = new System.Drawing.Point(127, 4);
             this.lbDate.Name = "lbDate";
-            this.lbDate.Size = new System.Drawing.Size(197, 23);
+            this.lbDate.Size = new System.Drawing.Size(230, 23);
             this.lbDate.TabIndex = 4;
             this.lbDate.Text = "2023-1-1";
-            this.lbDate.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lbDate.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             // 
             // lbName
             // 
-            this.lbName.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbName.Location = new System.Drawing.Point(3, 6);
             this.lbName.Name = "lbName";
             this.lbName.Size = new System.Drawing.Size(118, 23);
@@ -66,11 +66,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Gainsboro;
+            this.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.Controls.Add(this.lbMessage);
             this.Controls.Add(this.lbDate);
             this.Controls.Add(this.lbName);
+            this.Margin = new System.Windows.Forms.Padding(40, 20, 3, 10);
             this.Name = "Letter";
-            this.Size = new System.Drawing.Size(1200, 80);
+            this.Size = new System.Drawing.Size(1196, 66);
             this.ResumeLayout(false);
 
         }

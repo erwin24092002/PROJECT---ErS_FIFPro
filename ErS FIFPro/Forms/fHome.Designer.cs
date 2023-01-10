@@ -336,9 +336,9 @@
             this.icptbHome.IconColor = System.Drawing.SystemColors.ControlText;
             this.icptbHome.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.icptbHome.IconSize = 44;
-            this.icptbHome.Location = new System.Drawing.Point(21, 3);
+            this.icptbHome.Location = new System.Drawing.Point(24, 3);
             this.icptbHome.Name = "icptbHome";
-            this.icptbHome.Size = new System.Drawing.Size(161, 44);
+            this.icptbHome.Size = new System.Drawing.Size(151, 44);
             this.icptbHome.TabIndex = 0;
             this.icptbHome.TabStop = false;
             this.icptbHome.Click += new System.EventHandler(this.btnHome_Click);
@@ -419,6 +419,7 @@
             // 
             this.ptbAccount.BackgroundImage = global::ErS_FIFPro.Accounts.Viewer;
             this.ptbAccount.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ptbAccount.ErrorImage = ((System.Drawing.Image)(resources.GetObject("ptbAccount.ErrorImage")));
             this.ptbAccount.InitialImage = global::ErS_FIFPro.Accounts.Viewer;
             this.ptbAccount.Location = new System.Drawing.Point(6, 59);
             this.ptbAccount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);

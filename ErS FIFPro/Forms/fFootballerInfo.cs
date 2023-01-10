@@ -32,6 +32,8 @@ namespace ErS_FIFPro.Forms
             string[] flags = { "Argentina", "France", "Brazil", "Qatar", "Japan", "South_Korea", "Germany", "Croatia" };
             lbFootballerCountry.Text = "Country: " + flags[Int32.Parse(Footballer["FB_IDTEAM"].ToString()) - 1];
             lbFootballerBirthday.Text = "Birthday: " + Footballer["FB_BIRTHDAY"].ToString().Split(' ')[0];
+            MyColor mycolor = new MyColor();
+            lbFootballerName.BackColor = mycolor.colors[Int32.Parse(Footballer["FB_IDTEAM"].ToString())];
         }
 
         private void btnExit_Click(object sender, EventArgs e)

@@ -43,6 +43,7 @@
             // flpTeam
             // 
             this.flpTeam.AutoScroll = true;
+            this.flpTeam.BackColor = System.Drawing.SystemColors.Control;
             this.flpTeam.Dock = System.Windows.Forms.DockStyle.Top;
             this.flpTeam.Location = new System.Drawing.Point(0, 94);
             this.flpTeam.Name = "flpTeam";
@@ -52,6 +53,7 @@
             // pSearch
             // 
             this.pSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.pSearch.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pSearch.Controls.Add(this.groupBox1);
             this.pSearch.Controls.Add(this.gbOrder);
             this.pSearch.Dock = System.Windows.Forms.DockStyle.Top;
@@ -64,7 +66,7 @@
             // 
             this.groupBox1.Controls.Add(this.txbSearch);
             this.groupBox1.Font = new System.Drawing.Font("Century Schoolbook", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.ForeColor = System.Drawing.Color.Gainsboro;
+            this.groupBox1.ForeColor = System.Drawing.Color.MediumOrchid;
             this.groupBox1.Location = new System.Drawing.Point(221, 17);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(560, 62);
@@ -87,7 +89,7 @@
             // 
             this.gbOrder.Controls.Add(this.cbbOrder);
             this.gbOrder.Font = new System.Drawing.Font("Century Schoolbook", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbOrder.ForeColor = System.Drawing.Color.Gainsboro;
+            this.gbOrder.ForeColor = System.Drawing.Color.MediumOrchid;
             this.gbOrder.Location = new System.Drawing.Point(812, 17);
             this.gbOrder.Name = "gbOrder";
             this.gbOrder.Size = new System.Drawing.Size(210, 62);

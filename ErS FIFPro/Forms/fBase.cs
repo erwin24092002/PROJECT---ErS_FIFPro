@@ -96,6 +96,7 @@ namespace ErS_FIFPro.Forms
                 item.Location = new Point(100, 100);
                 item.Visible = false;
                 pBase.Controls.Add(item);
+                item.BringToFront();
             }
         }
         private void cbCheck_Changed(object sender, EventArgs e)

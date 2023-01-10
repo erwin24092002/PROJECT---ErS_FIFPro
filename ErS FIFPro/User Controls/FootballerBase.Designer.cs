@@ -39,11 +39,11 @@
             // 
             this.lbFootballerName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.lbFootballerName.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lbFootballerName.Font = new System.Drawing.Font("Century Schoolbook", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbFootballerName.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbFootballerName.ForeColor = System.Drawing.Color.Gainsboro;
             this.lbFootballerName.Location = new System.Drawing.Point(0, 68);
             this.lbFootballerName.Name = "lbFootballerName";
-            this.lbFootballerName.Size = new System.Drawing.Size(120, 20);
+            this.lbFootballerName.Size = new System.Drawing.Size(116, 20);
             this.lbFootballerName.TabIndex = 21;
             this.lbFootballerName.Text = "Lionel Messi";
             this.lbFootballerName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -55,14 +55,15 @@
             this.ptbFootballer.Dock = System.Windows.Forms.DockStyle.Top;
             this.ptbFootballer.Location = new System.Drawing.Point(0, 0);
             this.ptbFootballer.Name = "ptbFootballer";
-            this.ptbFootballer.Size = new System.Drawing.Size(120, 68);
+            this.ptbFootballer.Size = new System.Drawing.Size(116, 68);
             this.ptbFootballer.TabIndex = 20;
             this.ptbFootballer.TabStop = false;
             // 
             // lbRole
             // 
-            this.lbRole.BackColor = System.Drawing.Color.Tomato;
-            this.lbRole.Font = new System.Drawing.Font("Century Schoolbook", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbRole.BackColor = System.Drawing.Color.Gold;
+            this.lbRole.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lbRole.Font = new System.Drawing.Font("Segoe UI", 6.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbRole.ForeColor = System.Drawing.Color.Black;
             this.lbRole.Location = new System.Drawing.Point(20, 88);
             this.lbRole.Name = "lbRole";
@@ -88,13 +89,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkGray;
+            this.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.Controls.Add(this.lbRole);
             this.Controls.Add(this.lbIndex);
             this.Controls.Add(this.lbFootballerName);
             this.Controls.Add(this.ptbFootballer);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Name = "FootballerBase";
-            this.Size = new System.Drawing.Size(120, 140);
+            this.Size = new System.Drawing.Size(116, 136);
             ((System.ComponentModel.ISupportInitialize)(this.ptbFootballer)).EndInit();
             this.ResumeLayout(false);
 

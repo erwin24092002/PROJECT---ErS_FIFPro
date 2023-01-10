@@ -102,12 +102,19 @@ namespace ErS_FIFPro
             {
                 connection.Open();
 
-                string query = "INSERT INTO ACCOUNT (AC_NAME, AC_PASSWORD) VALUES ('" + name + "', '" + password + "')";
+                string email = txbEmail.Text;
+                string query = $"INSERT INTO ACCOUNT (AC_NAME, AC_PASSWORD, AC_EMAIL) VALUES ('{name}', '{password}', '{email}')";
                 SqlCommand command = new SqlCommand(query, connection);
                 command.ExecuteNonQuery();
 
                 connection.Close();
             }
+        }
+
+        private void btnForgetPassword_Click(object sender, EventArgs e)
+        {
+            fForgetPassword f = new fForgetPassword();
+            f.ShowDialog();
         }
     }
 }

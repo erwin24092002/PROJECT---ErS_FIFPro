@@ -43,13 +43,16 @@
             this.lbLogin = new System.Windows.Forms.Label();
             this.lbPassword = new System.Windows.Forms.Label();
             this.lbUserName = new System.Windows.Forms.Label();
+            this.txbEmail = new System.Windows.Forms.TextBox();
+            this.lbEmail = new System.Windows.Forms.Label();
+            this.btnForgetPassword = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnRegister
             // 
             this.btnRegister.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRegister.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegister.Location = new System.Drawing.Point(272, 376);
+            this.btnRegister.Location = new System.Drawing.Point(272, 408);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(121, 33);
             this.btnRegister.TabIndex = 29;
@@ -61,9 +64,9 @@
             // 
             this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLogin.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogin.Location = new System.Drawing.Point(272, 141);
+            this.btnLogin.Location = new System.Drawing.Point(186, 141);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(121, 33);
+            this.btnLogin.Size = new System.Drawing.Size(146, 33);
             this.btnLogin.TabIndex = 28;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = true;
@@ -84,7 +87,7 @@
             // 
             this.label4.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label4.Location = new System.Drawing.Point(9, 322);
+            this.label4.Location = new System.Drawing.Point(9, 323);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(172, 36);
             this.label4.TabIndex = 26;
@@ -201,12 +204,48 @@
             this.lbUserName.Text = "UserName:";
             this.lbUserName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // txbEmail
+            // 
+            this.txbEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.txbEmail.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbEmail.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txbEmail.Location = new System.Drawing.Point(187, 364);
+            this.txbEmail.Name = "txbEmail";
+            this.txbEmail.Size = new System.Drawing.Size(456, 30);
+            this.txbEmail.TabIndex = 31;
+            // 
+            // lbEmail
+            // 
+            this.lbEmail.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbEmail.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lbEmail.Location = new System.Drawing.Point(9, 362);
+            this.lbEmail.Name = "lbEmail";
+            this.lbEmail.Size = new System.Drawing.Size(172, 36);
+            this.lbEmail.TabIndex = 30;
+            this.lbEmail.Text = "Email:";
+            this.lbEmail.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // btnForgetPassword
+            // 
+            this.btnForgetPassword.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnForgetPassword.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnForgetPassword.Location = new System.Drawing.Point(348, 141);
+            this.btnForgetPassword.Name = "btnForgetPassword";
+            this.btnForgetPassword.Size = new System.Drawing.Size(146, 33);
+            this.btnForgetPassword.TabIndex = 32;
+            this.btnForgetPassword.Text = "Foget Password";
+            this.btnForgetPassword.UseVisualStyleBackColor = true;
+            this.btnForgetPassword.Click += new System.EventHandler(this.btnForgetPassword_Click);
+            // 
             // fLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.ClientSize = new System.Drawing.Size(655, 420);
+            this.ClientSize = new System.Drawing.Size(655, 452);
+            this.Controls.Add(this.btnForgetPassword);
+            this.Controls.Add(this.txbEmail);
+            this.Controls.Add(this.lbEmail);
             this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txbConfPassword);
@@ -246,6 +285,9 @@
         private System.Windows.Forms.Label lbLogin;
         private System.Windows.Forms.Label lbPassword;
         private System.Windows.Forms.Label lbUserName;
+        private System.Windows.Forms.TextBox txbEmail;
+        private System.Windows.Forms.Label lbEmail;
+        private System.Windows.Forms.Button btnForgetPassword;
     }
 }
 

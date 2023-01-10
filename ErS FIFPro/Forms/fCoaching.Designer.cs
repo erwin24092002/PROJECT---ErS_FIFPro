@@ -35,6 +35,7 @@
             // flpCoachingMatch
             // 
             this.flpCoachingMatch.AutoScroll = true;
+            this.flpCoachingMatch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(80)))));
             this.flpCoachingMatch.Dock = System.Windows.Forms.DockStyle.Top;
             this.flpCoachingMatch.Location = new System.Drawing.Point(0, 0);
             this.flpCoachingMatch.Name = "flpCoachingMatch";

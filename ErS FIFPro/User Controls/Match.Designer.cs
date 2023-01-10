@@ -57,7 +57,7 @@
             this.lbBet.Font = new System.Drawing.Font("Century Schoolbook", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbBet.ForeColor = System.Drawing.Color.Goldenrod;
             this.lbBet.IconChar = FontAwesome.Sharp.IconChar.Coins;
-            this.lbBet.IconColor = System.Drawing.Color.Gold;
+            this.lbBet.IconColor = System.Drawing.Color.DarkOrange;
             this.lbBet.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.lbBet.IconSize = 18;
             this.lbBet.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;

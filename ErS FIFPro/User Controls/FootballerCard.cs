@@ -33,6 +33,9 @@ namespace ErS_FIFPro.User_Controls
             ResourceManager FlagImageManager = new ResourceManager("ErS_FIFPro.Flags", Assembly.GetExecutingAssembly());
             ptbFlag.BackgroundImage = (Image)FlagImageManager.GetObject(flags[Int32.Parse(Footballer["FB_IDTEAM"].ToString()) - 1]);
 
+            MyColor mycolors = new MyColor();
+            lbFootballerName.BackColor = mycolors.colors[Int32.Parse(Footballer["FB_IDTEAM"].ToString())];
+
             this.Click += FootballerCard_Click;
         }
 

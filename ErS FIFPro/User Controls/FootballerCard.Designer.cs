@@ -43,9 +43,9 @@
             // 
             // lbFootballerName
             // 
-            this.lbFootballerName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.lbFootballerName.Font = new System.Drawing.Font("Century Schoolbook", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbFootballerName.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lbFootballerName.BackColor = System.Drawing.Color.SteelBlue;
+            this.lbFootballerName.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbFootballerName.ForeColor = System.Drawing.Color.Black;
             this.lbFootballerName.Location = new System.Drawing.Point(0, 149);
             this.lbFootballerName.Name = "lbFootballerName";
             this.lbFootballerName.Size = new System.Drawing.Size(240, 36);
@@ -56,7 +56,7 @@
             // label3
             // 
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(2, 185);
             this.label3.Name = "label3";
@@ -68,7 +68,7 @@
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(83, 185);
             this.label1.Name = "label1";
@@ -80,7 +80,7 @@
             // label2
             // 
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(166, 185);
             this.label2.Name = "label2";
@@ -104,6 +104,7 @@
             // lbRole
             // 
             this.lbRole.BackColor = System.Drawing.Color.Tomato;
+            this.lbRole.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lbRole.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbRole.ForeColor = System.Drawing.Color.Black;
             this.lbRole.Location = new System.Drawing.Point(66, 208);
@@ -128,8 +129,9 @@
             // ptbFlag
             // 
             this.ptbFlag.BackgroundImage = global::ErS_FIFPro.Flags.Argentina;
-            this.ptbFlag.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ptbFlag.Location = new System.Drawing.Point(84, 248);
+            this.ptbFlag.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ptbFlag.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.ptbFlag.Location = new System.Drawing.Point(84, 245);
             this.ptbFlag.Name = "ptbFlag";
             this.ptbFlag.Size = new System.Drawing.Size(76, 44);
             this.ptbFlag.TabIndex = 1;
@@ -150,6 +152,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
+            this.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.Controls.Add(this.lbGoal);
             this.Controls.Add(this.lbRole);
             this.Controls.Add(this.lbIndex);
@@ -162,7 +165,7 @@
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Margin = new System.Windows.Forms.Padding(60, 10, 0, 30);
             this.Name = "FootballerCard";
-            this.Size = new System.Drawing.Size(240, 300);
+            this.Size = new System.Drawing.Size(236, 296);
             ((System.ComponentModel.ISupportInitialize)(this.ptbFlag)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbFootballer)).EndInit();
             this.ResumeLayout(false);

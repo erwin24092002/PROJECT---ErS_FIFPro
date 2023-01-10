@@ -42,19 +42,22 @@
             this.txbSearch = new System.Windows.Forms.TextBox();
             this.flpFootballerCards = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.pSearch.SuspendLayout();
             this.gbRole.SuspendLayout();
             this.gbOrder.SuspendLayout();
             this.gbCountry.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pSearch
             // 
             this.pSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.pSearch.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pSearch.Controls.Add(this.groupBox1);
             this.pSearch.Controls.Add(this.gbRole);
             this.pSearch.Controls.Add(this.gbOrder);
             this.pSearch.Controls.Add(this.gbCountry);
-            this.pSearch.Controls.Add(this.txbSearch);
             this.pSearch.Dock = System.Windows.Forms.DockStyle.Top;
             this.pSearch.Location = new System.Drawing.Point(0, 0);
             this.pSearch.Name = "pSearch";
@@ -69,7 +72,7 @@
             this.gbRole.Controls.Add(this.cbMidfielder);
             this.gbRole.Controls.Add(this.cbForward);
             this.gbRole.Font = new System.Drawing.Font("Century Schoolbook", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbRole.ForeColor = System.Drawing.Color.Gainsboro;
+            this.gbRole.ForeColor = System.Drawing.Color.MediumOrchid;
             this.gbRole.Location = new System.Drawing.Point(68, 53);
             this.gbRole.Name = "gbRole";
             this.gbRole.Size = new System.Drawing.Size(638, 62);
@@ -82,6 +85,7 @@
             this.cbTrainer.AutoSize = true;
             this.cbTrainer.Checked = true;
             this.cbTrainer.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbTrainer.ForeColor = System.Drawing.Color.Gainsboro;
             this.cbTrainer.Location = new System.Drawing.Point(543, 31);
             this.cbTrainer.Name = "cbTrainer";
             this.cbTrainer.Size = new System.Drawing.Size(89, 25);
@@ -95,6 +99,7 @@
             this.cbGoalkeeper.AutoSize = true;
             this.cbGoalkeeper.Checked = true;
             this.cbGoalkeeper.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbGoalkeeper.ForeColor = System.Drawing.Color.Gainsboro;
             this.cbGoalkeeper.Location = new System.Drawing.Point(401, 31);
             this.cbGoalkeeper.Name = "cbGoalkeeper";
             this.cbGoalkeeper.Size = new System.Drawing.Size(120, 25);
@@ -108,6 +113,7 @@
             this.cbDefender.AutoSize = true;
             this.cbDefender.Checked = true;
             this.cbDefender.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbDefender.ForeColor = System.Drawing.Color.Gainsboro;
             this.cbDefender.Location = new System.Drawing.Point(272, 31);
             this.cbDefender.Name = "cbDefender";
             this.cbDefender.Size = new System.Drawing.Size(103, 25);
@@ -121,6 +127,7 @@
             this.cbMidfielder.AutoSize = true;
             this.cbMidfielder.Checked = true;
             this.cbMidfielder.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbMidfielder.ForeColor = System.Drawing.Color.Gainsboro;
             this.cbMidfielder.Location = new System.Drawing.Point(132, 31);
             this.cbMidfielder.Name = "cbMidfielder";
             this.cbMidfielder.Size = new System.Drawing.Size(112, 25);
@@ -134,6 +141,7 @@
             this.cbForward.AutoSize = true;
             this.cbForward.Checked = true;
             this.cbForward.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbForward.ForeColor = System.Drawing.Color.Gainsboro;
             this.cbForward.Location = new System.Drawing.Point(12, 31);
             this.cbForward.Name = "cbForward";
             this.cbForward.Size = new System.Drawing.Size(96, 25);
@@ -146,7 +154,7 @@
             // 
             this.gbOrder.Controls.Add(this.cbbOrder);
             this.gbOrder.Font = new System.Drawing.Font("Century Schoolbook", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbOrder.ForeColor = System.Drawing.Color.Gainsboro;
+            this.gbOrder.ForeColor = System.Drawing.Color.MediumOrchid;
             this.gbOrder.Location = new System.Drawing.Point(988, 53);
             this.gbOrder.Name = "gbOrder";
             this.gbOrder.Size = new System.Drawing.Size(216, 62);
@@ -174,7 +182,7 @@
             // 
             this.gbCountry.Controls.Add(this.cbbCountry);
             this.gbCountry.Font = new System.Drawing.Font("Century Schoolbook", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbCountry.ForeColor = System.Drawing.Color.Gainsboro;
+            this.gbCountry.ForeColor = System.Drawing.Color.MediumOrchid;
             this.gbCountry.Location = new System.Drawing.Point(737, 53);
             this.gbCountry.Name = "gbCountry";
             this.gbCountry.Size = new System.Drawing.Size(216, 62);
@@ -208,9 +216,9 @@
             this.txbSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.txbSearch.Font = new System.Drawing.Font("Century Schoolbook", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbSearch.ForeColor = System.Drawing.Color.Gainsboro;
-            this.txbSearch.Location = new System.Drawing.Point(360, 12);
+            this.txbSearch.Location = new System.Drawing.Point(19, 21);
             this.txbSearch.Name = "txbSearch";
-            this.txbSearch.Size = new System.Drawing.Size(522, 30);
+            this.txbSearch.Size = new System.Drawing.Size(524, 30);
             this.txbSearch.TabIndex = 20;
             this.txbSearch.TextChanged += new System.EventHandler(this.txbSearch_TextChanged);
             // 
@@ -232,6 +240,18 @@
             this.panel1.Size = new System.Drawing.Size(1284, 20);
             this.panel1.TabIndex = 2;
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.txbSearch);
+            this.groupBox1.Font = new System.Drawing.Font("Century Schoolbook", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.ForeColor = System.Drawing.Color.MediumOrchid;
+            this.groupBox1.Location = new System.Drawing.Point(360, -1);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(560, 57);
+            this.groupBox1.TabIndex = 25;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Search";
+            // 
             // fFootballer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -243,11 +263,12 @@
             this.Name = "fFootballer";
             this.Text = "fFootballer";
             this.pSearch.ResumeLayout(false);
-            this.pSearch.PerformLayout();
             this.gbRole.ResumeLayout(false);
             this.gbRole.PerformLayout();
             this.gbOrder.ResumeLayout(false);
             this.gbCountry.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -268,5 +289,6 @@
         private System.Windows.Forms.CheckBox cbGoalkeeper;
         private System.Windows.Forms.CheckBox cbTrainer;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

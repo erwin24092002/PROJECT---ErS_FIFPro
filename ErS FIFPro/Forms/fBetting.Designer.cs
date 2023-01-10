@@ -36,6 +36,7 @@
             // flpBet
             // 
             this.flpBet.AutoScroll = true;
+            this.flpBet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(80)))));
             this.flpBet.Dock = System.Windows.Forms.DockStyle.Top;
             this.flpBet.Location = new System.Drawing.Point(0, 0);
             this.flpBet.Name = "flpBet";

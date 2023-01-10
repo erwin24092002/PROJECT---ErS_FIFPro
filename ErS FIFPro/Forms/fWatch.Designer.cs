@@ -63,13 +63,13 @@
             this.btnComment.FlatAppearance.BorderSize = 0;
             this.btnComment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnComment.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnComment.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnComment.ForeColor = System.Drawing.Color.Orange;
             this.btnComment.IconChar = FontAwesome.Sharp.IconChar.Comment;
-            this.btnComment.IconColor = System.Drawing.Color.Gainsboro;
+            this.btnComment.IconColor = System.Drawing.Color.Orange;
             this.btnComment.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnComment.IconSize = 32;
-            this.btnComment.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnComment.Location = new System.Drawing.Point(217, 621);
+            this.btnComment.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnComment.Location = new System.Drawing.Point(220, 622);
             this.btnComment.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnComment.Name = "btnComment";
             this.btnComment.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
@@ -93,6 +93,7 @@
             // flpComment
             // 
             this.flpComment.AutoScroll = true;
+            this.flpComment.BackColor = System.Drawing.Color.Silver;
             this.flpComment.Dock = System.Windows.Forms.DockStyle.Top;
             this.flpComment.Location = new System.Drawing.Point(0, 0);
             this.flpComment.Name = "flpComment";
@@ -103,6 +104,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.ClientSize = new System.Drawing.Size(1584, 661);
             this.Controls.Add(this.pTool);
             this.Controls.Add(this.wbMatch);

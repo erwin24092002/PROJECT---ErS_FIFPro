@@ -18,6 +18,7 @@ CREATE TABLE ACCOUNT
 	AC_COIN INT NOT NULL DEFAULT 1000, 
 	AC_ROLE INT NOT NULL DEFAULT 0, 
 	AC_IDTEAM INT DEFAULT 0, 
+	AC_EMAIL VARCHAR(100),
 )
 GO
 
@@ -90,17 +91,17 @@ ALTER TABLE TMATCH NOCHECK CONSTRAINT ALL
 ALTER TABLE FMATCH NOCHECK CONSTRAINT ALL
 GO
 
-INSERT INTO ACCOUNT (AC_NAME, AC_PASSWORD, AC_COIN, AC_ROLE, AC_IDTEAM) VALUES 
-	('Argentina', 'Argentina', 1000, 1, 1), 
-	('France', 'France', 1000, 1, 2), 
-	('Brazil', 'Brazil', 1000, 1, 3), 
-	('Qatar', 'Qatar', 1000, 1, 4), 
-	('Japan', 'Japan', 1000, 1, 5), 
-	('South Korea', 'South Korea', 1000, 1, 6), 
-	('Germany', 'Germany', 1000, 1, 7), 
-	('Croatia', 'Croatia', 1000, 1, 8),
-	('Erwin', 'Erwin', 1000, 2, 0),
-	('Suong', 'Suong', 1000, 2, 0)
+INSERT INTO ACCOUNT (AC_NAME, AC_PASSWORD, AC_COIN, AC_ROLE, AC_IDTEAM, AC_EMAIL) VALUES 
+	('Argentina', 'Argentina', 1000, 1, 1, 'truongthang24091@gmail.com'), 
+	('France', 'France', 1000, 1, 2, 'truongthang24092@gmail.com'), 
+	('Brazil', 'Brazil', 1000, 1, 3, 'truongthang24093@gmail.com'), 
+	('Qatar', 'Qatar', 1000, 1, 4, 'truongthang24094@gmail.com'), 
+	('Japan', 'Japan', 1000, 1, 5, 'truongthang24095@gmail.com'), 
+	('South Korea', 'South Korea', 1000, 1, 6, 'truongthang24096@gmail.com'), 
+	('Germany', 'Germany', 1000, 1, 7, 'truongthang24097@gmail.com'), 
+	('Croatia', 'Croatia', 1000, 1, 8, 'truongthang24098@gmail.com'),
+	('Erwin', 'Erwin', 1000, 2, 0, 'truongthang24099@gmail.com'),
+	('Suong', 'Suong', 1000, 2, 0, 'truongthang240910@gmail.com')
 GO
 
 INSERT INTO TEAM (T_NAME, T_WIN, T_LOSE, T_DRAW) VALUES 
@@ -159,7 +160,7 @@ INSERT INTO FOOTBALLER (FB_NAME, FB_BIRTHDAY, FB_INDEX, FB_ROLE, FB_SCORE, FB_ID
 	('Rodrigo De Paul', '1995-9-24', 7, 'Midfielder', 0, 1),
 	('Marcos Acuña', '1995-9-24', 8, 'Midfielder', 0, 1), 
 	('Julián Álvarez', '1995-9-24', 9, 'Forward', 0, 1), 
-	('Lionel Messi', '1995-9-24', 10, 'Forward', 0, 1), 
+	('Lionel Messi', '1987-6-24', 10, 'Forward', 0, 1), 
 	('Ángel Di María', '1995-9-24', 11, 'Forward', 0, 1), 
 	('Gerónimo Rulli', '1995-9-24', 12, 'Goalkeeper', 0, 1), 
 	('Cristian Romero', '1995-9-24', 13, 'Defender', 0, 1), 
