@@ -22,6 +22,7 @@ namespace ErS_FIFPro.Forms
         private MyColor myColors = new MyColor();
         private Form currentChildForm;
         private DataRow account;
+        private int sliderNumber = 1;
 
         public fHome(DataRow acc)
         {
@@ -57,6 +58,21 @@ namespace ErS_FIFPro.Forms
                 lbAccountRole.Text = "Admin";
                 this.btnCoaching.Enabled = false;
             }
+        }
+        private void Slider()
+        {
+            if (sliderNumber == 7)
+            {
+                sliderNumber = 1;
+            }
+            ResourceManager SliderImageManager = new ResourceManager("ErS_FIFPro.Sliders", Assembly.GetExecutingAssembly());
+            ptbSlider.BackgroundImage = (Image)SliderImageManager.GetObject(sliderNumber.ToString());
+            sliderNumber++;
+        }
+
+        private void tSlider_Tick(object sender, EventArgs e)
+        {
+            Slider();
         }
         private void btnExit_Click(object sender, EventArgs e)
         {

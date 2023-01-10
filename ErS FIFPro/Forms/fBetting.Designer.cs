@@ -29,22 +29,33 @@
         private void InitializeComponent()
         {
             this.flpBet = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // flpBet
             // 
             this.flpBet.AutoScroll = true;
-            this.flpBet.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flpBet.Dock = System.Windows.Forms.DockStyle.Top;
             this.flpBet.Location = new System.Drawing.Point(0, 0);
             this.flpBet.Name = "flpBet";
-            this.flpBet.Size = new System.Drawing.Size(1284, 711);
+            this.flpBet.Size = new System.Drawing.Size(1284, 691);
             this.flpBet.TabIndex = 0;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 691);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1284, 20);
+            this.panel1.TabIndex = 3;
             // 
             // fBetting
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1284, 711);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.flpBet);
             this.Name = "fBetting";
             this.Text = "fBetting";
@@ -55,5 +66,6 @@
         #endregion
 
         private System.Windows.Forms.FlowLayoutPanel flpBet;
+        private System.Windows.Forms.Panel panel1;
     }
 }

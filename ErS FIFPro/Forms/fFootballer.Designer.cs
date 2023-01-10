@@ -41,6 +41,7 @@
             this.cbbCountry = new System.Windows.Forms.ComboBox();
             this.txbSearch = new System.Windows.Forms.TextBox();
             this.flpFootballerCards = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.pSearch.SuspendLayout();
             this.gbRole.SuspendLayout();
             this.gbOrder.SuspendLayout();
@@ -216,17 +217,27 @@
             // flpFootballerCards
             // 
             this.flpFootballerCards.AutoScroll = true;
-            this.flpFootballerCards.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flpFootballerCards.Dock = System.Windows.Forms.DockStyle.Top;
             this.flpFootballerCards.Location = new System.Drawing.Point(0, 127);
             this.flpFootballerCards.Name = "flpFootballerCards";
-            this.flpFootballerCards.Size = new System.Drawing.Size(1284, 584);
+            this.flpFootballerCards.Size = new System.Drawing.Size(1284, 564);
             this.flpFootballerCards.TabIndex = 1;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 691);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1284, 20);
+            this.panel1.TabIndex = 2;
             // 
             // fFootballer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1284, 711);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.flpFootballerCards);
             this.Controls.Add(this.pSearch);
             this.Name = "fFootballer";
@@ -256,5 +267,6 @@
         private System.Windows.Forms.CheckBox cbDefender;
         private System.Windows.Forms.CheckBox cbGoalkeeper;
         private System.Windows.Forms.CheckBox cbTrainer;
+        private System.Windows.Forms.Panel panel1;
     }
 }

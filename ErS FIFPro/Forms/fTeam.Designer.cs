@@ -34,6 +34,7 @@
             this.txbSearch = new System.Windows.Forms.TextBox();
             this.gbOrder = new System.Windows.Forms.GroupBox();
             this.cbbOrder = new System.Windows.Forms.ComboBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.pSearch.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.gbOrder.SuspendLayout();
@@ -42,10 +43,10 @@
             // flpTeam
             // 
             this.flpTeam.AutoScroll = true;
-            this.flpTeam.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flpTeam.Dock = System.Windows.Forms.DockStyle.Top;
             this.flpTeam.Location = new System.Drawing.Point(0, 94);
             this.flpTeam.Name = "flpTeam";
-            this.flpTeam.Size = new System.Drawing.Size(1284, 617);
+            this.flpTeam.Size = new System.Drawing.Size(1284, 597);
             this.flpTeam.TabIndex = 3;
             // 
             // pSearch
@@ -110,11 +111,21 @@
             this.cbbOrder.Text = "A-Z";
             this.cbbOrder.TextChanged += new System.EventHandler(this.cbbOrder_TextChanged);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 691);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1284, 20);
+            this.panel1.TabIndex = 4;
+            // 
             // fTeam
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1284, 711);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.flpTeam);
             this.Controls.Add(this.pSearch);
             this.Name = "fTeam";
@@ -135,5 +146,6 @@
         private System.Windows.Forms.ComboBox cbbOrder;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox txbSearch;
+        private System.Windows.Forms.Panel panel1;
     }
 }
