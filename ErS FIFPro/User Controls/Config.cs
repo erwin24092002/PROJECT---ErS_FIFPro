@@ -172,7 +172,7 @@ namespace ErS_FIFPro.User_Controls
 
                             mail.From = new MailAddress("20521907@gm.uit.edu.vn");
                             mail.To.Add("truongthang2409@gmail.com");
-                            mail.Subject = "[Betting Result] ErS FIFPro";
+                            mail.Subject = "[Announcement] ErS FIFPro";
                             string htmlString = $@"<html> <body> <p> {message} </p> </body> </html>";
                             mail.Body = htmlString;
                             mail.IsBodyHtml = true;

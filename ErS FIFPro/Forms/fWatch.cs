@@ -10,6 +10,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Media.TextFormatting;
+using System.Speech.Recognition;
+using System.Speech.Synthesis;
 
 namespace ErS_FIFPro.Forms
 {
@@ -17,6 +19,8 @@ namespace ErS_FIFPro.Forms
     {
         private DataRow match;
         private DataRow account;
+        private bool record = false;
+        private SpeechRecognitionEngine _recognizer = null;
         public fWatch(DataRow match, DataRow account)
         {
             InitializeComponent();
@@ -74,6 +78,75 @@ namespace ErS_FIFPro.Forms
                 File.WriteAllLines(filePath, lines);
                 rtbMessage.Text = "";
             }
+        }
+
+        private void _onSpeechRecognized(object sender, SpeechRecognizedEventArgs e)
+        {
+            if (e.Result.Text != "")
+                rtbMessage.Text += (" " + e.Result.Text);
+        }
+        private void _onSpeechRejected(object sender, SpeechRecognitionRejectedEventArgs e)
+        {
+            foreach (RecognizedPhrase r in e.Result.Alternates)
+                continue;
+        }
+
+        public void recognizer_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
+        {
+            rtbMessage.Text += e.Result.Text.ToLower();
+        }
+
+        private void btnVoice_Click(object sender, EventArgs e)
+        {
+            record = !record;
+            if (!record)
+            {
+                btnVoice.ForeColor = Color.Orange;
+                btnVoice.IconColor = Color.Orange;
+
+                _recognizer = null;
+            }
+            else
+            {
+                btnVoice.ForeColor = Color.Red;
+                btnVoice.IconColor = Color.Red;
+
+                _recognizer = new SpeechRecognitionEngine(new System.Globalization.CultureInfo("en_US"));
+                _recognizer.SpeechRecognized += _onSpeechRecognized;
+                _recognizer.SpeechRecognitionRejected += _onSpeechRejected;
+                _recognizer.SetInputToDefaultAudioDevice();
+                _recognizer.RequestRecognizerUpdate();
+                _recognizer.LoadGrammar(new DictationGrammar());
+                _recognizer.RecognizeAsync(RecognizeMode.Multiple);
+            }
+        }
+
+        
+        private void btnVoice_MouseDown(object sender, MouseEventArgs e)
+        {
+            /*btnVoice.ForeColor = Color.Red;
+            btnVoice.IconColor = Color.Red;*/
+
+            /*_recognizer = new SpeechRecognitionEngine(new System.Globalization.CultureInfo("en_VI"));
+            _recognizer.SpeechRecognized += _onSpeechRecognized;
+            _recognizer.SpeechRecognitionRejected += _onSpeechRejected;
+            _recognizer.SetInputToDefaultAudioDevice();
+            _recognizer.RequestRecognizerUpdate();
+            _recognizer.LoadGrammar(new DictationGrammar());
+            _recognizer.RecognizeAsync(RecognizeMode.Multiple);*/
+
+            /*SpeechRecognitionEngine reg = new SpeechRecognitionEngine(new System.Globalization.CultureInfo("en_VI"));
+            reg.LoadGrammar(new DictationGrammar());
+
+            reg.SpeechRecognized += new EventHandler<SpeechRecognizedEventArgs>(recognizer_SpeechRecognized);
+            reg.SetInputToDefaultAudioDevice();
+            reg.RecognizeAsync(RecognizeMode.Single);*/
+        }
+
+        private void btnVoice_MouseUp(object sender, MouseEventArgs e)
+        {
+            /*btnVoice.ForeColor = Color.Orange;
+            btnVoice.IconColor = Color.Orange;*/
         }
     }
 }

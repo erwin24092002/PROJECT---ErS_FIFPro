@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fWatch));
             this.wbMatch = new System.Windows.Forms.WebBrowser();
             this.pTool = new System.Windows.Forms.Panel();
+            this.btnVoice = new FontAwesome.Sharp.IconButton();
             this.btnComment = new FontAwesome.Sharp.IconButton();
             this.rtbMessage = new System.Windows.Forms.RichTextBox();
             this.flpComment = new System.Windows.Forms.FlowLayoutPanel();
@@ -48,6 +49,7 @@
             // 
             // pTool
             // 
+            this.pTool.Controls.Add(this.btnVoice);
             this.pTool.Controls.Add(this.btnComment);
             this.pTool.Controls.Add(this.rtbMessage);
             this.pTool.Controls.Add(this.flpComment);
@@ -56,6 +58,31 @@
             this.pTool.Name = "pTool";
             this.pTool.Size = new System.Drawing.Size(384, 661);
             this.pTool.TabIndex = 1;
+            // 
+            // btnVoice
+            // 
+            this.btnVoice.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnVoice.FlatAppearance.BorderSize = 0;
+            this.btnVoice.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVoice.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVoice.ForeColor = System.Drawing.Color.Orange;
+            this.btnVoice.IconChar = FontAwesome.Sharp.IconChar.Voicemail;
+            this.btnVoice.IconColor = System.Drawing.Color.Orange;
+            this.btnVoice.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnVoice.IconSize = 32;
+            this.btnVoice.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnVoice.Location = new System.Drawing.Point(6, 622);
+            this.btnVoice.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnVoice.Name = "btnVoice";
+            this.btnVoice.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
+            this.btnVoice.Size = new System.Drawing.Size(132, 34);
+            this.btnVoice.TabIndex = 4;
+            this.btnVoice.Text = "Voice";
+            this.btnVoice.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnVoice.UseVisualStyleBackColor = true;
+            this.btnVoice.Click += new System.EventHandler(this.btnVoice_Click);
+            this.btnVoice.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnVoice_MouseDown);
+            this.btnVoice.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnVoice_MouseUp);
             // 
             // btnComment
             // 
@@ -69,7 +96,7 @@
             this.btnComment.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnComment.IconSize = 32;
             this.btnComment.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnComment.Location = new System.Drawing.Point(220, 622);
+            this.btnComment.Location = new System.Drawing.Point(221, 622);
             this.btnComment.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnComment.Name = "btnComment";
             this.btnComment.Padding = new System.Windows.Forms.Padding(11, 0, 20, 0);
@@ -124,5 +151,6 @@
         private System.Windows.Forms.FlowLayoutPanel flpComment;
         private System.Windows.Forms.RichTextBox rtbMessage;
         private FontAwesome.Sharp.IconButton btnComment;
+        private FontAwesome.Sharp.IconButton btnVoice;
     }
 }

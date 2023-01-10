@@ -84,7 +84,7 @@ namespace ErS_FIFPro.Forms
                     {
                         mail.From = new MailAddress("20521907@gm.uit.edu.vn");
                         mail.To.Add("truongthang2409@gmail.com");
-                        mail.Subject = "[Betting] ErS FIFPro";
+                        mail.Subject = "[Announcement] ErS FIFPro";
 
                         string htmlString = $"<html> <body> <p> {message} </p> </body> </html>";
                         mail.Body = htmlString;

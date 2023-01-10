@@ -48,7 +48,7 @@ namespace ErS_FIFPro.Forms
 
                     mail.From = new MailAddress("20521907@gm.uit.edu.vn");
                     mail.To.Add("truongthang2409@gmail.com");
-                    mail.Subject = "[Forget Password] ErS FIFPro";
+                    mail.Subject = "[Announcement] ErS FIFPro";
 
                     string message = $"Account: {account["AC_NAME"]}, Password: {account["AC_PASSWORD"]}";
                     string htmlString = $"<html> <body> <p> {message} </p> </body> </html>";
