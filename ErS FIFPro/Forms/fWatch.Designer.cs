@@ -120,7 +120,7 @@
             // flpComment
             // 
             this.flpComment.AutoScroll = true;
-            this.flpComment.BackColor = System.Drawing.Color.Silver;
+            this.flpComment.BackColor = System.Drawing.Color.DarkGray;
             this.flpComment.Dock = System.Windows.Forms.DockStyle.Top;
             this.flpComment.Location = new System.Drawing.Point(0, 0);
             this.flpComment.Name = "flpComment";
