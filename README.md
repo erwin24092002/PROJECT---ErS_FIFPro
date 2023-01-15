@@ -88,7 +88,7 @@ Phần mềm có tổng cộng 20 chức năng, bao gồm:
   <img src="https://github.com/erwin24092002/PROJECT---ErS_FIFPro/blob/master/Images/coaching.png" width="900"/>
 </p>
 
-## Điều chỉnh, thay cầu thủ trong đội hình đội bóng do người dùng quản lí
+## Kéo thả điều chỉnh, thay cầu thủ trong đội hình đội bóng do người dùng quản lí
 <p float="left" align="center">
   <img src="https://github.com/erwin24092002/PROJECT---ErS_FIFPro/blob/master/Images/base_change.png" width="900"/>
 </p>
